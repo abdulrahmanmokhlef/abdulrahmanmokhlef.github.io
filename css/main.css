@@ -160,24 +160,33 @@ body {
 .first-nav li:nth-child(4) {
     margin-left: 0px;
 }
+
+
 .second-nav .nav-link{
     margin-right: 55px;
 }
-a.nav-link:hover {
-   color: #FAE168 !important;
-}
 
-a.nav-link:hover label{
-    color: #FAE168 !important;
-    
- }
- 
+
 .nav-link label{
     color: whitesmoke !important;
     font-size: 15px;
     font-family: Hacen-Algeria;
     cursor: pointer;
 }
+
+a.nav-link:hover {
+    color: #FAE168 !important;
+    
+ }
+ a.nav-link:hover label{
+    color: #FAE168 !important;
+ }
+a.nav-link:hover #nav-icon{
+   /* filter: invert(84%) sepia(99%) saturate(352%) hue-rotate(330deg) brightness(101%) contrast(96%); */
+   fill: #FAE168;
+}
+
+
 
 
 .nav-float {
@@ -199,7 +208,9 @@ a.nav-link:hover label{
 }
 
 
-/*service list*/
+/* ==========================================
+    service list
+  ========================================== */
 .nav-icon-service{
     background-color: #ffffff;
     margin-top: -100px;
@@ -388,7 +399,10 @@ a.nav-link:hover label{
     font-size: 15px;
 }
 
-/*Section-2*/
+
+/* ==========================================
+    Section-2
+  ========================================== */
 .section-2{
     margin-top: 100px;
 	overflow: hidden;
@@ -401,7 +415,7 @@ a.nav-link:hover label{
     height: 449px;
 }
 .text-part h1{
-    margin-top: 60px;
+    margin-top: 80px;
     color: #FF5440;
 }
 .text-part p{
@@ -412,7 +426,8 @@ a.nav-link:hover label{
     height: auto;
 }
 .img-part{
-    margin-top: -55px;
+    margin-top: -40px;
+    overflow: hidden;
 }
 .img-part img{
     height: 551px;
@@ -429,7 +444,9 @@ a.nav-link:hover label{
 }
 
 
-/*section-3*/
+/* ==========================================
+    section-3
+  ========================================== */
 .section-3{
     margin-top: 100px;
 }
@@ -531,10 +548,13 @@ a.nav-link:hover label{
 .section-3-button{
     text-align: center;
     
+    
 }
 
 .section-3-button a{
+    border: none;
     border-radius: 0px !important;
+    background-color: #3FD5DF;
     color: #ffffff !important;
 }
 .section-3-button a:hover{
@@ -582,17 +602,25 @@ a.nav-link:hover label{
 }
 .v-logo{
     padding: 30px;
-    margin-bottom: -53px;
+    margin-bottom: 10px;
 }
 .footer-logo-container p{
     margin-left: 32px;
-    margin-bottom: -10px;
+    margin-bottom: 7px;
+}
+
+.footer-logo-container img{
+    margin-top: -19px;
 }
 .social{
-    background-color: white !important;
-    color: blue !important;
-    border-radius: 50% !important;
+    /* background-color: white !important;
+    color: #1034A6 !important;
+    border-radius: 50% !important; */
+    width: 40px !important;
+    height: 40px !important;
+    padding: 3px !important;
 }
+
 
 .float-right{
     float: right !important;
