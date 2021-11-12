@@ -26,7 +26,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     z-index: 1;
-    
+    opacity: 50%;    
 }
 
 .carousel-item {
@@ -176,7 +176,6 @@ body {
 
 a.nav-link:hover {
     color: #FAE168 !important;
-    
  }
  a.nav-link:hover label{
     color: #FAE168 !important;
@@ -256,50 +255,50 @@ a.nav-link:hover #nav-icon{
 }
 
 .box-nav-1 .box-icon{
-    background: url("../img/icons/service-list/id.png") no-repeat center;
+    background: url("../img/icons/main/id.png") no-repeat center;
 }
 .box-nav-1:hover .box-icon{
-    background: url("../img/icons/service-list/id2.png") no-repeat center !important;
+    background: url("../img/icons/main/id2.png") no-repeat center !important;
     background-size: 45px !important;
 }
 
 .box-nav-2 .box-icon{
-    background: url("../img/icons/service-list/privete.png") no-repeat center;
+    background: url("../img/icons/main/privete.png") no-repeat center;
 }
 .box-nav-2:hover .box-icon{
-    background: url("../img/icons/service-list/privete2.png") no-repeat center !important;
+    background: url("../img/icons/main/privete2.png") no-repeat center !important;
     background-size: 45px !important;
 }
 
 .box-nav-3 .box-icon{
-    background: url("../img/icons/service-list/camera\ man.png") no-repeat center;
+    background: url("../img/icons/main/camera\ man.png") no-repeat center;
 }
 .box-nav-3:hover .box-icon{
-    background: url("../img/icons/service-list/camera\ man2.png") no-repeat center !important;
+    background: url("../img/icons/main/camera\ man2.png") no-repeat center !important;
     background-size: 45px !important;
 }
 
 .box-nav-4 .box-icon{
-    background: url("../img/icons/service-list/camera.png") no-repeat center;
+    background: url("../img/icons/main/camera.png") no-repeat center;
 }
 .box-nav-4:hover .box-icon{
-    background: url("../img/icons/service-list/camera2.png") no-repeat center !important;
+    background: url("../img/icons/main/camera2.png") no-repeat center !important;
     background-size: 45px !important;
 }
 
 .box-nav-5 .box-icon{
-    background: url("../img/icons/service-list/video.png") no-repeat center;
+    background: url("../img/icons/main/video.png") no-repeat center;
 }
 .box-nav-5:hover .box-icon{
-    background: url("../img/icons/service-list/video2.png") no-repeat center !important;
+    background: url("../img/icons/main/video2.png") no-repeat center !important;
     background-size: 45px !important;
 }
 
 .box-nav-6 .box-icon{
-    background: url("../img/icons/service-list/dance.png") no-repeat center;
+    background: url("../img/icons/main/dance.png") no-repeat center;
 }
 .box-nav-6:hover .box-icon{
-    background: url("../img/icons/service-list/dance2.png") no-repeat center !important;
+    background: url("../img/icons/main/dance2.png") no-repeat center !important;
     background-size: 45px !important;
 }
 
@@ -567,7 +566,7 @@ a.nav-link:hover #nav-icon{
     overflow: hidden;
     margin-top: 100px;
     height: 80vh;
-    background-image: url('../img/main/section-4/7@2x.png');
+    background-image: url('../img/main/section-4/7.jpg');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
