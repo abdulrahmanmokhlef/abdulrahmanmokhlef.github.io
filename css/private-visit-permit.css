@@ -19,7 +19,7 @@
 }
 
 main{
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
      background: url('../img/pages/private-visit-permit/img/section-bg.png') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -222,7 +222,7 @@ div.gallery-4 div.caption, div.gallery-4 div.small-caption{
     p-section-1-2
   ========================================== */
 
-  .p-section-1-2{
+.p-section-1-2{
     margin-top: 50px;
 }
 .p-section-1-2-header{
@@ -474,6 +474,12 @@ div.gallery-4 div.caption, div.gallery-4 div.small-caption{
     padding: 60px;
 }
 
+
+
+.main-end{
+    height: 50px;
+    /* margin-bottom: 50px; */
+}
 /*@media query*/
 @media screen and (max-width: 600px) {
     .form{
