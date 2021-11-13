@@ -35,15 +35,19 @@ $(document).ready(function() {
         }
     })
 
+    //todo this block of code is temporary commented
     //this to keep active tab opened after reload 
-    $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
-        localStorage.setItem('activeTab', $(e.target).attr('href'));
-    });
-    var activeTab = localStorage.getItem('activeTab');
-    if(activeTab){
-        $('#myTab a[href="' + activeTab + '"]').tab('show');
-    }
+    // $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
+    //     localStorage.setItem('activeTab', $(e.target).attr('href'));
+    // });
+    // var activeTab = localStorage.getItem('activeTab');
+    // if(activeTab){
+    //     $('#myTab a[href="' + activeTab + '"]').tab('show');
+    //     $('#myTab2 a[href="' + activeTab + '"]').tab('show');
+    // }
 
+
+    //input file
     $('.custom-file input').change(function (e) {
         var files = [];
         for (var i = 0; i < $(this)[0].files.length; i++) {
@@ -52,4 +56,5 @@ $(document).ready(function() {
         $(this).next('.custom-file-label').html(files.join(', '));
     });
 
+    
   });

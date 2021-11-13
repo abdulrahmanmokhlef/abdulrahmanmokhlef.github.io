@@ -637,6 +637,10 @@ a.nav-link:hover #nav-icon{
 .pp{
     font-size: 20px;
 }
+
+.site-red{
+    color: #FF5440; 
+}
 /*@media query*/
 @media screen and (max-width: 1360px) {
     .carousel-caption-override{
