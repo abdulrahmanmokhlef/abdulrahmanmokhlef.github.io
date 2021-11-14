@@ -35,6 +35,15 @@ $(document).ready(function() {
         }
     })
 
+
+    //avtive tab buy tab id
+    //navTabClass ex: nav-tab
+    activeTab = function(navTabClass,tab){
+        debugger
+        $( '.' + navTabClass + ' ' +'a[href="#' + tab + '"]').tab('show');
+    };
+
+      
     //todo this block of code is temporary commented
     //this to keep active tab opened after reload 
     // $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {

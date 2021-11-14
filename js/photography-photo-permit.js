@@ -1,14 +1,7 @@
 $(document).ready(function() {
  
 
-  activaTab = function(tab){
-    $('.sub-nav-tabs a[href="#' + tab + '"]').tab('show');
-  };
-
   
-
-  
-
     // //this to keep active tab opened after reload 
     // $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
     //     localStorage.setItem('activeTab', $(e.target).attr('href'));
