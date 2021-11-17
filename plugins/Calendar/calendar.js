@@ -95,9 +95,9 @@ function showCalendar(month, year) {
               cell.className = "date-picker";
               cell.innerHTML = "<span>" + (date) + "</span>";
 
-              if ( date === today.getDate() && year === today.getFullYear() && month === today.getMonth() ) {
-                  cell.className = "date-picker selected";
-              }
+              // if ( date === today.getDate() && year === today.getFullYear() && month === today.getMonth() ) {
+              //     cell.className = "date-picker selected";
+              // }
               row.appendChild(cell);
               date++;
           }
@@ -113,3 +113,42 @@ function showCalendar(month, year) {
 function daysInMonth(iMonth, iYear) {
   return 32 - new Date(iYear, iMonth, 32).getDate();
 }
+
+
+highlightDays = function(arrayOfDays){
+  debugger
+  const list = document.getElementsByClassName('date-picker');
+  
+  for (let item of list) {
+    
+    var value =item.attributes[0].textContent
+
+    const isEqual = arrayOfDays.filter(element => element == value);
+
+    if(isEqual.length > 0){
+      
+      item.className = "date-picker highlight-gray";
+      // item.innerHTML = "<span class='highlight-gray'>" + value + "</span>"
+      
+    }
+
+  }
+
+}
+
+const arrayOfDays = [24, 25, 26, 27, 28, 29, 30, 31];
+highlightDays(arrayOfDays);
+
+
+
+function generate_year_range2(start, end) {
+  var years = "";
+  for (var year = start; year <= end; year++) {
+      years += "<a class='dropdown-item' href='#'>" + year + "</a>";
+  }
+  return years;
+}
+var createYear2 = generate_year_range2(2021, 2030);
+// document.getElementById("year2").innerHTML = createYear2;
+
+

@@ -131,6 +131,34 @@ body {
     padding-right: 110px !important;
     padding-top: 20px;
 } */
+
+
+/* ==========================================
+    common on over all application
+  ========================================== */
+
+.form-control{
+    height: 40px !important;
+}
+
+.form-control{
+    box-shadow: none !important;
+    border: none !important;
+}
+.form-control:focus{
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.btn{
+    border: none !important;
+}
+.btn:focus{
+    box-shadow: none !important;
+}
+
+
+
  .top-header{
     position: absolute;
     top:0;

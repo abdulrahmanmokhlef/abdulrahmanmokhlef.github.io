@@ -29,7 +29,12 @@ $(document).ready(function() {
         $( '.' + navTabClass + ' ' +'a[href="#' + tab + '"]').tab('show');
     };
 
-      
+    activeTabInSpecificPage = function(tab, page){
+        debugger
+        localStorage.setItem('tab', tab);
+        window.location.replace('../pages/' + page);
+    };
+
     //todo this block of code is temporary commented
     //this to keep active tab opened after reload 
     // $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {

@@ -1,7 +1,6 @@
 $(document).ready(function() {
  
 
-  
     // //this to keep active tab opened after reload 
     // $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
     //     localStorage.setItem('activeTab', $(e.target).attr('href'));

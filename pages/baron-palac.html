@@ -16,8 +16,6 @@
     <link href="../css/baron-palac.css" rel="stylesheet">
     <link href="../plugins/calendar/calendar.css" rel="stylesheet">
 
-	  <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet"> -->
-
     <!-- Bootstrap core CSS -->
     <link href="../plugins/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
    
@@ -360,8 +358,9 @@
                                  -->
                                  <div class="header-container-calendar">
                       
-                                    <div class="selectdiv">
-                                      <select id="year" onchange="jump()"></select>       
+                                  <!-- <div class="selectdiv" "> -->
+                                    <div class="selectdiv"  style="width:200px;">
+                                      <select  id="year" onchange="jump()" ></select>       
                                     </div>
                       
                                     <div class="selectdiv">
@@ -372,7 +371,7 @@
                                           <option value=3>أبريل</option>
                                           <option value=4>مايو</option>
                                           <option value=5>يونيو</option>
-                                          <option value=6>يونيه</option>
+                                          <option value=6>يوليو</option>
                                           <option value=7>أغسطس</option>
                                           <option value=8>سبتمبر</option>
                                           <option value=9>أكتوبر</option>
@@ -380,6 +379,7 @@
                                           <option value=11>ديسمبر</option>
                                       </select>
                                   </div>
+                                  
                                 </div>
                       
                                 <table class="table-calendar" id="calendar" data-lang="en">
@@ -390,6 +390,14 @@
                             </div>
                           </div>
 
+                          <div class="panels2-p">
+                            <p>
+                              <span class="site-red">* الحجز بأسبقية تقديم الطلب ودفع الرسوم</span>
+                            </p>
+                            <p>
+                              <span class="site-red">* يتم تحديث المواعيد المتاحه يومياً</span>
+                            </p>
+                          </div>
                         </div>
                       </div>
 
@@ -447,7 +455,7 @@
 
                             </div>
 
-                            <button class="btn btn-danger" id="part-2-btn"type="button">طلب تصريح إقامة حفل</button>
+                            <button class="btn btn-danger"  href="#!" id="part-2-btn"  onclick="activeTabInSpecificPage('apply', 'wedding-permit.html')">طلب تصريح إقامة حفل</button>
                           </div>
 
                         </div>
@@ -604,8 +612,6 @@
     <script type="text/javascript" src="../js/main.js"></script>
     <script type="text/javascript" src="../js/baron-palac.js"></script>
     <script type="text/javascript" src="../plugins/calendar/calendar.js"></script>
-
-    
 
   </body>
 </html>

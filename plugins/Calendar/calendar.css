@@ -139,6 +139,26 @@ display: none;
   background-color: #FF5440;
   background-image: none;
   /* border: 1px solid #cccccc; */
+  border: none !important;
   -ms-word-break: normal;
   word-break: normal;
+}
+
+.selectdiv select:focus{
+  box-shadow: none !important; 
+  border: none !important; 
+  outline: none;
+}
+
+.selectdiv select > option{
+  background-color: #ffffff;
+  color: #FF5440;
+}
+
+
+.highlight-gray{
+  /* border: 1px solid gray !important; */
+  padding: 0px 18px;
+  background-color: #488DFF;
+  opacity: 50%;
 }

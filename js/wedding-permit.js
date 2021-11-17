@@ -1,5 +1,14 @@
 $(document).ready(function() {
  
+debugger
+  var item = localStorage.getItem('tab');
+
+  if(item ==="apply"){
+    $( '.' + 'nav-tabs' + ' ' +'a[href="#' + 'apply' + '"]').tab('show');
+  }
+  
+  localStorage.removeItem('tab');
+
 
   var count1 = 1, count2 = 1;
   appendItem = function(){
