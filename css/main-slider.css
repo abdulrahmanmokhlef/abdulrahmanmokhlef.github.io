@@ -1,0 +1,196 @@
+
+.carousel-item {
+    height: 85vh;
+    min-height: 350px;
+    /* background: no-repeat center center scroll; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.prev, .next {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px;
+    border:1px solid #E74C3C !important;
+    z-index: 50;
+}
+
+.prev:hover{
+    background: #E74C3C !important;
+    color: white;
+}
+.next:hover{
+    background: #E74C3C !important;
+    color: white;
+}
+
+.prev > span, .next > span {transform : scale(1,1); color: white}
+
+
+
+
+
+.carousel-caption-override {
+    position: absolute;
+    right: 50% !important;
+    bottom: 180px !important;
+    left: 30px !important;
+    z-index: 1 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+
+}
+
+.carousel-caption h2{
+    color:#3FD5DF;
+    font-size: 50px;
+}
+
+/*old*/
+/*
+.owl-prev {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40%;
+    left: 100px;
+    display: block !important;
+    border:1px solid red !important;
+}
+
+.owl-next {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40%;
+    right: 100px;
+    display: block !important;
+    border:1px solid red !important;
+
+}
+.owl-prev i, .owl-next i {transform : scale(1,1); color: white}
+
+.owl-prev:hover{
+    background: red !important;
+    color: white;
+}
+.owl-next:hover{
+    background: red !important;
+    color: white;
+}
+*/
+
+
+ /* Start Header*/
+
+ /*fluid*/
+ /* .top-header{
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding-left: 160px !important;
+    padding-right: 110px !important;
+    padding-top: 20px;
+} */
+
+
+
+/* ==========================================
+    section-3
+  ========================================== */
+ 
+.owl-carousel .item{
+    overflow: hidden; 
+}
+.item-img{
+    overflow: hidden;
+}
+.owl-carousel .item img{
+    transition: transform .25s;
+}
+
+.owl-carousel .item img:hover{
+    transform: scale(1.25);
+}
+
+.item-small-caption{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    font-size: 12px;
+    width: 70px;
+    height: 20px;
+}
+
+
+.item-caption{
+    text-align: center;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.item-1 .item-caption, .item-1 .item-small-caption {
+    background: #FAE168;
+    color: #1034A6;
+} 
+.item-2 .item-caption, .item-2 .item-small-caption {
+    background: #FF5440;
+    color: #FFFFFF;
+} 
+.item-3 .item-caption, .item-3 .item-small-caption {
+    background: #1034A6;
+    color: #FFFFFF;
+} 
+.item-4 .item-caption, .item-4 .item-small-caption {
+    background: #3FD5DF;
+    color: #FFFFFF;
+} 
+/*Owl carsouel configurations*/  
+.owl-prev {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 40%;
+    left: -30px;
+    display: block !important;
+    border:1px solid #FF5440 !important;
+    border-radius: 0px !important;
+}
+
+.owl-next {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 40%;
+    right: -30px;
+    border:1px solid #FF5440 !important;
+    border-radius: 0px !important;
+    
+}
+.owl-prev i, .owl-next i {transform : scale(1.2); color: #85C1E9}
+
+.owl-prev:hover{
+    background: #FF5440 !important;
+}
+.owl-next:hover{
+    background: #FF5440 !important;
+}
+.owl-prev:hover i,
+.owl-next:hover i{
+    color: #ffffff;
+} 
+
+.owl-next:focus, .owl-prev:focus {outline: none;}
+
+

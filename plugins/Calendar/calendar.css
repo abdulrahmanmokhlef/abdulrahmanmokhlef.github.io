@@ -1,0 +1,144 @@
+.wrapper {
+  /* margin: 15px auto; */
+  max-width: 1100px;
+}
+
+.container-calendar {
+  background: #ffffff;
+  /* padding: 15px; */
+  max-width: 475px;
+  /* margin: 0 auto; */
+  overflow: auto;
+  direction: rtl;
+}
+
+.button-container-calendar button {
+  cursor: pointer;
+  display: inline-block;
+  zoom: 1;
+  background: #00a2b7;
+  color: #fff;
+  border: 1px solid #0aa2b5;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.table-calendar {
+  border-collapse: collapse;
+  border: none;
+  width: 100%;
+  color: #1034A6;
+}
+
+.table-calendar td, .table-calendar th {
+  padding: 5px;
+  /* border: 1px solid #e2e2e2; */
+  text-align: center;
+  vertical-align: top;
+  border: none;
+  font-weight: bold;
+}
+
+.date-picker.selected {
+  font-weight: bold;
+  outline: 1px dashed #00BCD4;
+}
+
+.date-picker.selected span {
+  border-bottom: 2px solid currentColor;
+}
+
+/* sunday */
+.date-picker:nth-child(1) {
+color: #FF5440;
+}
+
+/* Sunday */
+.date-picker:nth-child(2) {
+color: gray;
+}
+
+#monthAndYear {
+  text-align: center;
+  margin-top: 0;
+}
+
+
+
+.header-container-calendar {
+  /* margin-top: 1em; */
+  /* border-bottom: 1px solid #dadada; */
+  /* padding: 10px 0; */
+  margin-bottom: 80px;
+}
+
+.header-container-calendar select {
+  cursor: pointer;
+  display: inline-block;
+  zoom: 1;
+  background: #ffffff;
+  color: #585858;
+  /* border: 1px solid #bfc5c5; */
+  /* border-radius: 3px; */
+  padding: 5px 1em;
+  margin-bottom: 10px;
+}
+
+
+.selectdiv {
+  /* direction: ltr; */
+  position: relative;
+  /*Don't really need this just for demo styling*/
+  
+  float: right;
+  min-width: 200px;
+  /* margin: 50px 33%; */
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+display: none;
+}
+
+.selectdiv:after {
+  content: '<';
+  font: 17px "Consolas", monospace;
+  color: #ffffff;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  left: 105px;
+  /*Adjust for position however you want*/
+  
+  top: 19px;
+  padding: 0 6px 0 2px;
+  
+  /*left line */
+  
+  position: absolute;
+  pointer-events: none;
+}
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  
+  display: block;
+  width: 70%;
+  max-width: 320px;
+  height: 45px;
+  float: right;
+  margin: 5px 0px;
+  padding: 0px 40px 0px 20px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #ffffff;
+  background-color: #FF5440;
+  background-image: none;
+  /* border: 1px solid #cccccc; */
+  -ms-word-break: normal;
+  word-break: normal;
+}
