@@ -1,3 +1,8 @@
+
+const arrayOfDays = [24, 25, 26, 27, 28, 29, 30, 31];
+const mm = 11;
+const yyyy = 2021;
+
 function generate_year_range(start, end) {
   var years = "";
   for (var year = start; year <= end; year++) {
@@ -57,6 +62,8 @@ function jump() {
   currentYear = parseInt(selectYear.value);
   currentMonth = parseInt(selectMonth.value);
   showCalendar(currentMonth, currentYear);
+
+  highlightDays(arrayOfDays, mm, yyyy);
 }
 
 function showCalendar(month, year) {
@@ -115,17 +122,22 @@ function daysInMonth(iMonth, iYear) {
 }
 
 
-highlightDays = function(arrayOfDays){
+
+
+highlightDays = function(arrayOfDays, mm, yyyy){
   debugger
   const list = document.getElementsByClassName('date-picker');
   
   for (let item of list) {
     
-    var value =item.attributes[0].textContent
+    const Currentdd =item.attributes[0].textContent
+    const Currentmm =item.attributes[1].textContent
+    const Currentyyyy =item.attributes[2].textContent
 
-    const isEqual = arrayOfDays.filter(element => element == value);
+    const isDayInList = arrayOfDays.filter(element => element == Currentdd);
+    
 
-    if(isEqual.length > 0){
+    if(isDayInList.length > 0 && Currentmm == mm && Currentyyyy == yyyy){
       
       item.className = "date-picker highlight-gray";
       // item.innerHTML = "<span class='highlight-gray'>" + value + "</span>"
@@ -136,9 +148,7 @@ highlightDays = function(arrayOfDays){
 
 }
 
-const arrayOfDays = [24, 25, 26, 27, 28, 29, 30, 31];
-highlightDays(arrayOfDays);
-
+highlightDays(arrayOfDays, mm, yyyy);
 
 
 function generate_year_range2(start, end) {
