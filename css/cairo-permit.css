@@ -1,0 +1,266 @@
+.header-img {
+    height: 75vh;
+    min-height: 350px;
+    /* background: no-repeat center center scroll; */
+    background-image: url('../img/pages/cairo-permit/img/hdr.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+.p-section-header-text{
+    /* float: right;
+    margin-top: 390px;
+    margin-right: 100px; */
+    position: absolute;
+    bottom: 30%;
+    right: 8%;
+    color: #FFFFFF;
+}
+
+main{
+     background: url('../img/pages/cairo-permit/img/section-bg.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* ==========================================
+    p-section-1
+  ========================================== */
+
+.p-section-1{
+    margin-top: 50px;
+
+}
+
+
+.p-section-1 .img-row{
+    margin-bottom: 150px;
+}
+
+
+/*responsive image grid*/
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-top: -8px;
+  }
+
+  /*Add main image */
+  .grid-main-img{
+    flex: 25%;
+    max-width: 100%;
+    padding: 1px 4px;
+  }
+
+  .grid-main-img img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  
+
+  
+
+/*panle*/
+.p-section-1 .permit-panel{
+    background-color: #1034A6;
+    text-align: right;
+    padding: 40px 20px 22px 20px;
+}
+.p-section-1 .permit-panel h3{
+    color: #FFFFFF;
+}
+.p-section-1 .permit-panel p{
+    color: #FFFFFF;
+    /* width: 80%; */
+    margin-bottom: 10px ;
+}
+
+.p-section-1 .permit-panel .row{
+    width: 90%;
+}
+
+.p-section-1 .permit-form{
+    /* margin-top: 15px; */
+}
+
+.p-section-1 .permit-form input{
+    text-align: center;
+    direction: ltr;
+    border: 1px solid #FAE168;
+    background:transparent;
+    color: #FFFFFF;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+    opacity: 1;
+    /* -webkit-appearance: none; */
+    -webkit-background-composite: unset;
+    outline:none;
+}
+
+hr.panel-h-line{
+    border-top: 1px solid #FAE168;
+    margin-top: -7px;
+}
+
+.p-section-1 .form-buttons{
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+}
+
+
+.p-section-1 .form-buttons a{
+    background-color: #1034A6;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 30%;
+    border-radius: 0px;
+}
+
+.p-section-1 .form-buttons a.add{
+    background-color: #FAE168 !important;
+    color: #1034A6;
+}
+
+.p-section-1 .form-buttons a.add:hover{
+    background-color: #FF5440 !important;
+    color: #FFFFFF;
+}
+
+.p-section-1 .form-buttons a.submit{
+    background-color: #FF5440 !important;
+    color: #1034A6;
+}
+.p-section-1 .form-buttons a.submit:hover{
+    background-color: #3FD5DF !important;
+    color: #1034A6;
+}
+
+
+
+
+/* ==========================================
+    p-section-1
+  ========================================== */
+
+.p-section-3-header{
+    text-align: center;
+    color: #1034A6;
+    margin-bottom: 30px;
+} 
+
+div.gallery {
+    margin-bottom: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+  
+div.gallery .gallery-img{
+    overflow: hidden;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform .25s;
+}
+
+div.gallery img:hover{
+    transform: scale(1.25);
+}
+
+div.gallery div.caption {
+    padding: 5px;
+    text-align: center;
+    background: #FAE168;
+    color: #1034A6;
+    font-size: 18px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+div.gallery div.small-caption{
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    text-align: center;
+    font-size: 12px;
+    width: 70px;
+    height: 20px;
+    padding: 1px;
+}
+
+div.gallery div.small-caption{
+    background: #FAE168;
+    color: #1034A6;
+} 
+
+div.gallery-1 div.caption, div.gallery-1 div.small-caption{
+    background: #1034A6;
+    color: #FFFFFF;
+} 
+
+
+div.gallery-2 div.caption, div.gallery-2 div.small-caption{
+    background: #FF5440;
+    color: #FFFFFF;
+} 
+div.gallery-3 div.caption, div.gallery-3 div.small-caption{ 
+    background: #28D0DC;
+    color: #FFFFFF;
+} 
+div.gallery-4 div.caption, div.gallery-4 div.small-caption{
+    background: #FAE168;
+    color: #1034A6;
+}
+
+
+
+.main-end{
+    height: 50px;
+    /* margin-bottom: 50px; */
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+    
+    .p-section-1 .permit-panel{
+        margin-top: 20px;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+    
+  }

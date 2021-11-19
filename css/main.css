@@ -157,7 +157,9 @@ body {
     box-shadow: none !important;
 }
 
-
+.number-control:focus-visible{
+    outline:none !important
+}
 
  .top-header{
     position: absolute;
@@ -668,6 +670,13 @@ a.nav-link:hover #nav-icon{
 .site-red{
     color: #FF5440; 
 }
+.site-yellow{
+    color: #FAE168; 
+}
+.site-blue{
+    color: #1034A6; 
+}
+
 /*@media query*/
 @media screen and (max-width: 1360px) {
     .carousel-caption-override{

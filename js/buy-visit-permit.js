@@ -1,16 +1,29 @@
 $(document).ready(function() {
  
 
-    // //this to keep active tab opened after reload 
-    // $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
-    //     localStorage.setItem('activeTab', $(e.target).attr('href'));
-    // });
-    // var activeTab = localStorage.getItem('activeTab');
-    // if(activeTab){
-    //     $('#privatePhotographyTab a[href="' + activeTab + '"]').tab('show');
-    //     $('#privatePhotographyTab2 a[href="' + activeTab + '"]').tab('show');
-    // }
+  var idCount = 3;
+  appendRow = function(){
+  debugger
+    const element = `  
+        <tr>
+          <th scope="row">
+            <p>نصريح القاهرة</p>
+            <label class="site-red">تصريح جديد</label>
+          </th>
+          <td>
+            <input type="number" class="number-control count-input" id="quantity` + idCount +`" name="quantity2" value ="1"   min="1" max="50">
+          </td>
+          <td>$0</td>
+          <td>$0</td>
+      </tr>`;
 
+      var table = document.getElementById("permitTable");
+   
+      // Create an empty <tr> element and add it to the 3st position of the table:
+      var row = table.insertRow(3).innerHTML = element;
+
+  }
+ 
 
     // //input file
     // $('.custom-file input').change(function (e) {

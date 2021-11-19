@@ -19,7 +19,6 @@
 }
 
 main{
-    /* margin-bottom: 50px; */
      background: url('../img/pages/buy-visit-permit/img/section-bg.png') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -143,19 +142,6 @@ main{
     color: #FF5440 !important;
 }
 
-
-::placeholder {
-color: #FF5440 !important;
-opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-color: #FF5440 !important;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-color: #FF5440 !important;
-}
 
 
 div.gallery {
@@ -360,9 +346,22 @@ thead{
 }
 .table-borderless > tbody > tr > td input{
     text-align: center;
-    color: #FF5440;
+    border: 1px solid #FF5440;
+    direction: ltr;
+    
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+    opacity: 1;
+}
+
+.p-section-1-5 .add-item{
+    color: #FF5440;
+    cursor: pointer;
+    /* margin-top: -10px; */
+}
 
 .p-section-1-5 .permit-summary{
     background-color: #E8F8F5;
@@ -389,7 +388,6 @@ thead{
 }
 
 
-
 .p-section-1-5 .terms-panel{
     background-color: #FDEDEC;
     border: 1px solid #FF5440;
@@ -408,11 +406,17 @@ thead{
 
 
 
-/* .p-section-1-5, .terms-panel ul{
+
+.p-section-1-5 .form{
+    margin-bottom: 30px;
+    color: #1034A6;
+}
+
+.p-section-1-5-form-header{
     text-align: right;
     margin-bottom: 20px;
-} */
-
+    color: #1034A6;
+}
 
 .p-section-1-5 .form .row{
     text-align: right !important;
@@ -453,21 +457,6 @@ thead{
 
 
 
-
-/* .p-section-1-5 .custom-file {
-    color: #1034A6 !important;
-    border: 1px solid #1034A6 !important;
-    border-radius: 0px !important;
-    opacity: 50%;
-} */
-
-
-
-.p-section-1-5 .file-upload{
-    /* border: 1px solid #1034A6; */
-    
-
-}
 .p-section-1-5 .custom-file{
     direction: ltr;
     text-align: center;
@@ -484,6 +473,50 @@ thead{
     margin-top: -38px;
     width: 140px;
 }
+
+
+/*form 2 color*/
+.p-section-1-5 .request-2 .form{
+    margin-bottom: 30px;
+    color: #FF5440;
+}
+
+.p-section-1-5 .request-2 .p-section-1-5-form-header{
+    color: #FF5440;
+}
+
+
+.p-section-1-5 .request-2 .form-header{
+    color: #FF5440;
+}
+
+.p-section-1-5 .request-2 .form-control {
+    border: 1px solid #FF5440 !important;
+    color: #FF5440 !important;
+    opacity: 100%;
+    
+}
+
+.form-check .request-2 .form-check-label{
+    padding-right: 15px;
+    color: #FF5440;
+}
+.form-check .request-2 .form-check-label a{
+    color: #FF5440;
+}
+
+
+.p-section-1-5 .request-2 .custom-file{
+    /* border: 1px solid#8f9fcc; */
+    border: 1px solid #FF5440 !important;
+
+}
+
+.p-section-1-5 .request-2 #file-lbl{
+    background-color: #FF5440;
+}
+
+
 
 
 
@@ -515,6 +548,26 @@ thead{
 }
 
 
+
+.page-half-buttom{
+    /* margin-top: 100px;
+    background-color: rgb(16, 52, 166, 5%); */
+
+    background-color: rgb(16, 52, 166, 5%);
+    position: absolute;
+    left: 0;
+    top: 1200px;
+    height: 650px;
+    width: 100%;
+    z-index: -1;
+}
+
+.p-section-1-5 .request-2{
+    color: #FF5440 !important;
+    margin-top: 100px;
+}
+
+
 .p-section-1-5 .modal-body{
     text-align: center;
     background-color: #1034A6;
@@ -526,6 +579,51 @@ thead{
     padding: 60px;
 }
 
+.final{
+    text-align: right;
+}
+.final p{
+    color: #1034A6 !important;
+    font-size: 18px;
+}
+
+
+.final .search-group{
+    border: 1px solid #FF5440 !important;
+    width: 36%;
+}
+.final .search-group .form-control {
+    border-radius: 0px !important;
+    border: none !important;
+    font-size: 15px;
+    background-color: #FF54401F;
+    opacity: 100% !important;
+    color: gray;
+}
+.final .search-group .search-button{
+    background-color: #FF5440;
+    color: #FFFFFF;
+    border-radius: 0px !important;
+    border: 0px !important;
+    width: 30%;
+    padding: 0;
+}
+.final .search-group .form-control:focus {
+    border-radius: 1px solid #FF5440 !important;
+    color: #474747 !important;
+}
+
+.final .search-group .search-button:hover{
+    background: transparent;
+    color: #FF5440;
+}
+.final .search-group input#googlSearch {
+    background-image: url('../img/pages/buy-visit-permit/icons/google-maps.png');
+    background-repeat: no-repeat;
+    background-position: 250px 8px;
+    background-size: 20px 20px;
+    text-indent: 25px;
+}
 
 
 .main-end{
@@ -533,7 +631,8 @@ thead{
     /* margin-bottom: 50px; */
 }
 /*@media query*/
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 800px) {
     .form{
         margin-bottom: 10px;
     }
@@ -542,5 +641,20 @@ thead{
         width: 400px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .final .search-group{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .final .search-group{
+        width: 50%;
+    }
+
+    .page-half-buttom{
+       display: none;
     }
 }
