@@ -1,5 +1,13 @@
 $(document).ready(function() {
  
+  var item = localStorage.getItem('tab');
+
+  if(item ==="apply"){
+    $( '.' + 'nav-tabs' + ' ' +'a[href="#' + 'apply' + '"]').tab('show');
+  }
+  
+  localStorage.removeItem('tab');
+
 
   var idCount = 3;
   appendRow = function(){
@@ -21,7 +29,8 @@ $(document).ready(function() {
    
       // Create an empty <tr> element and add it to the 3st position of the table:
       var row = table.insertRow(3).innerHTML = element;
-
+      
+      idCount++;
   }
  
 

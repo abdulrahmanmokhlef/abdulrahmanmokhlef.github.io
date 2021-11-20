@@ -79,22 +79,7 @@ main{
     width: 100%;
   }
 
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-
+  
 
 /*nav tabs*/
 .nav-tabs{
@@ -364,3 +349,28 @@ main{
     /* margin-bottom: 50px; */
 }
 
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 25%;
+    }
+
+    .p-section-1 .owl-carousel, .p-section-1-1 .details-panel{
+        margin-bottom: 20px;
+    }
+
+    
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 25%;
+    }
+
+    .p-section-1 .owl-carousel, .p-section-1-1 .details-panel{
+        margin-bottom: 20px;
+    }
+  }
