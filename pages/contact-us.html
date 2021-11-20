@@ -13,7 +13,7 @@
     
     <!-- Custom CSS -->
     <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/cairo-permit.css" rel="stylesheet">
+    <link href="../css/contact-us.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="../plugins/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,17 +35,24 @@
       <header>
        
        <!--Header-img start-->
-       <div class="header-img">
-          <div class="p-section-header-text">
-            <h1>تصريح القاهرة</h1>
+       <div class="overlayed-hdr">
+
+          <div class="header-img">
+            <div class="p-section-header-text">
+              <h1>اتصل بنا</h1>
+            </div>
           </div>
+
+          <div class="overlay"></div>
+
        </div>
        <!--Header-img end-->
+
         <div>
 
         </div>
 
-         <div class="container top-header">
+        <div class="container top-header">
           <div class="row ">
 
             <div class="col-lg-3  col-md-3 col-sm-3 col-3 p-0 float-right">
@@ -164,226 +171,114 @@
           <!--Section 1 start-->
           <section class="p-section-1">
 
-            <div>
+            <div class="row">
 
-              <div class="row img-row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                
+                <div class="form">
 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-
-                  <div class="row grid">
-                    <div class="grid-main-img">
-                      <img src="../img/pages/cairo-permit/img/slider/1.png">
-                    </div>
-                  </div>
-
-                  <div class="row grid">
-                    <div class="column">
-                      <img src="../img/pages/cairo-permit/img/slider/s4.png">
-                    </div>
-                    <div class="column">
-                      <img src="../img/pages/cairo-permit/img/slider/s3@2x.png">
-                    </div>
-                    <div class="column">
-                      <img src="../img/pages/cairo-permit/img/slider/s2@2x.png">
-                    </div>
-                    <div class="column">
-                      
-                      <div class="overlayed-img-container">
-                        <img src="../img/pages/cairo-permit/img/slider/s1@2x.png">
-                        <div class="overlay">
-                          <a href="#!" class="icon" alt="+7">
-                            <img src="../img/pages/cairo-permit/img/slider/+7.svg" width="50" height="50">
-                          </a>
-                        </div>
+                  <form action="#">
+                    <div class="row">
+                     
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <label>الاسم الاول</label>
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        </div> 
                       </div>
 
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <label>الاسم الاخير</label>
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        </div> 
+                      </div>
+
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <label>الهاتف</label>
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        </div> 
+                      </div>
+
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <label>البريد الإلكتروني</label>
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        </div> 
+                      </div>
+
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <label>الرسالة</label>
+                        <div class="input-group mb-3 message">
+                          <textarea id="w3review" name="w3review" rows="4" cols="80">
+                          </textarea>
+                        </div> 
+                      </div>
+
+                    
+                    </div>  
+                    
+                    <div class="form-buttons">
+                      <a class="btn submit"  href="#!" >
+                        إرسال
+                      </a>
+                    </div>
+
+                  </form>
+                </div>
+                
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+               
+                <div class="contact-info">
+                  <p>
+                    <img src="../img/pages/contact-us/icons/phone.svg" width="25" height="25">
+                    1234 1234
+                  </p>
+
+                  <div id="parent">
+                    <div class="child child-img">                    
+                      <img src="../img/pages/contact-us/icons/map-icon.svg" width="40" height="40">
+                    </div>
+                    <div class="child">
+                      <p>
+                        الإدارة العامة للعلاقات الثقافية الخارجية
+                        <br>
+                        العنوان: شارع أبو الفدا الزمالك القاهرة. جمهورية مصر العربية
+                      </p>
                     </div>
                   </div>
-                  
+                 
                 </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                  <div class="permit-panel">
+                <div class="map-panel">
+                  <div id="map" class="map"></div>
 
-                      <h3 class="mb-4">تصريح القاهرة</h3>
+                  <form>
+                    <div class="input-group mb-3 search-group">
+                      <input class="form-control" 
+                             type="text" 
+                             id="googlSearch" 
+                             onfocus="this.value=''" 
+                             value="الموقع علي الخريطه بواسطة جوجل" 
+                             aria-label="Recipient's username" 
+                             aria-describedby="button-addon2">
 
-                      <h5 class="site-yellow">التفاصيل</h5>
-
-                      <p>يشمل التصريح دخول كل المواقع الأثرية المفتوحة بمحافظة القاهرة<br> اضغط هنا <span class="site-yellow">لقائمة المواقع</span></p>
-                      <p>مدة التصريح: ٥ أيام </p>
-                      <p>الشروط: يجب اظهار التصريح واثبات تحقيق الشخصية عند دخول المواقع الأثرية</p>
-
-
-                      <div class="permit-form">
-                        <form>
-                          <div class="row">
-                            <div class="col-lg-4col-md-4 col-sm-4 col-4">
-                              <p>
-                                أجنبي
-                              </p>
-                            </div>
-                            <div class="col-lg-4col-md-4 col-sm-4 col-4">
-                              <p>
-                                <input type="number" class="number-control count-input"  id="quantity" name="quantity2" value ="1"   min="1" max="50">
-                              </p>
-                            </div>
-                            <div class="col-lg-4col-md-4 col-sm-4 col-4">
-                              <p>
-                                سعر التصريح $100
-                              </p>
-                            </div>
-                            <div class="col-lg-4col-md-4 col-sm-4 col-4">
-                              <p>
-                                طالب أجنبي
-                              </p>
-                            </div>
-                            <div class="col-lg-4col-md-4 col-sm-4 col-4">
-                              <p class="number-input">
-                                <input type="number" class="number-control count-input"  id="quantity2" name="quantity2" value ="1"   min="1" max="50">
-                              </p>
-                            </div>
-                            <div class="col-lg-4col-md-4 col-sm-4 col-4">
-                              <p>
-                                سعر التصريح $50
-                              </p>
-                            </div>
-                          </div>
-
-                          <hr class="panel-h-line">
-
-                          <div class="row">
-                            <div class="col-lg-4col-md-4 col-sm-4 col-4">
-                              <p>
-                                المجموع
-                              </p>
-                            </div>
-                            <div class="col-lg-4col-md-4 col-sm-4 col-4">
-                              <p>
-                                عدد 2 تصريح
-                              </p>
-                            </div>
-                            <div class="col-lg-4col-md-4 col-sm-4 col-4">
-                              <p>
-                                القيمة : $150
-                              </p>
-                            </div>
-                          </div>
-
-                          <div class="form-buttons">
-                            
-                            <a href ="../pages/buy-visit-permit.html" class="btn add">
-                              أضف الي السلة
-                            </a>
-                            <a class="btn submit"  href="#!" onclick="activeTabInSpecificPage('apply', 'buy-visit-permit.html')" >
-                              إنهاء عملية الشراء
-                            </a>
-                          </div>
-                        </form>
-                      </div>
-
-                  </div>
-
+                      <button class="btn btn-danger search-button"id="button-addon2" type="button">
+                        الاتجاهات
+                      </button>
+                    </div> 
+                  </form>
                 </div>
 
               </div>
-  
+
             </div>
 
           </section>
           <!--Section 1 end-->
-
-          <!--Section 2 start-->
-          <section class="p-section-2">
-
-            <div>
-              
-              <div class="row">
-
-                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                  
-                  <div class="places-panel">
-                    <h4>أماكن إستلام تصريح الزيارة</h4>
-                    <br>
-                    <p>
-                      <img src="../img/pages/cairo-permit/icons/pin.svg" width="15" height="15">
-                      مكتب العلاقات الثقافية - وزارة السياحة والآثار
-                    </p>
-                    <p>
-                      <img src="../img/pages/cairo-permit/icons/pin.svg" width="15" height="15">
-                      مكتب العلاقات الثقافية - وزارة السياحة والآثار
-                    </p>
-                    <p>
-                      <img src="../img/pages/cairo-permit/icons/pin.svg" width="15" height="15">
-                      مكتب العلاقات الثقافية - وزارة السياحة والآثار
-                    </p>
-                  </div>
-                  
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                 
-                  <div class="map-panel">
-                    <div id="map" class="map"></div>
-                  </div>
-
-                </div>
-
-              </div>
-  
-            </div>
-
-          </section>
-          <!--Section 2 end-->
-
-           <!--Section 3 start-->
-           <section class="p-section-3">
-
-              <div class="p-section-3-header">
-                <h2>سيهمك أيضاً</h2>
-              </div>
-
-              <div class="imgs-container">
-                <div class="row">
-
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                    <div class="gallery gallery-1">
-                    <div class="gallery-img ">
-                        <a target="_self" href="#!">
-                          <img src="../img/pages/cairo-permit/img/all-annual-permit.png" alt="Northern Lights" width="700" height="500">
-                        </a>
-                    </div>
-                      <div class="caption">تصريح زيارة سنوي شامل</div>
-                    </div>
-                  </div>
-
-
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                    <div class="gallery gallery-2">
-                    <div class="gallery-img">
-                        <a target="_self" href="#!">
-                          <img src="../img/pages/cairo-permit/img/annula-permit.png" alt="Northern Lights" width="700" height="500">
-                        </a>
-                    </div>
-                      <div class="caption">تصريح زيارة سنوي</div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                    <div class="gallery gallery-3">
-                    <div class="gallery-img">
-                        <a target="_self" href="#!">
-                          <img src="../img/pages/cairo-permit/img/3-month-permit.png" alt="Northern Lights" width="700" height="500">
-                        </a>
-                    </div>
-                      <div class="caption">تصريح زيارة ٣ أشهر</div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-  
-          </section>
-          <!--Section 3 end-->
 
         </div>
 
@@ -439,10 +334,10 @@
                     <p><a href="./private-photo-permit.html" class="text-white" alt="link">تصريح تصوير شخصي</a></p>
                   </li>
                   <li>
-                    <p><a href="./private-visit-permit.html" class="text-white" alt="link">تصريح زيارة خاصة</a></p>
+                    <p><a href="./contact-us.html" class="text-white" alt="link">تصريح زيارة خاصة</a></p>
                   </li>
                   <li>
-                    <p><a href="./cairo-permit.html" class="text-white" alt="link">شراء تصاريح زيارة</a></p>
+                    <p><a href="./buy-visit-permit.html" class="text-white" alt="link">شراء تصاريح زيارة</a></p>
                   </li>
                 </ul>
               </div>
@@ -522,10 +417,7 @@
     <script src="../plugins/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGGI7Uu9_1XF3x-cGmZfY4m5dDT9hvU2s&callback=initMap&libraries=&v=weekly"></script>
     <script type="text/javascript" src="../js/main.js"></script>
-    <script type="text/javascript" src="../js/cairo-permit.js"></script>
-
-    
-
+    <script type="text/javascript" src="../js/contatct-us.js"></script>
 
   </body>
 </html>

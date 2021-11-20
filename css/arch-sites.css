@@ -1,0 +1,173 @@
+.header-img {
+    height: 75vh;
+    min-height: 350px;
+    /* background: no-repeat center center scroll; */
+    background-image: url('../img/pages/arch-sites/img/hdr.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+.p-section-header-text{
+    /* float: right;
+    margin-top: 390px;
+    margin-right: 100px; */
+    position: absolute;
+    bottom: 30%;
+    right: 8%;
+    color: #FFFFFF;
+}
+
+main{
+    /* margin-bottom: 50px; */
+     background: url('../img/pages/arch-sites/img/section-bg.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
+/* ==========================================
+    p-section-1
+  ========================================== */
+
+.p-section-1{
+    margin-top: 50px;
+   
+}
+
+.p-section-1 .form{
+    margin-bottom: 30px;
+}
+.p-section-1 .search-group{
+    border: 1px solid #FF5440 !important;
+}
+.p-section-1 .search-group .form-control {
+    border-radius: 0px !important;
+    font-size: 12px;
+  }
+
+.p-section-1 .search-group .form-control:focus {
+    background: white;
+    border-radius: 1px solid #FF5440 !important;
+}
+.p-section-1 .search-group .search-button{
+    background-color: #FF5440;
+    border-radius: 0px !important;
+    border: 0px !important;
+    width: 15%;
+    padding: 0;
+    
+}
+
+.p-section-1 .selectpicker{
+    border: 1px solid #FF5440 !important;
+    border-radius: 0px !important;
+    font-size: 12px;
+}
+
+.p-section-1 .form-control{
+    margin-bottom: 30px;
+    color: #FF5440 !important;
+}
+
+
+::placeholder {
+color: #FF5440 !important;
+opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: #FF5440 !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+color: #FF5440 !important;
+}
+
+div.gallery {
+    margin-bottom: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+  
+div.gallery .gallery-img{
+    overflow: hidden;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform .25s;
+}
+
+div.gallery img:hover{
+    transform: scale(1.25);
+}
+
+div.gallery div.caption {
+    padding: 5px;
+    text-align: center;
+    background: #FAE168;
+    color: #1034A6;
+    font-size: 18px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+div.gallery div.small-caption{
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    text-align: center;
+    font-size: 12px;
+    width: 70px;
+    height: 20px;
+    padding: 1px;
+}
+
+div.gallery div.small-caption{
+    background: #FAE168;
+    color: #1034A6;
+} 
+
+div.gallery-1 div.caption, div.gallery-1 div.small-caption{
+    background: #1034A6;
+    color: #FFFFFF;
+} 
+
+
+div.gallery-2 div.caption, div.gallery-2 div.small-caption{
+    background: #FF5440;
+    color: #FFFFFF;
+} 
+div.gallery-3 div.caption, div.gallery-3 div.small-caption{ 
+    background: #28D0DC;
+    color: #FFFFFF;
+} 
+div.gallery-4 div.caption, div.gallery-4 div.small-caption{
+    background: #FAE168;
+    color: #1034A6;
+}
+
+
+
+.main-end{
+    height: 50px;
+    /* margin-bottom: 50px; */
+}
+/*@media query*/
+@media screen and (max-width: 600px) {
+    .form{
+        margin-bottom: 10px;
+    }
+
+    .grid-container {
+        width: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

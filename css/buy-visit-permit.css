@@ -646,6 +646,13 @@ input[type=number]::-webkit-outer-spin-button {
     .final .search-group{
         width: 50%;
     }
+
+    .p-section-1-5 .confirm-button{
+        margin-bottom: 10px;
+    }
+    .p-section-1-5 .confirm-button a{
+        width: 40%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -657,4 +664,6 @@ input[type=number]::-webkit-outer-spin-button {
     .page-half-buttom{
        display: none;
     }
+
+    
 }

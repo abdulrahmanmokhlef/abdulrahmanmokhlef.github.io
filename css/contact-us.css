@@ -1,0 +1,185 @@
+.header-img {
+    height: 75vh;
+    min-height: 350px;
+    /* background: no-repeat center center scroll; */
+    background-image: url('../img/pages/contact-us/img/hdr.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+.p-section-header-text{
+    position: absolute;
+    bottom: 8%;
+    right: 8%;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+.overlayed-hdr{
+    position: relative;
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/pages/contact-us/img/hdr-overlay.svg');
+    /* opacity: 1; */
+    z-index: 1;
+}
+
+
+main{
+    /* margin-bottom: 50px; */
+     background: url('../img/pages/contact-us/img/section-bg.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
+/* ==========================================
+    p-section-1
+  ========================================== */
+
+.p-section-1{
+    margin-top: 50px;
+
+}
+
+.p-section-1 .form{
+    margin-bottom: 30px;
+    color: #1034A6;
+}
+
+.p-section-1 .form .row{
+    text-align: right !important;
+}
+
+.p-section-1 .form-header{
+    text-align: right ;
+    color: #1034A6;
+}
+
+.p-section-1 .form-control {
+    margin-bottom: 30px;
+    color: #1034A6 !important;
+    border: 1px solid #1034A6 !important;
+    border-radius: 0px !important;
+    /* opacity: 50%; */
+    /* font-size: 12px; */
+}
+
+.p-section-1 textarea{
+    color: #1034A6 !important;
+    border: 1px solid #1034A6 !important;
+    max-height: 200px;
+}
+
+.p-section-1 .form-buttons{
+    /* margin-top: 50px; */
+    text-align: right;
+}
+
+.p-section-1 .form-buttons a{
+    background-color: #1034A6;
+    color: #FFFFFF;
+    padding: 8px;
+    width: 30%;
+    border-radius: 0px;
+}
+
+.p-section-1 .form-buttons a.submit:hover{
+    background-color: #FF5440 !important;
+    color: #FFFFFF;
+}
+
+
+
+
+
+.contact-info{
+    text-align: right;
+}
+
+.contact-info p{
+    color: #1034A6;
+}
+
+#parent { white-space: nowrap; }
+.child { display: inline-block; }
+
+.child-img > img{
+    margin-top: -30px;
+    margin-right: -6px;
+}
+
+
+.map-panel{
+    border: 1px solid #FF5440;
+    max-height: 292px;
+}
+.map{
+    width:100%;
+    height:250px;
+}
+
+.p-section-1 .map-panel .search-group .form-control{
+    border: 0.5px solid #FF5440 !important;
+    border-bottom: none !important;
+    color: #FF5440 !important;
+    background-color: #FADBD8;
+}
+.p-section-1 .map-panel .search-group .form-control:focus {
+    border-radius: 1px solid #FF5440 !important;
+    color: #FF5440 !important;
+}
+.p-section-1 .map-panel .search-group .search-button{
+    background-color: #FF5440;
+    border-radius: 0px !important;
+    border: 0px !important;
+    width: 30%;
+    padding: 0;
+}
+
+.p-section-1 .map-panel .search-group .search-button:hover{
+    background: transparent;
+    color: #FF5440;
+}
+
+.p-section-1 .map-panel .search-group input#googlSearch {
+    background-image: url('../img/pages/baron-palac/icons/google-maps.png');
+    background-repeat: no-repeat;
+    background-position: 345px 8px;
+    background-size: 20px 20px;
+    text-indent: 25px;
+   
+}
+
+
+
+
+.main-end{
+    height: 50px;
+    /* margin-bottom: 50px; */
+}
+/*@media query*/
+@media screen and (max-width: 600px) {
+    .form{
+        margin-bottom: 10px;
+    }
+
+    .grid-container {
+        width: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
