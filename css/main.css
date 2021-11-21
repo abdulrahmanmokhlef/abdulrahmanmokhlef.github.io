@@ -234,6 +234,16 @@ a.nav-link:hover #nav-icon{
 }
 
 /*Start main section*/
+
+main{
+    /* margin-bottom: 50px; */
+     background: url('../img/main/section-bg.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .content {
     padding-top: 10px;
     padding: 10px;
@@ -630,6 +640,18 @@ a.nav-link:hover #nav-icon{
 
 
 /*Footer*/
+
+footer .container{
+    padding: 45px 0px;
+}
+footer .row > div{
+    direction: ltr;
+}
+
+footer .row > :last-child{
+    direction: rtl;
+}
+
 .footer-logo-container img{
     padding: 10px;
     text-align: center;
@@ -639,17 +661,15 @@ a.nav-link:hover #nav-icon{
     margin-bottom: 10px;
 }
 .footer-logo-container p{
-    margin-left: 32px;
+    margin-left: 28px;
     margin-bottom: 7px;
 }
 
 .footer-logo-container img{
     margin-top: -19px;
 }
+
 .social{
-    /* background-color: white !important;
-    color: #1034A6 !important;
-    border-radius: 50% !important; */
     width: 40px !important;
     height: 40px !important;
     padding: 3px !important;
@@ -683,6 +703,7 @@ a.nav-link:hover #nav-icon{
     color: #1034A6; 
 }
 
+
 /*@media query*/
 @media screen and (max-width: 1360px) {
     .carousel-caption-override{
@@ -702,10 +723,15 @@ a.nav-link:hover #nav-icon{
         margin-top: 46px;
     }
 
-
-    /*fluid*/
-    /* .top-header{
-        padding-left: 0px !important;
-        padding-right: 30px !important;
-    } */
 }
+
+@media screen and (max-width: 600px) {
+    footer .row > :last-child{
+        direction: rtl;
+    }
+    
+    footer .row > :last-child > ul{
+        float: right !important;
+    }
+}
+

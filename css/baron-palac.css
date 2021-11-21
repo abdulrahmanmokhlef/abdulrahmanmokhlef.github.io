@@ -9,21 +9,22 @@
     background-size: cover
 }
 .p-section-header-text{
-    /* float: right;
-    margin-top: 390px;
-    margin-right: 100px; */
-    position: absolute;
-    bottom: 30%;
-    right: 8%;
+    text-align: right;
+    position: relative;
     color: #FFFFFF;
 }
 
+.p-section-header-text h1{
+    position: absolute;
+    top: 380px;
+}
+
 main{
-     /* background: url('../img/pages/baron-palac/img/section-bg.png') no-repeat;
+     background: url('../img/pages/baron-palac/img/section-bg.png') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; */
+    background-size: cover;
 }
 
 
