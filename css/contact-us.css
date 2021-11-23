@@ -169,7 +169,16 @@ main{
 }
 
 
-
+.modal-body{
+    text-align: center;
+    background-color: #1034A6;
+    color: #FFFFFF;
+    width:100;
+    margin: 0px -40px 0px -40px;
+}
+.body-content{
+    padding: 110px;
+}
 
 .main-end{
     height: 50px;

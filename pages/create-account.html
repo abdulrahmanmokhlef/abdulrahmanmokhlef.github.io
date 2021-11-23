@@ -13,7 +13,8 @@
     
     <!-- Custom CSS -->
     <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/services.css" rel="stylesheet">
+    <link href="../css/create-account.css" rel="stylesheet">
+
 
     <!-- Bootstrap core CSS -->
     <link href="../plugins/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -34,22 +35,34 @@
       <!--Header start-->
       <header>
        
-        <!--Header-img start-->
-        <div class="header-img">
+       <!--Header-img start-->
+       <div class="overlayed-hdr">
 
-          <div class="container">
-            <div class="p-section-header-text">
-              <h1>خدماتنا</h1>
+           <!--Header-img start-->
+          <div class="header-img">
+
+            <div class="container">
+              <div class="p-section-header-text">
+                <h1>انشاء الحساب الشخصي</h1>
+              </div>
             </div>
+              
           </div>
-            
-         </div>
-         <!--Header-img end-->
+          <!--Header-img end-->
+
+          <div class="overlay"></div>
+
+       </div>
+       <!--Header-img end-->
+
+        <div>
+
+        </div>
 
         <div class="container top-header">
           <div class="row ">
 
-            <div class="col-lg-3  col-md-3 col-sm-3 col-3 p-0 ">
+            <div class="col-lg-3  col-md-3 col-sm-3 col-3 p-0 float-right">
               <div class=" logo-container">
                 <a class="navbar-brand"href="../index.html"><img src="../img/logo/logo.svg" alt="logo" width="100" height="109"></a>
               </div>
@@ -154,156 +167,209 @@
           </div>
         </div>
         
+        
       </header> 
       <!--Header end-->
 
       <!-- Main -->
       <main class="main">
-        <div class="">
+        <div class="container">
           
           <!--Section 1 start-->
           <section class="p-section-1">
 
-            <div class="row">
+              <div class="form">
 
-            
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0 img-part-col">
-                <div class="img-part1 wedding-img">
-                  <img src="../img/pages/services/img/1.jpg" alt="featured"  >
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0  text-part-col  text-col">
-                <div class="text-part1 wedding-text  vertical-center">
-                  <h1>تصريح إقامة حفل</h1>
-                  <p>
-                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
-                  </p>
-
-                  <div class="form-buttons">
-                    <a href ="../pages/wedding-permit.html" class="btn add">
-                      معرفة التفاصيل
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0  text-part-col  text-col">
-                <div class="text-part1 video-text t2  vertical-center">
-                  <h1>تصريح تصوير فيديو</h1>
-                  <p>
-                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
-                  </p>
-
-                  <div class="form-buttons">
-                      <a href ="../pages/video-permit.html" class="btn add">
-                        معرفة التفاصيل
-                      </a>
+                <form action="#">
+                  <div class="row">
+                   
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <label>الاسم</label>
+                      <div class="input-group mb-3">
+                          <input class="form-control" onclick="this.value=''"value="" type="text" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                      </div> 
                     </div>
 
-                </div>
-              </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <label>الشركة</label>
+                      <div class="input-group mb-3">
+                          <input class="form-control" type="text" onclick="this.value=''"value="" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                      </div> 
+                    </div>
 
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0 img-part-col">
-                <div class="img-part1  video-img i2">
-                  <img src="../img/pages/services/img/2.jpg" alt="featured"  >
-                </div>
-              </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <label>المسمى الوظيفي</label>
+                      <div class="input-group mb-3">
+                          <input class="form-control" type="text" onclick="this.value=''"value="" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                      </div> 
+                    </div>
 
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0 img-part-col">
-                <div class="img-part1  photography-img i2">
-                  <img src="../img/pages/services/img/3.jpg" alt="featured"  >
-                </div>
-              </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <label>البريد الإلكتروني</label>
+                      <div class="input-group mb-3">
+                          <input class="form-control" type="text" onclick="this.value=''"value="" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                      </div> 
+                    </div>
 
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0  text-part-col  text-col">
-                <div class="text-part1  photography-text t2  vertical-center">
-                  <h1>تصريح تصوير فوتوغرافي</h1>
-                  <p>
-                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
-                  </p>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <label>رقم الهاتف المحمول</label>
+                      <div class="input-group mb-3">
+                          <input class="form-control" type="text" onclick="this.value=''"value="" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                      </div> 
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <label>تاريخ الميلاد</label>
+                                    
+                      <div class="row">
+
+                        
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                          <div>
+                            <!-- AUTO COMPLETE DROPDOWN -->
+                            <select class="selectpicker form-control birth-date-select">
+                              <option class =" red"value="Ultrasound Knee Right" selected disabled>يوم</option>
+                              <option value="01">01</option>
+                              <option value="02">02</option>
+                              <option value="03">03</option>
+                              <option value="04">04</option>
+                              <option value="05">05</option>
+                              <option value="06">06</option>
+                              <option value="07">07</option>
+                              <option value="08">08</option>
+                              <option value="09">09</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                              <option value="13">13</option>
+                              <option value="14">14</option>
+                              <option value="15">15</option>
+                              <option value="16">16</option>
+                              <option value="17">17</option>
+                              <option value="18">18</option>
+                              <option value="19">19</option>
+                              <option value="20">20</option>
+                              <option value="21">21</option>
+                              <option value="22">22</option>
+                              <option value="23">23</option>
+                              <option value="24">24</option>
+                              <option value="25">25</option>
+                              <option value="26">26</option>
+                              <option value="27">27</option>
+                              <option value="28">28</option>
+                              <option value="29">29</option>
+                              <option value="30">30</option>
+                              <option value="31">31</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                          <div>
+                            <!-- AUTO COMPLETE DROPDOWN -->
+                            <select class="selectpicker form-control birth-date-select" id="month">
+                              <option class =" red"value="Ultrasound Knee Right" selected disabled>شهر</option>
+                              <option value="01">01</option>
+                              <option value="02">02</option>
+                              <option value="03">03</option>
+                              <option value="04">04</option>
+                              <option value="05">05</option>
+                              <option value="06">06</option>
+                              <option value="07">07</option>
+                              <option value="08">08</option>
+                              <option value="09">09</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                          <div>
+                            <!-- AUTO COMPLETE DROPDOWN -->
+                            <select class="selectpicker form-control birth-date-select" id="year">
+                              <option class =" red"value="Ultrasound Knee Right" selected disabled>سنة</option>
+                              <option value="1993">1993</option>
+                              <option value="1994">1994</option>
+                              <option value="1995">1995</option>
+                              <option value="1996">1996</option>
+                              <option value="1997">1997</option>
+                              <option value="1998">1998</option>
+                              <option value="1999">1999</option>
+                              <option value="2000">2000</option>
+                              <option value="2001">2001</option>
+                              <option value="2002">2002</option>
+                              <option value="2003">2003</option>
+                              <option value="2004">2004</option>
+                              <option value="2005">2005</option>
+                              <option value="2006">2006</option>
+                              <option value="2007">2007</option>
+                              <option value="2008">2008</option>
+                              <option value="2009">2009</option>
+                              <option value="2010">2010</option>
+                              <option value="2011">2011</option>
+                              <option value="2012">2012</option>
+                              <option value="2013">2013</option>
+                              <option value="2014">2014</option>
+                              <option value="2015">2015</option>
+                              <option value="2016">2016</option>
+                              <option value="2017">2017</option>
+                              <option value="2018">2018</option>
+                              <option value="2019">2019</option>
+                              <option value="2020">2020</option>
+                              <option value="2021">2021</option>
+                            </select>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <label>كلمة السر</label>
+                      <div class="input-group mb-3">
+                          <input class="form-control" onclick="this.value=''"value="" type="password" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                      </div> 
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <label>تأكيد كلمة السر</label>
+                      <div class="input-group mb-3">
+                          <input class="form-control" onclick="this.value=''"value="" type="password" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                      </div> 
+                    </div>
+                  
+                  </div>  
                   
                   <div class="form-buttons">
-                    <a href ="../pages/photography-photo-permit.html" class="btn add">
-                      معرفة التفاصيل
+                    <a href ="#!" class="btn submit" data-toggle="modal" data-target="#exampleModalCenter" >
+                      الحساب الشخصي
                     </a>
                   </div>
 
-                </div>
+                </form>
               </div>
 
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0  text-part-col  text-col">
-                <div class="text-part1  private-photo-text t2  vertical-center">
-                  <h1>تصريح تصوير شخصي</h1>
-                  <p>
-                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
-                  </p>
-                  
-                  <div class="form-buttons">
-                    <a href ="../pages/private-photo-permit.html" class="btn add">
-                      معرفة التفاصيل
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0 img-part-col">
-                <div class="img-part1  private-photo-img i2">
-                  <img src="../img/pages/services/img/4.jpg" alt="featured"  >
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0 img-part-col">
-                <div class="img-part1  private-visit-img i2">
-                  <img src="../img/pages/services/img/5.jpg" alt="featured"  >
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0  text-part-col  text-col">
-                <div class="text-part1  private-visit-text t2  vertical-center">
-                  <h1>تصريح زيارة خاصة</h1>
-                  <p>
-                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
-                  </p>
-                  
-                  <div class="form-buttons">
-                    <a href ="../pages/private-visit-permit.html" class="btn add">
-                      معرفة التفاصيل
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0  text-part-col  text-col">
-                <div class="text-part1  buy-visit-permit-text t2  vertical-center">
-                  <h1>شراء تصاريح زيارة</h1>
-                  <p>
-                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
-                  </p>
-
-                  <div class="form-buttons">
-                    <a href ="../pages/buy-visit-permit.html" class="btn add">
-                      معرفة التفاصيل
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0 img-part-col">
-                <div class="img-part1  buy-visit-permit-img i2">
-                  <img src="../img/pages/services/img/6.jpg" alt="featured"  >
-                </div>
-              </div>
-
-
-            </div>
-            
           </section>
-          <!--Section 2 end-->
+          <!--Section 1 end-->
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                
+                <div class="modal-body">
+                  <div class="body-content">
+                    <h2>تم إنشاء الحساب بنجاح</h2>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <div class="main-end"></div>
@@ -439,7 +505,9 @@
     <script type="text/javascript" src="../plugins/jQuery/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../plugins/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
     <script src="../plugins/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGGI7Uu9_1XF3x-cGmZfY4m5dDT9hvU2s&callback=initMap&libraries=&v=weekly"></script>
     <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/create-account.js"></script>
     <script type="text/javascript" src="../js/login.js"></script>
 
   </body>
