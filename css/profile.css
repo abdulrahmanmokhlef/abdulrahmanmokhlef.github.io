@@ -126,22 +126,27 @@ main{
 }
 
 
-.p-section-1-1 .form{
+.p-section-1-1 .form,
+.p-section-1-2 .form{
     margin-bottom: 30px;
 }
-.p-section-1-1 .search-group{
+.p-section-1-1 .search-group,
+.p-section-1-2 .search-group{
     border: 1px solid #FF5440 !important;
 }
-.p-section-1-1 .search-group .form-control {
+.p-section-1-1 .search-group .form-control,
+.p-section-1-2 .search-group .form-control {
     border-radius: 0px !important;
     font-size: 12px;
   }
 
-.p-section-1-1 .search-group .form-control:focus {
+.p-section-1-1 .search-group .form-control:focus,
+.p-section-1-2 .search-group .form-control:focus {
     background: white;
     border-radius: 1px solid #FF5440 !important;
 }
-.p-section-1-1 .search-group .search-button{
+.p-section-1-1 .search-group .search-button,
+.p-section-1-2 .search-group .search-button{
     background-color: #FF5440;
     border-radius: 0px !important;
     border: 0px !important;
@@ -151,24 +156,12 @@ main{
 }
 
 
-.p-section-1-1 .form-control{
+.p-section-1-1 .form-control,
+.p-section-1-2 .form-control{
     margin-bottom: 30px;
     color: #FF5440 !important;
 }
 
-
-::placeholder {
-color: #FF5440 !important;
-opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-color: #FF5440 !important;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-color: #FF5440 !important;
-}
 
 .dropdowns-nav{
     background-color: #F2FDFD;
@@ -181,19 +174,19 @@ color: #FF5440 !important;
 
 .dropdowns-nav .row label{
     font-size: 15px;
-    padding: 10px 15px;
+    padding: 10px 14px;
     color: #1034A6;
 }
 
   
-  .selectdiv {
+.selectdiv {
     /* direction: ltr; */
     position: relative;
     /*Don't really need this just for demo styling*/
     float: right;
     min-width: 200px;
     /* margin: 50px 33%; */
-  }
+}
   
   /* IE11 hide native button (thanks Matt!) */
   select::-ms-expand {
@@ -306,7 +299,7 @@ color: #FF5440 !important;
 } */
 
 .p-section-1-1 table td{
-    padding: 20px 5px;
+    padding: 5px 5px;
     vertical-align: middle;
     font-size: 14px;
    
@@ -320,7 +313,7 @@ color: #FF5440 !important;
 }
 
 .p-section-1-1 table td .icons a{
-    margin-right: 10px;
+    margin-right: 0px;
     text-decoration: none;
     display:inline-grid;
 }
@@ -355,7 +348,7 @@ color: #FF5440 !important;
 }
 .p-section-1-1 table .x-icon{
     margin-top: 0px !important;
-    margin-right: 24px !important;
+    margin-right: 0px !important;
 }
 .p-section-1-1 table td.pistache-cell  img:nth-child(1){
     margin-left: 0px !important;
@@ -791,12 +784,273 @@ a.x-1 :hover {
     padding: 60px;
 }
 
+/*tab4*/
+.p-section-1-3-4 .notifications{
+    background-color: #1034A6;
+    text-align: right;
+}
+.p-section-1-3-4 .notifications p{
+    padding: 15px 10px;
+   color: #FAE168;
+}
+.chat-search-box {
+    -webkit-border-radius: 3px 0 0 0;
+    -moz-border-radius: 3px 0 0 0;
+    border-radius: 3px 0 0 0;
+    padding: .75rem 1rem;
+}
+
+.chat-search-box .input-group .form-control {
+    -webkit-border-radius: 2px 0 0 2px;
+    -moz-border-radius: 2px 0 0 2px;
+    border-radius: 2px 0 0 2px;
+    border-right: 0;
+}
+
+.chat-search-box .input-group .form-control:focus {
+    border-right: 0;
+}
+
+.chat-search-box .input-group .input-group-btn .btn {
+    -webkit-border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+    border-radius: 0 2px 2px 0;
+    margin: 0;
+}
+
+.chat-search-box .input-group .input-group-btn .btn i {
+    font-size: 1.2rem;
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+    .chat-search-box {
+        display: none;
+    }
+}
+
+
+
+
+/************************************************
+	************************************************
+									Chat right side
+	************************************************
+************************************************/
+
+.selected-user {
+    width: 100%;
+    padding: 0 15px;
+    min-height: 64px;
+    line-height: 64px;
+    border-bottom: 1px solid #e6ecf3;
+    -webkit-border-radius: 0 3px 0 0;
+    -moz-border-radius: 0 3px 0 0;
+    border-radius: 0 3px 0 0;
+}
+
+.selected-user span {
+    line-height: 100%;
+}
+
+.selected-user span.name {
+    font-weight: 700;
+}
+
+.chat-container {
+    position: relative;
+    padding: 1rem;
+}
+
+.chat-container li.chat-left,
+.chat-container li.chat-right {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.chat-container li img {
+    width: 48px;
+    height: 48px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.chat-container li .chat-avatar {
+    margin-right: 20px;
+}
+
+.chat-container li.chat-right {
+    justify-content: flex-end;
+}
+
+.chat-container li.chat-right > .chat-avatar {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.chat-container li .chat-name {
+    font-size: .75rem;
+    color: #999999;
+    text-align: center;
+}
+
+.chat-container li .chat-text {
+    padding: .4rem 1rem;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-weight: 300;
+    line-height: 150%;
+    position: relative;
+    text-align: right;
+}
+
+.chat-container li .chat-text p {
+    margin: 0px !important;
+}
+.chat-container li .chat-hour {
+    padding: 0;
+    font-size: 14px;
+    color: #AEB8C0;
+}
+
+
+
+.chat-container li.chat-right .chat-text {
+    background: #F2F4FB;
+}
+
+.chat-container li.chat-left .chat-text  {
+    background: #F2FDFD;
+}
+
+.chat-container li.chat-left .chat-text .chat-hour {
+    float: left;
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .chat-container li.chat-left,
+    .chat-container li.chat-right {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .chat-container li img {
+        width: 32px;
+        height: 32px;
+    }
+    .chat-container li.chat-left .chat-avatar {
+        margin: 0 0 5px 0;
+        display: flex;
+        align-items: center;
+    }
+    .chat-container li.chat-left .chat-hour {
+        justify-content: flex-end;
+    }
+    .chat-container li.chat-left .chat-name {
+        margin-left: 5px;
+    }
+    .chat-container li.chat-right .chat-avatar {
+        order: -1;
+        margin: 0 0 5px 0;
+        align-items: center;
+        display: flex;
+        justify-content: right;
+        flex-direction: row-reverse;
+    }
+    .chat-container li.chat-right .chat-hour {
+        justify-content: flex-start;
+        order: 2;
+    }
+    .chat-container li.chat-right .chat-name {
+        margin-right: 5px;
+    }
+    .chat-container li .chat-text {
+        font-size: .8rem;
+    }
+}
+
+
+.chat-form {
+    background: #F2FDFD;
+}
+
+.chat-form textarea{
+    background: #F2FDFD;
+    min-height: 100px;
+}
+
+.chat-form textarea:focus{
+    background: #F2FDFD;
+}
+
+
+.p-section-1-3-4 .form-buttons{
+    margin-top: 30px;
+    padding: 10px 10px;
+}
+
+.p-section-1-3-4 .form-buttons a{
+    background-color: #1034A6;
+    color: #FFFFFF;
+    padding: 8px;
+    width: 15%;
+    border-radius: 0px;
+}
+
+.p-section-1-3-4 .form-buttons a:hover{
+    background-color: #FF5440;
+    color: #FFFFFF;
+}
+
+
+.p-section-1-3-4 .custom-file{
+    direction: ltr;
+    text-align: center;
+    width: 15%;
+    height: 40px;
+    text-align: -webkit-center;
+    background-color: #BCBCBC !important;
+    cursor: pointer;
+}
+.p-section-1-3-4 #file-lbl{
+    display: block;
+    background-color: #BCBCBC;
+    color: white;
+    padding: 6px;
+    border-radius: 0;
+    margin-top: -37px;
+    width: 100px;
+}
+
+.p-section-1-3-4 .custom-file:hover{
+    background-color: #1034A6 !important;
+}
+.p-section-1-3-4 .custom-file:hover #file-lbl{
+    background-color: #1034A6 !important;
+    color: #ffffff;
+}
+
+.p-section-1-3-4 .form-buttons .chat-hour{
+    float: right;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #AEB8C0;
+}
 
 
 .main-end{
     height: 50px;
-    /* margin-bottom: 50px; */
 }
+
 /*@media query*/
 @media screen and (max-width: 600px) {
     .form{

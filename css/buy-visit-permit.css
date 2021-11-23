@@ -93,6 +93,20 @@ main{
 }
 
 
+/*this for cheking icon only*/
+.nav-tabs .tab-link:hover .checking-icon{
+    background: url('../img/pages/buy-visit-permit/icons/checking.svg');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: right;
+}
+.nav-tabs .tab-link.active .checking-icon{
+    background: url('../img/pages/buy-visit-permit/icons/checking.svg');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: right;
+}
+
 /* ==========================================
     p-section-1-1
   ========================================== */
@@ -455,7 +469,6 @@ input[type=number]::-webkit-outer-spin-button {
     color: #1034A6;
     text-decoration: underline;
 }
-
 
 
 .p-section-1-5 .custom-file{

@@ -18,14 +18,14 @@ $(document).ready(function() {
 
     //todo this block of code is temporary commented
     //this to keep active tab opened after reload 
-    $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
-        localStorage.setItem('activeTab', $(e.target).attr('href'));
-    });
-    var activeTab = localStorage.getItem('activeTab');
-    if(activeTab){
-        $('#myTab a[href="' + activeTab + '"]').tab('show');
-        $('#myTab2 a[href="' + activeTab + '"]').tab('show');
-    }
+    // $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
+    //     localStorage.setItem('activeTab', $(e.target).attr('href'));
+    // });
+    // var activeTab = localStorage.getItem('activeTab');
+    // if(activeTab){
+    //     $('#myTab a[href="' + activeTab + '"]').tab('show');
+    //     $('#myTab2 a[href="' + activeTab + '"]').tab('show');
+    // }
 
 
     //input file
