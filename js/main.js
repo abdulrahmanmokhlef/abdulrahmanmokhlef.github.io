@@ -16,6 +16,11 @@ $(document).ready(function() {
         window.location.replace('../pages/' + page);
     };
 
+    closeModal = function(id){
+        debugger
+        $('#' + id + '').modal('toggle');
+    }
+    
     //todo this block of code is temporary commented
     //this to keep active tab opened after reload 
     // $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {

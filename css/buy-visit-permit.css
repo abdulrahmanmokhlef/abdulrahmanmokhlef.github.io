@@ -334,7 +334,9 @@ div.gallery-4 div.caption, div.gallery-4 div.small-caption{
     border: 0 !important;
 }
 
-
+.final-tab-item{
+    display: none;
+}
 
 
 table{
@@ -555,6 +557,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: #1034A6 !important;
     color: #FFFFFF;
 }
+
 
 .p-section-1-5 .form-buttons a.submit:hover{
     background-color: #FF5440 !important;
