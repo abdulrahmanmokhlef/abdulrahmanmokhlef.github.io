@@ -1,0 +1,200 @@
+.header-img {
+    height: 75vh;
+    min-height: 350px;
+    /* background: no-repeat center center scroll; */
+    background-image: url('../img/pages/payment-method/img/hdr.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+
+.overlay{
+    background: url('../img/header/hdr-overlay.svg');
+}
+
+
+
+main{
+    /* margin-bottom: 50px; */
+     background: url('../img/main/section-bg.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 689px;
+    background-position: bottom;
+}
+
+
+
+
+/* ==========================================
+    p-section-1
+  ========================================== */
+
+.p-section-1{
+    margin-top: 50px;
+
+}
+
+.p-section-1 .request-details h5{
+    text-align: right ;
+    color: #1034A6;
+}
+
+.p-section-1 .request-details .details-panel{
+    text-align: right ;
+    background-color: #1034A6;
+    color: #FAE168;
+}
+
+.p-section-1 .request-details .details-panel p {
+    margin: 0;
+    vertical-align: middle;
+    padding: 20px 10px;
+}
+
+.p-section-1 .form{
+    margin-top: 30px;
+    color: #1034A6;
+    text-align: right;
+}
+
+
+
+/* pretty radio */
+.p-section-1 .form .form-check .container{
+    padding-right: 0px;
+}
+
+.p-section-1 .form .form-check .lbl{
+    color: #FF5440;
+    font-size: 22px;
+    /* margin-right: -10px; */
+    /* padding: 10px 0px; */
+}
+
+.p-section-1 .form .form-check label > input[type="radio"] {
+    display: none;
+}
+.p-section-1 .form .form-check  label > input[type="radio"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1rem;
+    height: 1rem;
+    /* margin-right: 0.3rem; */
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #FF5440;
+    margin-bottom: 4px;
+    
+}
+.p-section-1 .form .form-check  label > input[type="radio"]:checked + * {
+    color: #FF5440;
+}
+.p-section-1 .form .form-check  label > input[type="radio"]:checked + *::before {
+    background: radial-gradient(#FF5440 0%, #FF5440 40%, transparent 50%, transparent);
+    border-color: #FF5440;
+    /* margin-bottom: 5px; */
+}
+  
+.p-section-1 .form .form-check  label > input[type="radio"] + * {
+    display: inline-block;
+    /* padding: 0.5rem 0.5rem; */
+    padding-left: 5px;
+}
+
+
+.p-section-1 .form .form-text{
+    margin-top: 30px;
+}
+.p-section-1 .form .form-text p{
+    font-size: 21px;
+}
+
+
+.p-section-1 .form .attachment-lbl{
+    font-size: 25px;
+}
+
+.p-section-1 .form  .custom-file{
+    direction: ltr;
+    text-align: center;
+    border: 1px solid#8f9fcc;
+    width: 50%;
+    background: #FFFFFF;
+}
+
+.p-section-1 .form  #file-lbl{
+    display: block;
+    background-color: #1034A6;
+    color: white;
+    padding: 6px;
+    border-radius: 0;
+    cursor: pointer;
+    margin-top: -38px;
+    width: 140px;
+}
+
+
+
+.p-section-1 .form-buttons{
+    text-align: left;
+    margin-top: 50px;
+}
+
+.p-section-1 .form-buttons a{
+    background-color: #1034A6;
+    color: #FFFFFF;
+    padding: 8px;
+    width: 15%;
+    border-radius: 0px;
+}
+
+.p-section-1 .form-buttons a.save{
+    background-color: #BCBCBC !important;
+    color: #FFFFFF;
+}
+
+.p-section-1 .form-buttons a.save:hover{
+    background-color: #1034A6 !important;
+    color: #FFFFFF;
+}
+
+
+.p-section-1 .form-buttons a.submit:hover{
+    background-color: #FF5440 !important;
+    color: #FFFFFF;
+}
+
+.modal-body{
+    text-align: center;
+    background-color: #1034A6;
+    color: #FFFFFF;
+    width:100;
+    margin: 0px -40px 0px -40px;
+}
+.body-content{
+    padding: 110px;
+}
+
+.main-end{
+    height: 50px;
+    /* margin-bottom: 50px; */
+}
+/*@media query*/
+@media screen and (max-width: 600px) {
+    .form{
+        margin-bottom: 10px;
+    }
+
+    .grid-container {
+        width: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -8,42 +8,21 @@
     -o-background-size: cover;
     background-size: cover
 }
-.p-section-header-text{
-    text-align: right;
-    position: relative;
-    color: #FFFFFF;
-}
 
-.p-section-header-text h1{
-    position: absolute;
-    top: 380px;
-    z-index: 2;
+.overlay{
+    /* background: url('../img/header/hdr-overlay.svg'); */
 }
-
-.overlayed-hdr{
-    position: relative;
-    width: 100%;
-}
-
-/* .overlay{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('../img/pages/create-account/img/hdr-overlay.svg');
-    z-index: 1;
-} */
 
 
 main{
     /* margin-bottom: 50px; */
-     background: url('../img/pages/create-account/img/section-bg.png') no-repeat;
+    background: url('../img/main/section-bg.png') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-size: 100% 689px;
+    background-position: bottom;
 }
 
 

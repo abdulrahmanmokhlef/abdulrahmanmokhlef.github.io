@@ -6,25 +6,22 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover
-}
-.p-section-header-text{
-    text-align: right;
-    position: relative;
-    color: #FFFFFF;
+    background-size: cover;
+    
 }
 
-.p-section-header-text h1{
-    position: absolute;
-    top: 380px;
+.overlay{
+    background: url('../img/header/hdr-overlay.svg'); 
 }
 
 main{
-     background: url('../img/pages/cairo-permit/img/section-bg.png') no-repeat;
+    background: url('../img/main/section-bg.png') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-size: 100% 689px;
+    background-position: bottom;
 }
 
 
@@ -89,20 +86,6 @@ main{
       width: 100%;
   }
   
-  /* The overlay effect (full height and width) - lays on top of the container and over the image */
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-    /* transition: .3s ease; */
-    background: url('../img/pages/cairo-permit/img/slider/Rectangle\ 47.svg') no-repeat;
-    background-size: 171px 153px;
-  }
 
 
   /* The icon inside the overlay is positioned in the middle vertically and horizontally */

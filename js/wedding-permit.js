@@ -1,6 +1,5 @@
 $(document).ready(function() {
  
-debugger
   var item = localStorage.getItem('tab');
 
   if(item ==="apply"){
@@ -12,7 +11,6 @@ debugger
 
   var count1 = 1, count2 = 1;
   appendItem = function(){
-    debugger
     var element = `      
       <div class="col-lg-6 col-md-6 col-sm-6 col-12 ">
         <label class="lbl1">البند</label>

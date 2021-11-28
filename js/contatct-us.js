@@ -34,4 +34,13 @@ $(document).ready(function() {
 
       initMap();
     
+
+      send = function(){
+        debugger
+        $('#sendModal').modal('toggle');
+    
+        setInterval(function(){
+          location.href="../index.html"
+        },3000);
+      }
 });

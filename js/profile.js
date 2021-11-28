@@ -2,24 +2,47 @@ $(document).ready(function() {
  
 
   
-    // //this to keep active tab opened after reload 
-    // $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
-    //     localStorage.setItem('activeTab', $(e.target).attr('href'));
-    // });
-    // var activeTab = localStorage.getItem('activeTab');
-    // if(activeTab){
-    //     $('#privatePhotographyTab a[href="' + activeTab + '"]').tab('show');
-    //     $('#privatePhotographyTab2 a[href="' + activeTab + '"]').tab('show');
-    // }
+  closeModal = function(id){
+    debugger
+    $('#' + id + '').modal('hide');
+  };
+
+  openModal = function(id){
+    $('#' + id + '').modal('show');
+  }
+
+  back = function(){
+    debugger
+    closeModal('cancelRequest');
+    $('#cancelRequest').on('hidden.bs.modal', function (e) {
+      // Load up a new modal...
+      debugger
+      $('#requestCancelled').modal('hide');
+    })
+  }
+
+  cancelRequest = function(){
+    closeModal('cancelRequest');
+    openModal('requestCancelled');
+
+    // $('#cancelRequest').on('hidden.bs.modal', function (e) {
+    //   // Load up a new modal...
+    //   $('#requestCancelled').modal('show')
+    // })
+    // setInterval(function(){
+    //   // location.href="../index.html"
+    // },3000);
+  }
+
+  
+  deleteNotification = function(){
+    closeModal('deleteNofification');
+    openModal('notificationDeleted');
+    // setInterval(function(){
+    //   // location.href="../index.html"
+    // },3000);
+  }
 
 
-    // //input file
-    // $('.custom-file input').change(function (e) {
-    //     var files = [];
-    //     for (var i = 0; i < $(this)[0].files.length; i++) {
-    //         files.push($(this)[0].files[i].name);
-    //     }
-    //     $(this).next('.custom-file-label').html(files.join(', '));
-    // });
 
-  });
+});

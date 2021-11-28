@@ -6,26 +6,23 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover
-}
-.p-section-header-text{
-    text-align: right;
-    position: relative;
-    color: #FFFFFF;
+    background-size: cover;
+
 }
 
-.p-section-header-text h1{
-    position: absolute;
-    top: 380px;
+.overlay{
+    /* background: url('../img/header/hdr-overlay.svg'); */
 }
 
 main{
     /* margin-bottom: 50px; */
-     background: url('../img/pages/private-visit-permit/img/section-bg.png') no-repeat;
+    background: url('../img/main/section-bg.png') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-size: 100% 689px;
+    background-position: bottom;
 }
 
 
@@ -394,14 +391,42 @@ div.gallery-4 div.caption, div.gallery-4 div.small-caption{
 }
 
 
-.form-check .form-check-label{
-    padding-right: 15px;
+/* pretty radio */
+.p-section-1-5 .form-check label > input[type="checkbox"] {
+    display: none;
+}
+.p-section-1-5 .form-check label > input[type="checkbox"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 5px;
+    border: 1px solid #1034A6;
+    border-radius: 0%;
+    flex-shrink: 0;
+}
+.p-section-1-5 .form-check label > input[type="checkbox"]:checked + * {
+    color: #FFFFFF;
+}
+.p-section-1-5 .form-check label > input[type="checkbox"]:checked + *::before {
+    content: '\2714';
+    color: #1034A6;
+    text-align: center;
+    border-color: #1034A6;
+    /* padding: 1px 1px; */
+    line-height: 15px;
+}
+
+
+.p-section-1-5 .form-check .form-check-label{
     color: #1034A6;
 }
-.form-check .form-check-label a{
+.p-section-1-5 .form-check .form-check-label a{
     color: #1034A6;
     text-decoration: underline;
 }
+
 
 
 

@@ -6,26 +6,23 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover
-}
-.p-section-header-text{
-    text-align: right;
-    position: relative;
-    color: #FFFFFF;
+    background-size: cover;
+    
 }
 
-.p-section-header-text h1{
-    position: absolute;
-    top: 380px;
+.overlay{
+    /* background: url('../img/header/hdr-overlay.svg'); */
 }
 
 main{
     /* margin-bottom: 50px; */
-     background: url('../img/pages/video-permit/img/section-bg.png') no-repeat;
+    background: url('../img/main/section-bg.png') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-size: 100% 689px;
+    background-position: bottom;
 }
 
 /* ==========================================

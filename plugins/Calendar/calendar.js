@@ -14,8 +14,8 @@ function generate_year_range(start, end) {
 var today = new Date();
 var currentMonth = today.getMonth();
 var currentYear = today.getFullYear();
-var selectYear = document.getElementById("year");
-var selectMonth = document.getElementById("month");
+var selectYear = document.getElementById("years");
+var selectMonth = document.getElementById("months");
 
 
 var createYear = generate_year_range(2021, 2030);
@@ -23,7 +23,7 @@ var createYear = generate_year_range(2021, 2030);
 * createYear = generate_year_range( 1970, currentYear );
 */
 
-document.getElementById("year").innerHTML = createYear;
+document.getElementById("years").innerHTML = createYear;
 
 var calendar = document.getElementById("calendar");
 var lang = calendar.getAttribute('data-lang');

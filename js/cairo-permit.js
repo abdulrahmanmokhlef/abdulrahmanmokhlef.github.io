@@ -47,4 +47,17 @@ $(document).ready(function() {
 
       initMap();
     
+
+
+    activeTabInSpecificPage = function(tab, page){
+      debugger
+      localStorage.setItem('tab', tab);
+      window.location.replace('../pages/' + page);
+    };
+
+    addToCart = function(){
+      debugger
+      activeTabInSpecificPage('apply', 'buy-visit-permit.html')
+    }
+
 });

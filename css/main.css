@@ -29,93 +29,6 @@ body {
     opacity: 50%;    
 }
 
-/* .carousel-item {
-    height: 85vh;
-    min-height: 350px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover
-}
-
-.prev, .next {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    vertical-align: middle;
-    padding: 4px;
-    border:1px solid #E74C3C !important;
-    z-index: 50;
-}
-
-.prev:hover{
-    background: #E74C3C !important;
-    color: white;
-}
-.next:hover{
-    background: #E74C3C !important;
-    color: white;
-}
-
-.prev > span, .next > span {transform : scale(1,1); color: white}
-
-
-
-
-
-.carousel-caption-override {
-    position: absolute;
-    right: 50% !important;
-    bottom: 180px !important;
-    left: 30px !important;
-    z-index: 1 !important;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 0px;
-
-}
-
-.carousel-caption h2{
-    color:#3FD5DF;
-    font-size: 50px;
-} */
-
-/*old*/
-/*
-.owl-prev {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 40%;
-    left: 100px;
-    display: block !important;
-    border:1px solid red !important;
-}
-
-.owl-next {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 40%;
-    right: 100px;
-    display: block !important;
-    border:1px solid red !important;
-
-}
-.owl-prev i, .owl-next i {transform : scale(1,1); color: white}
-
-.owl-prev:hover{
-    background: red !important;
-    color: white;
-}
-.owl-next:hover{
-    background: red !important;
-    color: white;
-}
-*/
 
 
  /* Start Header*/
@@ -136,6 +49,40 @@ body {
 /* ==========================================
     common on over all application
   ========================================== */
+/* .p-section-header-text{
+    text-align: right;
+    position: absolute;
+    bottom: 180px;
+    color: #FFFFFF;
+    z-index: 3 !important;
+} */
+
+.p-section-header-text{
+    text-align: right;
+    position: absolute;
+    bottom: 30px !important;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+
+.overlayed-hdr{
+    position: relative;
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url('../img/pages/contact-us/img/hdr-overlay.svg'); */
+    /* opacity: 1; */
+    z-index: 1;
+}
+
 
 .form-control{
     height: 40px !important;
@@ -164,6 +111,7 @@ body {
 textarea:focus-visible{
     outline:none !important
 }
+
 
 
 
@@ -233,17 +181,9 @@ a.nav-link:hover #nav-icon{
     margin: 0px !important;
 }
 
-/*Start main section*/
-
-main{
-    /* margin-bottom: 50px; */
-     background: url('../img/main/section-bg.png') no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
+/* ==========================================
+    Main Section
+  ========================================== */
 .content {
     padding-top: 10px;
     padding: 10px;
@@ -740,9 +680,7 @@ main{
     margin-right: 4px;
     margin-bottom: 5px;
     border-radius: 0%;
-    border-style: solid;
-    border-width: 0.1rem;
-    border-color: #28D0DC;
+    border: 1px solid #28D0DC;
     flex-shrink: 0;
   }
   .login-form label > input[type="checkbox"]:checked + * {
@@ -875,7 +813,7 @@ footer .row > :last-child{
 .site-blue{
     color: #1034A6; 
 }
-
+ 
 
 /*@media query*/
 @media screen and (max-width: 1360px) {
