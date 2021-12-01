@@ -1,6 +1,4 @@
 .header-img {
-    height: 75vh;
-    min-height: 350px;
     /* background: no-repeat center center scroll; */
     background-image: url('../img/pages/services/img/hdr.jpg');
     -webkit-background-size: cover;
@@ -51,29 +49,29 @@ main{
 .text-part1{
     position: relative;
     text-align: right;
-    padding: 120px 100px 0px 10px;
-    height: 459px;
-
-    /* padding: 60px 100px 0px 10px;
-    height: 330px; */
+    /* padding: 120px 100px 0px 10px; */
+    /* height: 459px; */
+    min-height: 250px; 
+    padding: 30px 50px 0px 20px;
 }
 
+
 .text-part1 p{
-    font-size: 20px;
+    font-size: 15x;
 }
 
 .img-part1{
     background-color: #FF5440;
     overflow: hidden;
-    height: 551px;
-    /* height: 400px; */
+    /* height: 551px; */
+    height: 320px;
 }
 .img-part1 img{
     overflow: hidden;
     width: 100%;
     transition: transform 0.5s; /* Animation */
-    min-height: 551px;
-    /* min-height: 400px; */
+    /* min-height: 551px; */
+    min-height: 320px;
 }
 
 .img-part1 img:hover{
@@ -81,12 +79,14 @@ main{
 }
 
 .i2{
-    margin-top: -50px;
+    margin-top: -40px;
+    /* margin-top: -50px; */
     /* margin-top: -38px; */
 }
 
 .t2{
-    margin-top: -25px;
+    margin-top: -20px;
+    /* margin-top: -25px; */
     /* margin-top: -20px; */
 }
 
@@ -96,7 +96,7 @@ main{
     color: #FFFFFF;
 }
 .wedding-text p{
-    opacity: 50%;
+    /* opacity: 50%; */
 }
 
 .video-text{
@@ -105,7 +105,7 @@ main{
 }
 
 .video-text p{
-    opacity: 90%;
+    /* opacity: 90%; */
 }
 
 .photography-text{
@@ -113,7 +113,7 @@ main{
     color: #000000;
 }
 .photography-text p{
-   opacity: 50%;
+   /* opacity: 50%; */
 }
 
 .private-photo-text{
@@ -130,8 +130,7 @@ main{
 }
 
 .private-visit-text p{
-    opacity: 50%;
-
+    /* opacity: 50%; */
 }
 
 .buy-visit-permit-text{
@@ -211,10 +210,21 @@ main{
 }
 
 /*@media query*/
-@media screen and (max-width: 900px) {
-
+@media screen and (max-width: 1200px) {
     .text-part1 {
-        padding: 50px 40px 0px 10px;
+        /* padding: 50px 40px 0px 10px; */
+        padding: 5px 20px 40px 10px;
+    }
+    .form-buttons a{
+        width: 40% !important;
+    }
+}
+
+/*@media query*/
+@media screen and (max-width: 900px) {
+    .text-part1 {
+        /* padding: 50px 40px 0px 10px; */
+        padding: 5px 20px 40px 10px;
     }
     .form-buttons a{
         width: 40% !important;
@@ -225,7 +235,8 @@ main{
 @media screen and (max-width: 600px) {
 
     .text-part1 {
-        padding: 50px 40px 0px 10px;
+        /* padding: 50px 40px 0px 10px; */
+        padding: 5px 20px 40px 10px;
     }
 
     .form-buttons a{

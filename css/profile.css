@@ -1,6 +1,4 @@
 .header-img {
-    height: 75vh;
-    min-height: 350px;
     /* background: no-repeat center center scroll; */
     background-image: url('../img/pages/profile/img/hdr.jpg');
     -webkit-background-size: cover;
@@ -46,59 +44,6 @@ main{
    
 }
 
-.nav-tabs{
-    padding-right: 0px !important;
-    border: none !important;
-}
-.nav-tabs .tab-item{
-    border: 1px solid #1034A6 !important;
-    color: #1034A6;
-    text-align: right;
-    width: 20%;
-}
-
-.nav-tabs .tab-item:hover{
-    background-color: #1034A6;
-    color: #FFFFFF !important;
-    
-}
-
-.nav-tabs a.tab-link {
-    padding: 10px 10px;
-    display: block;
-    text-decoration: none !important;
-    color: #1034A6 !important;
-}
-
-
-
-.nav-tabs a.tab-link #tab-icon{
-    fill: #1034A6;
-}
-
-.nav-tabs a.tab-link:hover {
-    color: #FFFFFF !important;
-}
-.nav-tabs a.tab-link:hover #tab-icon{
-    fill: #FFFFFF;
-}
-
-
-.nav-tabs .tab-link.active{
-    background-color:#1034A6;
-    color: #FFFFFF !important;
-}
-
-.nav-tabs .tab-link.active .tab-item{
-    background-color:#1034A6;
-    color: #FFFFFF !important;
-}
-
-
-
-.nav-tabs .tab-link.active #tab-icon{
-    fill: #FFFFFF;
-}
 
 
 /*drop down selects*/
@@ -563,12 +508,14 @@ a:hover .icon-label{
 
 .p-section-1-3-1 .form-control {
     margin-bottom: 30px;
-    color: #1034A6 !important;
+    color: #1034A6;
     border: 1px solid #1034A6 !important;
     border-radius: 0px !important;
     /* opacity: 50%; */
     font-size: 12px;
 }
+
+
 
 .p-section-1-3-1 .form-control #visitDate{
     opacity: 100% !important;
@@ -1052,17 +999,6 @@ a:hover .icon-label{
 }
 
 
-
-.container .modal .modal-body{
-    text-align: center;
-    background-color: #1034A6;
-    color: #FFFFFF;
-    width:100;
-    margin: 0px -40px 0px -40px;
-}
-.container .modal  .body-content{
-    padding: 110px;
-}
 
 .container .modal .form-buttons{
     margin-top: 20px;

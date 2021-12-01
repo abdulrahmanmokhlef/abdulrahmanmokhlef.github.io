@@ -35,7 +35,7 @@ $(document).ready(function() {
                   </div>
 
                   <div class="forget">
-                    <a href="#" class="link">هل نسيت كلمة السر؟</a>
+                    <a href="../pages/forget-password.html" class="link">هل نسيت كلمة السر؟</a>
                   </div>
                   
                 </form>

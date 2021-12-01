@@ -180,7 +180,7 @@
             <div>
 
               <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="tab-item">
+                <li class="tab-item active">
                   <a class=" tab-link active" id="sites-tab" data-toggle="tab" href="#sites" role="tab" aria-controls="sites" aria-selected="true">
                     <span>متابعة طلبات التصاريح</span>
                   </a>
@@ -375,7 +375,7 @@
                               <span class="icon-label red-lbl">تحميل التصريح</span>
                               </a>
                               <a href="#!">
-                                <img src="../img/pages/profile/icons/pen-red-hidden.svg" width="20" height="20">
+                                <img src="../img/pages/profile/icons/pen-red.svg" width="20" height="20">
                                 <span class="icon-label red-lbl">تعديل الطلب</span>
                               </a>
                               <a class="" href="#!" data-toggle="modal" data-target="#cancelRequest" >
@@ -442,6 +442,10 @@
                                 <img src="../img/pages/profile/icons/pen.png" width="20" height="20">
                                 <span class="icon-label blue-lbl">تعديل الطلب</span>
                               </a>
+                              <a href="./waiver.html">
+                                <img src="../img/pages/profile/icons/hand-shake.svg" width="20" height="20">
+                                <span class="icon-label blue-lbl">تنازل</span>
+                              </a>
                               <a class="" href="#!" data-toggle="modal" data-target="#cancelRequest" >
 
                                <img src="../img/pages/profile/icons/+.svg" width="20" height="20">
@@ -482,7 +486,7 @@
                               <span class="icon-label red-lbl">تحميل التصريح</span>
                               </a>
                               <a href="#!">
-                                <img src="../img/pages/profile/icons/pen-red-hidden.svg" width="20" height="20">
+                                <img src="../img/pages/profile/icons/pen-red.svg" width="20" height="20">
                                 <span class="icon-label red-lbl">تعديل الطلب</span>
                               </a>
                               <a class="" href="#!" data-toggle="modal" data-target="#cancelRequest" >
@@ -505,8 +509,13 @@
                               <img src="../img/pages/profile/icons/pen.png" width="20" height="20">
                               <span class="icon-label blue-lbl">تعديل الطلب</span>
                               </a>
-                              <a class="" href="#!" data-toggle="modal" data-target="#cancelRequest" >
 
+                              <a href="./waiver.html">
+                                <img src="../img/pages/profile/icons/hand-shake.svg" width="20" height="20">
+                                <span class="icon-label blue-lbl">تنازل</span>
+                              </a>
+
+                              <a class="" href="#!" data-toggle="modal" data-target="#cancelRequest" >
                                <img src="../img/pages/profile/icons/+.svg" width="20" height="20">
                                <span class="icon-label red-lbl">إلغاء الطلب</span>
                               </a>
@@ -568,8 +577,13 @@
                               <img src="../img/pages/profile/icons/pen.png" width="20" height="20">
                               <span class="icon-label blue-lbl">تعديل الطلب</span>
                               </a>
-                              <a class="" href="#!" data-toggle="modal" data-target="#cancelRequest" >
 
+                              <a href="./waiver.html">
+                                <img src="../img/pages/profile/icons/hand-shake.svg" width="20" height="20">
+                                <span class="icon-label blue-lbl">تنازل</span>
+                              </a>
+
+                              <a class="" href="#!" data-toggle="modal" data-target="#cancelRequest" >
                                <img src="../img/pages/profile/icons/+.svg" width="20" height="20">
                                <span class="icon-label red-lbl">إلغاء الطلب</span>
                               </a>
@@ -617,7 +631,7 @@
                               <span class="icon-label red-lbl">تحميل التصريح</span>
                               </a>
                               <a href="#!">
-                                <img src="../img/pages/profile/icons/pen-red-hidden.svg" width="20" height="20">
+                                <img src="../img/pages/profile/icons/pen-red.svg" width="20" height="20">
                                 <span class="icon-label red-lbl">تعديل الطلب</span>
                               </a>
                               <a class="" href="#!" data-toggle="modal" data-target="#cancelRequest" >
@@ -943,7 +957,7 @@
                             <ul class="nav  sub-nav-tabs" id="myTab2" role="tablist">
       
                               <li class="tab-item">
-                                <a class="tab-link  active" id="tab-1" data-toggle="tab" href="#tab1" role="tab1" aria-controls="tab1" aria-selected="true">
+                                <a class="tab-link active" id="tab-1" data-toggle="tab" href="#tab1" role="tab1" aria-controls="tab1" aria-selected="true">
                                   <span>البيانات الشخصيه</span>
                                 </a>
                               </li>
@@ -980,62 +994,102 @@
                               <form action="#">
                                 <div class="row">
         
-        
                                   <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
                                     <label>الاسم</label>
-                                    <div class="input-group mb-3">
-                                        <input class="form-control" type="text" value="لوريم ايبسوم هو نموذج افتراضي" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
-                                        <!-- <div class="form-control edit">
-                                          <span>لوريم ايبسوم هو نموذج افتراضي</span>
-                                          <a href="#!">
-                                            <img src="../img/pages/profile/icons/pen.png" width="20" height="20">
-                                          </a>
-                                        </div>   -->
-                                    </div> 
+                                    <div class="input-icons">
+                                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                                      <input 
+                                        class="form-control input-field disabled-input" 
+                                        type="text" value="لوريم ايبسوم هو نموذج افتراضي" 
+                                        name="name" 
+                                        disabled>
+                                    </div>
+
                                   </div>
   
                                   <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <label>كود العميل</label>
-                                    <div class="input-group mb-3">
-                                        <input class="form-control" type="text"value="123456" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
-                                    </div> 
+
+                                    <div class="input-icons">
+                                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                                      <input 
+                                        class="form-control input-field disabled-input" 
+                                        type="text" value="123456" 
+                                        name="code" 
+                                        disabled>
+                                    </div>
+
                                   </div>
   
   
                                   <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
                                     <label>المسمى الوظيفي</label>
-                                    <div class="input-group mb-3">
-                                        <input class="form-control" type="text" value="لوريم ايبسوم هو نموذج افتراضي" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <div class="input-icons">
+                                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                                      <input 
+                                        class="form-control input-field disabled-input" 
+                                        type="text" value="لوريم ايبسوم هو نموذج افتراضي"
+                                        name="jobTitle" 
+                                        disabled>
                                     </div> 
+                                    
                                   </div>
   
                                   <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
                                     <label>الشركة</label>
-                                    <div class="input-group mb-3">
-                                        <input class="form-control" type="text" value="لوريم ايبسوم هو نموذج افتراضي" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <div class="input-icons">
+                                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                                      <input 
+                                        class="form-control input-field disabled-input" 
+                                        type="text" value="لوريم ايبسوم هو نموذج افتراضي"
+                                        name="companyName" 
+                                        disabled>
                                     </div> 
+
                                   </div>
   
   
                                   <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
                                     <label>رقم الهاتف المحمول</label>
-                                    <div class="input-group mb-3">
-                                        <input class="form-control" type="text" value="لوريم ايبسوم هو نموذج افتراضي" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <div class="input-icons">
+                                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                                      <input 
+                                        class="form-control input-field disabled-input" 
+                                        type="text" value="لوريم ايبسوم هو نموذج افتراضي"
+                                        name="mobileNo" 
+                                        disabled>
                                     </div> 
+
                                   </div>
   
                                   <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
                                     <label>البريد الالكتروني</label>
-                                    <div class="input-group mb-3">
-                                        <input class="form-control" type="text" value="لوريم ايبسوم هو نموذج افتراضي" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <div class="input-icons">
+                                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                                      <input 
+                                        class="form-control input-field disabled-input" 
+                                        type="text" value="لوريم ايبسوم هو نموذج افتراضي"
+                                        name="email" 
+                                        disabled>
                                     </div> 
+
                                   </div>
   
   
                                   <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <label>كلمة السر</label>
-                                    <div class="input-group mb-3">
-                                        <input class="form-control" type="password" value="123456" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <div class="input-icons">
+                                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                                      <input 
+                                        class="form-control input-field disabled-input" 
+                                        type="password" value="123456"
+                                        name="mobileNo" 
+                                        disabled>
                                     </div> 
                                   </div>
   
@@ -1082,7 +1136,7 @@
                                   <a href ="#!" class="btn save">
                                     حفظ
                                   </a>
-                                  <a class="btn submit" href="#!" onclick="activeTab('sub-nav-tabs','prepare')" >
+                                  <a class="btn submit" href="#!" onclick="clearInputs(this)" >
                                     إلغاء
                                   </a>
                                 </div>
@@ -1350,7 +1404,7 @@
 
                                       <img src="../img/pages/profile/icons/+.svg" width="40" height="40">
                                       <br>
-                                      <span class="icon-label red-lbl">إلغاء الطلب</span>
+                                      <span class="icon-label red-lbl">إلغاء</span>
                                     </a>
                                   </td>
                                   
@@ -1378,7 +1432,7 @@
 
                                       <img src="../img/pages/profile/icons/+.svg" width="40" height="40">
                                       <br>
-                                      <span class="icon-label red-lbl">إلغاء الطلب</span>
+                                      <span class="icon-label red-lbl">إلغاء</span>
                                     </a>
                                   </td>
                                   
@@ -1406,7 +1460,7 @@
 
                                       <img src="../img/pages/profile/icons/+.svg" width="40" height="40">
                                       <br>
-                                      <span class="icon-label red-lbl">إلغاء الطلب</span>
+                                      <span class="icon-label red-lbl">إلغاء</span>
                                     </a>
                                   </td>
                                   
@@ -1434,7 +1488,7 @@
 
                                       <img src="../img/pages/profile/icons/+.svg" width="40" height="40">
                                       <br>
-                                      <span class="icon-label red-lbl">إلغاء الطلب</span>
+                                      <span class="icon-label red-lbl">إلغاء</span>
                                     </a>
                                   </td>
                                   
@@ -1468,7 +1522,7 @@
 
                                       <img src="../img/pages/profile/icons/+.svg" width="40" height="40">
                                       <br>
-                                      <span class="icon-label red-lbl">إلغاء الطلب</span>
+                                      <span class="icon-label red-lbl">إلغاء</span>
                                     </a>
                                   </td>
                                   
@@ -1496,7 +1550,7 @@
 
                                       <img src="../img/pages/profile/icons/+.svg" width="40" height="40">
                                       <br>
-                                      <span class="icon-label red-lbl">إلغاء الطلب</span>
+                                      <span class="icon-label red-lbl">إلغاء</span>
                                     </a>
                                   </td>
                                   
@@ -1524,7 +1578,7 @@
 
                                       <img src="../img/pages/profile/icons/+.svg" width="40" height="40">
                                       <br>
-                                      <span class="icon-label red-lbl">إلغاء الطلب</span>
+                                      <span class="icon-label red-lbl">إلغاء</span>
                                     </a>
                                   </td>
                                   
@@ -1552,7 +1606,7 @@
 
                                       <img src="../img/pages/profile/icons/+.svg" width="40" height="40">
                                       <br>
-                                      <span class="icon-label red-lbl">إلغاء الطلب</span>
+                                      <span class="icon-label red-lbl">إلغاء</span>
                                     </a>
                                   </td>
                                   
@@ -1586,7 +1640,7 @@
 
                                       <img src="../img/pages/profile/icons/+.svg" width="40" height="40">
                                       <br>
-                                      <span class="icon-label red-lbl">إلغاء الطلب</span>
+                                      <span class="icon-label red-lbl">إلغاء</span>
                                     </a>
                                   </td>
                                   
@@ -1614,7 +1668,7 @@
 
                                       <img src="../img/pages/profile/icons/+.svg" width="40" height="40">
                                       <br>
-                                      <span class="icon-label red-lbl">إلغاء الطلب</span>
+                                      <span class="icon-label red-lbl">إلغاء</span>
                                     </a>
                                   </td>
                                   
@@ -1642,7 +1696,7 @@
 
                                       <img src="../img/pages/profile/icons/+.svg" width="40" height="40">
                                       <br>
-                                      <span class="icon-label red-lbl">إلغاء الطلب</span>
+                                      <span class="icon-label red-lbl">إلغاء</span>
                                     </a>
                                   </td>
                                   
@@ -1670,7 +1724,7 @@
 
                                       <img src="../img/pages/profile/icons/+.svg" width="40" height="40">
                                       <br>
-                                      <span class="icon-label red-lbl">إلغاء الطلب</span>
+                                      <span class="icon-label red-lbl">إلغاء</span>
                                     </a>
                                   </td>
                                   
@@ -1792,10 +1846,9 @@
 
 
           <!-- Modal -->
-          <div class="modal fade" id="cancelRequest" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal fade" id="cancelRequest" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
-                
                 <div class="modal-body">
                   <div class="body-content">
                     <h3>تأكيد إلغاء طلبكم</h3>
@@ -1815,10 +1868,13 @@
           </div>
 
           <!-- Modal -->
-          <div class="modal fade" id="requestCancelled" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal fade" id="requestCancelled" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
-                
+                <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+                  <!-- <span aria-hidden="true">&times;</span> -->
+                  <img src="../img/icons/+.svg" width="30" height="30">
+                </button>
                 <div class="modal-body">
                   <div class="body-content">
                     <h3>تم إلغاء طلبكم</h3>
@@ -1830,10 +1886,9 @@
           </div>
 
           <!-- Modal -->
-          <div class="modal fade" id="deleteNofification" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal fade" id="deleteNofification" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
-                
                 <div class="modal-body">
                   <div class="body-content">
                     <h3>تأكيد مسح الإشعار</h3>
@@ -1853,10 +1908,13 @@
           </div>
 
           <!-- Modal -->
-          <div class="modal fade" id="notificationDeleted" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal fade" id="notificationDeleted" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
-                
+                <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+                  <!-- <span aria-hidden="true">&times;</span> -->
+                  <img src="../img/icons/+.svg" width="30" height="30">
+                </button>
                 <div class="modal-body">
                   <div class="body-content">
                     <h3>تم مسح الإشعار</h3>
@@ -1868,10 +1926,13 @@
           </div>
           
           <!-- Modal -->
-          <div class="modal fade" id="refuseCause" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal fade" id="refuseCause" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
-                
+                <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+                  <!-- <span aria-hidden="true">&times;</span> -->
+                  <img src="../img/icons/+.svg" width="30" height="30">
+                </button>
                 <div class="modal-body">
                   <div class="body-content">
                     <h3>سبب الرفض</h3>

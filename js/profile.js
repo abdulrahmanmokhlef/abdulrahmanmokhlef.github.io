@@ -1,7 +1,8 @@
 $(document).ready(function() {
  
 
-  
+   
+
   closeModal = function(id){
     debugger
     $('#' + id + '').modal('hide');
@@ -42,6 +43,7 @@ $(document).ready(function() {
     //   // location.href="../index.html"
     // },3000);
   }
+
 
 
 

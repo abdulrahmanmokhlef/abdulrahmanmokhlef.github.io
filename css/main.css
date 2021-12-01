@@ -17,7 +17,8 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    height: 85vh;
+    /* height: 85vh; */
+    height: 500px;
     min-height: 350px;
     /* background: no-repeat center center scroll; */
     background-image: url('../img/header/layer.svg');
@@ -61,10 +62,14 @@ body {
     text-align: right;
     position: absolute;
     bottom: 30px !important;
-    color: #FFFFFF;
+    color: #FFFFFF; 
     z-index: 2;
 }
 
+.header-img {
+    height: 500px;
+    min-height: 350px;
+}
 
 .overlayed-hdr{
     position: relative;
@@ -84,6 +89,97 @@ body {
 }
 
 
+
+
+.nav-tabs{
+    padding-right: 0px !important;
+    border: none !important;
+}
+
+.nav-tabs .tab-item{
+    border: 1px solid #1034A6 !important;
+    color: #1034A6 !important;
+    text-align: right;
+    width: 20%;
+    /* padding: 10px 10px; */
+    display: block;
+    cursor: pointer;
+}
+
+.nav-tabs .tab-item:hover{
+    background-color: #1034A6;
+    color: #FFFFFF !important;
+}
+
+.nav-tabs .tab-item:hover #tab-icon{
+    fill: #FFFFFF;
+}
+.nav-tabs .tab-item:hover a > span{
+    color: #FFFFFF;
+}
+
+.nav-tabs .tab-item.active {
+    background-color:#1034A6;
+    color: #FFFFFF !important;
+}
+.nav-tabs .tab-item.active #tab-icon{
+    fill: #FFFFFF;
+}
+.nav-tabs .tab-item.active a > span{
+    color: #FFFFFF;
+}
+
+
+.nav-tabs a.tab-link {
+    padding: 10px 10px;
+    display: block;
+    text-decoration: none !important;
+    color: #1034A6 !important;
+}
+
+.nav-tabs a.tab-link #tab-icon{
+    fill: #1034A6;
+}
+
+
+/* .nav-tabs a.tab-link:hover {
+    color: #FFFFFF !important;
+} 
+
+.nav-tabs a.tab-link:hover #tab-icon{
+    fill: #FFFFFF;
+}
+
+.nav-tabs .tab-link.active {
+    background-color:#1034A6;
+    color: #FFFFFF !important;
+}
+
+.nav-tabs .tab-link.active #tab-icon{
+    fill: #FFFFFF;
+}  */
+
+
+/*custom input icon/disable*/
+.input-icons{
+    text-align: left;
+}
+
+.input-icons img {
+    position: absolute;
+    padding: 10px;
+    margin-right: -40px;
+    cursor: pointer;
+}
+ 
+input:disabled {
+    background: #FFFFFF !important;
+}
+.disabled-input{
+    color: #8f9fcc !important;
+}
+
+
 .form-control{
     height: 40px !important;
 }
@@ -91,10 +187,12 @@ body {
 .form-control{
     box-shadow: none !important;
     border: none !important;
+   
 }
 .form-control:focus{
     box-shadow: none !important;
     border: none !important;
+    color: #1034A6 !important;
 }
 
 .btn{
@@ -112,7 +210,31 @@ textarea:focus-visible{
     outline:none !important
 }
 
+/*Modal*/
+.modal button{
+    text-align: right;
+    color: red;
+    opacity: 100%;
+    margin-right: -45px;
+    width: 6%;
+}
+.modal button:focus{
+    outline: none;
+}
 
+
+.modal-body{
+    text-align: center;
+    background-color: #1034A6;
+    color: #FFFFFF;
+    width:100;
+    margin: 0px -40px 0px -40px;
+}
+.body-content{
+    padding: 110px;
+}
+
+/*End of common*/
 
 
  .top-header{
@@ -843,6 +965,10 @@ footer .row > :last-child{
     
     footer .row > :last-child > ul{
         float: right !important;
+    }
+
+    .modal button{
+        margin-right: -15px;
     }
 }
 

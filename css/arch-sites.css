@@ -1,6 +1,4 @@
 .header-img {
-    height: 75vh;
-    min-height: 350px;
     /* background: no-repeat center center scroll; */
     background-image: url('../img/pages/arch-sites/img/hdr.jpg');
     -webkit-background-size: cover;
@@ -55,7 +53,7 @@ main{
     background-color: #FF5440;
     border-radius: 0px !important;
     border: 0px !important;
-    width: 15%;
+    width: 20%;
     padding: 0;
     
 }

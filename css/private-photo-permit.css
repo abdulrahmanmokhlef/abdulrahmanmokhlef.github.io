@@ -1,6 +1,4 @@
 .header-img {
-    height: 75vh;
-    min-height: 350px;
     /* background: no-repeat center center scroll; */
     background-image: url('../img/pages/private-photo-permit/img/hdr.jpg');
     -webkit-background-size: cover;
@@ -36,59 +34,6 @@ main{
 .p-section-1{
     margin-top: 50px;
    
-}
-
-.nav-tabs{
-    padding-right: 0px !important;
-}
-.tab-item{
-    border: 1px solid #1034A6 !important;
-    color: #1034A6;
-    text-align: right;
-    width: 20%;
-}
-
-.tab-item:hover{
-    background-color: #1034A6;
-    color: #FFFFFF !important;
-    
-}
-
-a.tab-link {
-    padding: 10px 10px;
-    display: block;
-    text-decoration: none !important;
-    color: #1034A6 !important;
-}
-
-
-
-a.tab-link #tab-icon{
-    fill: #1034A6;
-}
-
-a.tab-link:hover {
-    color: #FFFFFF !important;
-}
-a.tab-link:hover #tab-icon{
-    fill: #FFFFFF;
-}
-
-
-.tab-link.active{
-    background-color:#1034A6;
-    color: #FFFFFF !important;
-}
-
-.tab-link.active .tab-item{
-    background-color:#1034A6;
-    color: #FFFFFF !important;
-}
-
-
-
-.tab-link.active #tab-icon{
-    fill: #FFFFFF;
 }
 
 
@@ -465,13 +410,6 @@ div.gallery-4 div.caption, div.gallery-4 div.small-caption{
 }
 
 
-.p-section-1-5 .modal-body{
-    text-align: center;
-    background-color: #1034A6;
-    color: #FFFFFF;
-    width:100;
-    margin: 0px -40px 0px -40px;
-}
 .p-section-1-5 .body-content{
     padding: 60px;
 }

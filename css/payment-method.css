@@ -1,6 +1,4 @@
 .header-img {
-    height: 75vh;
-    min-height: 350px;
     /* background: no-repeat center center scroll; */
     background-image: url('../img/pages/payment-method/img/hdr.jpg');
     -webkit-background-size: cover;
@@ -11,7 +9,7 @@
 
 
 .overlay{
-    background: url('../img/header/hdr-overlay.svg');
+    /* background: url('../img/header/hdr-overlay.svg'); */
 }
 
 
@@ -53,18 +51,23 @@ main{
 .p-section-1 .request-details .details-panel p {
     margin: 0;
     vertical-align: middle;
-    padding: 20px 10px;
+    padding: 30px 10px;
 }
 
 .p-section-1 .form{
     margin-top: 30px;
+    margin-bottom: 50px;
     color: #1034A6;
     text-align: right;
+    
 }
 
 
 
 /* pretty radio */
+.p-section-1 .form .form-check{
+    padding-left: 2px;
+}
 .p-section-1 .form .form-check .container{
     padding-right: 0px;
 }
@@ -108,17 +111,34 @@ main{
     padding-left: 5px;
 }
 
+hr {
+    /* border:none;
+    border:1px dashed #28D0DC!important;
+    color:#fff;
+    background-color:#fff;
+    height:1px;
+    width: 100%; */
+
+    border:none !important;
+    height: 3px !important;
+    background-color:#fff !important;
+    background-image: linear-gradient(to right, #28D0DC 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 15px 20px;
+    background-repeat: repeat-x;
+}
+
 
 .p-section-1 .form .form-text{
     margin-top: 30px;
 }
 .p-section-1 .form .form-text p{
-    font-size: 21px;
+    font-size: 15px;
 }
 
 
 .p-section-1 .form .attachment-lbl{
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .p-section-1 .form  .custom-file{

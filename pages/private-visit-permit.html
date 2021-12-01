@@ -175,7 +175,7 @@
             <div>
 
               <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="tab-item">
+                <li class="tab-item active">
                   <a class=" tab-link active" id="sites-tab" data-toggle="tab" href="#sites" role="tab" aria-controls="sites" aria-selected="true">
                     <!-- <i class="fas fa-university fa-lg"></i> -->
                     <!-- <img src="../Group 10890.svg" alt="social" width="20" height="20"> -->
@@ -412,8 +412,8 @@
                     <div class="form">
                       <form action="#">
                         <div class="row">
-
-                          <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+        
+                          <div class="col-md">
                             
                               <div class="input-group mb-3 search-group">
                                   <input class="form-control" type="text" placeholder="البحث عن موقع" aria-label="Recipient's username" aria-describedby="button-addon2">
@@ -424,8 +424,8 @@
                               </div> 
                             
                           </div>
-
-                          <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+        
+                          <div class="col-md">
                             
                             <div>
                                 <!-- AUTO COMPLETE DROPDOWN -->
@@ -435,9 +435,51 @@
                                   <option value="2">2</option>
                                   <option value="3">3</option>
                                   <option value="4">4</option>
-                                  <option value="5">5</option>
-                                  <option value="6">6</option>
-                                  <option value="7">7</option>
+                                </select>
+                            </div>
+                            
+                          </div>
+        
+                          <div class="col-md">
+                            
+                            <div>
+                                <!-- AUTO COMPLETE DROPDOWN -->
+                                <select class="selectpicker form-control ">
+                                  <option value="Ultrasound Knee Right" selected disabled>اختر موقع الاثري</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                </select>
+                            </div>
+                            
+                          </div>
+        
+                          <div class="col-md">
+                            
+                            <div>
+                                <!-- AUTO COMPLETE DROPDOWN -->
+                                <select class="selectpicker form-control ">
+                                  <option value="Ultrasound Knee Right" selected disabled>المكان المحدد داخل الموقع الاثري</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                </select>
+                            </div>
+                            
+                          </div>
+        
+                          <div class="col-md">
+                            
+                            <div>
+                                <!-- AUTO COMPLETE DROPDOWN -->
+                                <select class="selectpicker form-control ">
+                                  <option value="Ultrasound Knee Right" selected disabled>اماكن اخري غير موجوده بالقائمه</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
                                 </select>
                             </div>
                             
@@ -844,10 +886,13 @@
 
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
-                          
+                          <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+                            <!-- <span aria-hidden="true">&times;</span> -->
+                            <img src="../img/icons/+.svg" width="30" height="30">
+                          </button>
                           <div class="modal-body">
                             <div class="body-content">
                               <h2>تم تسليم طلبكم بنجاح</h2>

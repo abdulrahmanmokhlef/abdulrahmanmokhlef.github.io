@@ -1,6 +1,4 @@
 .header-img {
-    height: 75vh;
-    min-height: 350px;
     /* background: no-repeat center center scroll; */
     background-image: url('../img/pages/baron-palac/img/hdr.jpg');
     -webkit-background-size: cover;
@@ -78,59 +76,12 @@ main{
 
   
 
-/*nav tabs*/
-.nav-tabs{
-    padding-right: 0px !important;
-    border: 0px !important;
-}
+/*override nav tabs*/
 .nav-tabs .tab-item{
-    border: 1px solid #1034A6 !important;
-    color: #1034A6;
     text-align: center;
     width: 15%;
 }
 
-.nav-tabs .tab-item:hover{
-    background-color: #1034A6;
-    color: #FFFFFF !important;
-
-}
-
-.nav-tabs a.tab-link {
-    padding: 10px 10px;
-    display: block;
-    text-decoration: none !important;
-    color: #1034A6 !important;
-}
-
-
-.nav-tabs a.tab-link #tab-icon{
-    fill: #1034A6;
-}
-
-.nav-tabs a.tab-link:hover {
-    color: #FFFFFF !important;
-}
-.nav-tabs a.tab-link:hover #tab-icon{
-    fill: #FFFFFF;
-}
-
-
-.nav-tabs .tab-link.active{
-    background-color:#1034A6;
-    color: #FFFFFF !important;
-}
-
-.nav-tabs .tab-link.active .tab-item{
-    background-color:#1034A6;
-    color: #FFFFFF !important;
-}
-
-
-
-.nav-tabs .tab-link.active #tab-icon{
-    fill: #FFFFFF;
-}
 
 
 /* ==========================================

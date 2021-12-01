@@ -1,26 +1,48 @@
 $(document).ready(function() {
  
 
-    
-    //avtive tab buy tab id
-    //navTabClass ex: nav-tab
-    activeTab = function(navTabClass,tab){
-        
-        $( '.' + navTabClass + ' ' +'a[href="#' + tab + '"]').tab('show');
-    };
+  //this function for input that has edit icon inside
+  editInput = function(e){
+    $(e).next("input").eq(0).prop('disabled', false);
+    $(e).next("input").removeClass('disabled-input');
+  }
+  
+  clearInputs = function(e){
+      $(e).closest('form').find("input[type=text], input[type=password],textarea").val("");
+      $(e).closest('form').find("input[type=text], input[type=password],textarea").prop('disabled', true);
+      $(e).closest('form').find("input[type=text], input[type=password],textarea").addClass('disabled-input');
+  }
 
-    activeTabInSpecificPage = function(tab, page){
-        localStorage.setItem('tab', tab);
-        window.location.replace('../pages/' + page);
-    };
+  //avtive tab by tab id
+  //navTabClass ex: nav-tab
+  activeTab = function(navTabClass,tab){
+      $( '.' + navTabClass + ' ' +'a[href="#' + tab + '"]').tab('show');
+  };
 
-    closeModal = function(id){
-        $('#' + id + '').modal('toggle');
-    };
+  activeTabInSpecificPage = function(tab, page){
+      localStorage.setItem('tab', tab);
+      window.location.replace('../pages/' + page);
+  };
+
+
+  //style main nav tabs
+  $('.tab-item').click(function(){
+    debugger
+    $('.nav-tabs > .tab-item').removeClass('active');
+    $('nav-tabs > tab-item >.tab-link').removeClass('active');
+    $(this).addClass('active');
+  });
+
+
+
     
-    openModal = function(id){
+  closeModal = function(id){
       $('#' + id + '').modal('toggle');
-    }
+  };
+  
+  openModal = function(id){
+    $('#' + id + '').modal('toggle');
+  }
 
 
 
