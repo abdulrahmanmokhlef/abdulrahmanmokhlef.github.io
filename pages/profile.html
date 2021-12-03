@@ -17,14 +17,17 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../plugins/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
    
     <!-- OwlCarousel CSS -->
     <link rel="stylesheet" href="../plugins/OwlCarousel2-2.3.4/css/owl.carousel.min.css">
     <link rel="stylesheet"  href="../plugins/OwlCarousel2-2.3.4/css/owl.theme.default.min.css">
 
-    <!-- fontawesome CSS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="../font/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <!-- <link href="../plugins/Template-FAQ/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
 
+    <!-- fontawesome CSS -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="../font/fontawesome-free-5.15.4-web/css/all.min.css" /> -->
 
 
   </head>
@@ -100,7 +103,7 @@
                                      <path id="nav-icon" data-name="Path 5" d="M362,363a3,3,0,1,0,3-3A3,3,0,0,0,362,363Zm3-1a1,1,0,1,1-1,1A1,1,0,0,1,365,362Zm0,0" transform="translate(-344.693 -342)" fill="#fff"/>
                                    </g>
                                  </svg>
-                                 
+                                 <span class='badge badge-warning' id='lblCartCount'> 0 </span>
                                </a>
                              </li>
                              <li class="nav-item">
@@ -196,7 +199,7 @@
                   </a>
                 </li>
                 <li class=" tab-item">
-                  <a class=" tab-link " id="terms-tab" data-toggle="tab" href="#!" role="tab" aria-controls="terms" aria-selected="false">
+                  <a class=" tab-link " id="terms-tab" data-toggle="tab" href="#terms" role="tab" aria-controls="terms" aria-selected="false">
                     <span>المساعدة</span>
                   </a>
                 </li>
@@ -330,7 +333,7 @@
                                 <img src="../img/pages/profile/icons/cloud-computing.png" width="20" height="20">
                                 <span class="icon-label blue-lbl">تحميل التصريح</span>
                               </a>
-                              <a class="" href="#!">
+                              <a class="" href="../pages/edit-permit.html">
                                 <img src="../img/pages/profile/icons/pen.png" width="20" height="20">
                                 <span class="icon-label blue-lbl">تعديل الطلب</span>
                               </a>
@@ -374,7 +377,7 @@
 
                               <span class="icon-label red-lbl">تحميل التصريح</span>
                               </a>
-                              <a href="#!">
+                              <a class="" href="../pages/edit-permit.html">
                                 <img src="../img/pages/profile/icons/pen-red.svg" width="20" height="20">
                                 <span class="icon-label red-lbl">تعديل الطلب</span>
                               </a>
@@ -419,7 +422,7 @@
 
                               <span class="icon-label blue-lbl">تحميل التصريح</span>
                               </a>
-                              <a href="#!">
+                              <a class="" href="../pages/edit-permit.html">
                                 <img src="../img/pages/profile/icons/pen.png" width="20" height="20">
                                 <span class="icon-label blue-lbl">تعديل الطلب</span>
                               </a>
@@ -485,7 +488,7 @@
 
                               <span class="icon-label red-lbl">تحميل التصريح</span>
                               </a>
-                              <a href="#!">
+                              <a class="disabled-link" href="../pages/edit-permit.html">
                                 <img src="../img/pages/profile/icons/pen-red.svg" width="20" height="20">
                                 <span class="icon-label red-lbl">تعديل الطلب</span>
                               </a>
@@ -554,7 +557,7 @@
 
                               <span class="icon-label blue-lbl">تحميل التصريح</span>
                               </a>
-                              <a href="#!">
+                              <a class="disabled-link" href="../pages/edit-permit.html">
                                 <img src="../img/pages/profile/icons/pen.png" width="20" height="20">
                                 <span class="icon-label blue-lbl">تعديل الطلب</span>
                               </a>
@@ -630,7 +633,7 @@
 
                               <span class="icon-label red-lbl">تحميل التصريح</span>
                               </a>
-                              <a href="#!">
+                              <a class="disabled-link" href="../pages/edit-permit.html">
                                 <img src="../img/pages/profile/icons/pen-red.svg" width="20" height="20">
                                 <span class="icon-label red-lbl">تعديل الطلب</span>
                               </a>
@@ -1012,7 +1015,6 @@
                                     <label>كود العميل</label>
 
                                     <div class="input-icons">
-                                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
                                       <input 
                                         class="form-control input-field disabled-input" 
                                         type="text" value="123456" 
@@ -1836,6 +1838,160 @@
 
                 <div class="tab-pane fade" id="terms" role="tabpanel" aria-labelledby="terms-tab">
                  
+                  <!--Section 1-4 start-->
+                  <section class="p-section-1-4">
+
+                    <div class="notifications">
+                      <p>المساعدة</p>
+                    </div>
+
+                    <!-- Content wrapper start -->
+                      <div class="content-wrapper">
+
+                        <!-- Row start -->
+                        <div class="row gutters">
+
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                                <div class="card m-0">
+
+                                    <!-- Row start -->
+                                    <div class="row no-gutters">
+                                        
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                            
+                                            <div class="chat-container">
+                                                <ul class="chat-box chatContainerScroll">
+
+                                                  <li class="chat-right">
+                                                    <div class="chat-text">
+                                                      <p>
+                                                        تم الموافقة على طلبك رقم ١٢٣٤٥٤٣. يرجى دفع الرسوم الموضحة في قائمة متابعة الطلبات في خلال ٥ أيام عمل لتجنب الغاء حجز الموقع
+                                                      </p>
+                                                      <span class="chat-hour">08:55</span>
+                                                    </div>
+                                                      <div class="chat-avatar">
+                                                          <img src="../img/pages/profile/img/avatar1.png" alt="Retail Admin">
+                                                          <div class="chat-name">Support</div>
+                                                      </div>
+                                                  </li>
+                                                    <li class="chat-left">
+                                                        <div class="chat-avatar">
+                                                            <img src="../img/pages/profile/img/avatar2.png" alt="Retail Admin">
+                                                            <div class="chat-name">User</div>
+                                                        </div>
+                                                        <div class="chat-text">
+                                                          <p>
+                                                            هل ممكن ارفعه في شكل صورة؟
+                                                          </p>
+                                                          <span class="chat-hour">08:55</span>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    
+                                                </ul>
+                                                <div class="chat-form">
+                                                    <textarea class="form-control" rows="10" placeholder="اكتب رسالك هنا...."></textarea>
+                                                   
+                                                    <div class="form-buttons">
+
+                                                      <span class="chat-hour">08:55</span>
+                                                      
+                                                      <label class="custom-file">
+                                                        <input type="file" class="custom-file-input" id="InputFile" aria-describedby="fileHelp">
+                                                        <label for="InputFile" id="file-lbl">
+                                                          إرفاق ملف
+                                                          <img src="../img/pages/buy-visit-permit/icons/attach.svg" alt='attach' width="20" height="20">
+                                                        </label>
+                                                      </label>
+
+                                                      <a class="btn submit" href="#!" onclick="activeTab('sub-nav-tabs','prepare')" >
+                                                        إرسل
+                                                      </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Row end -->
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Row end -->
+
+                      </div>
+                    <!-- Content wrapper end -->
+                     <hr class="custom-hr">
+
+                    <div class="faq">
+                      <div class="panel-group" id="accordion">
+                        <div class="faqHeader">
+                            <h3>الأسئلة المترددة</h3>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" >
+                                <h6 class="panel-title" class="accordion-toggle collapsed">
+                                    <p class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" >
+                                      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات؟
+                                    </p>
+                                </h6>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse ">
+                                <div class="panel-body">
+                                    <p>
+                                      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي 
+                                      للنص أو شكل توضع الفقرات في الصفحة التي يقرأها ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي 
+                                      توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h6 class="panel-title" class="accordion-toggle collapsed">
+                                    <p class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+                                      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات؟
+                                    </p>
+                                </h6>
+                            </div>
+                            <div id="collapseTen" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                  <p>
+                                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي 
+                                    للنص أو شكل توضع الفقرات في الصفحة التي يقرأها ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي 
+                                    توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي"
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h6 class="panel-title">
+                                    <p class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">
+                                      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات؟
+                                    </p>
+                                </h6>
+                            </div>
+                            <div id="collapseEleven" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                  <p>
+                                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي 
+                                    للنص أو شكل توضع الفقرات في الصفحة التي يقرأها ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي 
+                                    توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي"
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+                
+                      </div>
+                    </div>
+
+                  </section>
+                  <!--Section 1-4 end-->
+
                 </div>
               </div>
   
@@ -1949,7 +2105,7 @@
         </div>
 
         
-
+        
         <div class="main-end"></div>
       </main>
       <!-- Main end -->

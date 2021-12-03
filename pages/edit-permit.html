@@ -13,7 +13,7 @@
     
     <!-- Custom CSS -->
     <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/services.css" rel="stylesheet">
+    <link href="../css/waiver.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="../plugins/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -42,7 +42,7 @@
 
             <div class="container">
               <div class="p-section-header-text">
-                <h1>خدماتنا</h1>
+                <h1>تعديل تصريح إقامة فاعليات</h1>
               </div>
             </div>
               
@@ -96,6 +96,7 @@
                                   </g>
                                 </svg>
                                 <span class='badge badge-warning' id='lblCartCount'> 0 </span>
+                                
                               </a>
                             </li>
                             <li class="nav-item">
@@ -166,147 +167,344 @@
 
       <!-- Main -->
       <main class="main">
-        <div class="">
+        <div class="container">
           
           <!--Section 1 start-->
-          <section class="p-section-1 container">
+          <section class="p-section-1 ">
 
-            <div class="row">
-
+            <div class="header">
+              <h3>
+                طلب تنازل عن تصريح إقامة فاعليات في  موقع أثري
+              </h3>
+            </div>
             
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0 img-part-col">
-                <div class="img-part1 wedding-img">
-                  <img src="../img/pages/services/img/1.jpg" alt="featured"  >
-                </div>
-              </div>
+            <div class="header-details">
+              <p>رقم الطلب: 123456</p>
+            </div>
 
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0  text-part-col  text-col">
-                <div class="text-part1 wedding-text  vertical-center">
-                  <h1>تصريح إقامة حفل</h1>
-                  <p>
-                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
-                  </p>
+            <div class="form">
+              <form action="#">
+                <div class="row">
 
-                  <div class="form-buttons">
-                    <a href ="../pages/wedding-permit.html" class="btn add">
-                      معرفة التفاصيل
-                    </a>
-                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
 
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0  text-part-col  text-col">
-                <div class="text-part1 video-text t2  vertical-center">
-                  <h1>تصريح تصوير فيديو</h1>
-                  <p>
-                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
-                  </p>
-
-                  <div class="form-buttons">
-                      <a href ="../pages/video-permit.html" class="btn add">
-                        معرفة التفاصيل
-                      </a>
+                    <label>إسم العميل/الشركة</label>
+                    <div class="input-icons">
+                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                      <input 
+                        class="form-control input-field disabled-input" 
+                        type="text" value="الشركة المعتمدة" 
+                        name="name" 
+                        disabled>
                     </div>
 
-                </div>
-              </div>
+                  </div>
 
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0 img-part-col">
-                <div class="img-part1  video-img i2">
-                  <img src="../img/pages/services/img/2.jpg" alt="featured"  >
-                </div>
-              </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                    <label>مهنة العميل/نشاط الشركة</label>
 
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0 img-part-col">
-                <div class="img-part1  photography-img i2">
-                  <img src="../img/pages/services/img/3.jpg" alt="featured"  >
-                </div>
-              </div>
+                    <div class="input-icons">
+                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                      <input 
+                        class="form-control input-field disabled-input" 
+                        type="text" value="شركة سياحية" 
+                        name="code" 
+                        disabled>
+                    </div>
 
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0  text-part-col  text-col">
-                <div class="text-part1  photography-text t2  vertical-center">
-                  <h1>تصريح تصوير فوتوغرافي</h1>
-                  <p>
-                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
-                  </p>
+                  </div>
+
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                    <label>جنسية الجهة الطالبة</label>
+                    <div>
+                        <!-- AUTO COMPLETE DROPDOWN -->
+                        <select class="selectpicker form-control ">
+                          <option value="Ultrasound Knee Right" selected disabled>مصر</option>
+                          <option value="1">مصر </option>
+                          <option value="2">المانيا</option>
+                          <option value="3">هولندا</option>
+                          <option value="4">تركيا</option>
+                        </select>
+                    </div>
+                    
+                  </div>
+
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                    
+                    <label>تحميل الشعار</label>
+                    <div> 
+                      <label class="custom-file">
+                        
+                        <input type="file" class="custom-file-input" id="InputFile" aria-describedby="fileHelp">
+                        <label for="InputFile" id="file-lbl">
+                          إرفاق ملف
+                          <img src="../img/pages/buy-visit-permit/icons/attach.svg" alt='attach' width="20" height="20">
+                        </label>
+                      </label>
+                    </div>
+                    
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
+                    <label>المدينة</label>
+                    <div class="input-icons">
+                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                      <input 
+                        class="form-control input-field disabled-input" 
+                        type="text" value="القاهرة"
+                        name="companyName" 
+                        disabled>
+                    </div> 
+
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
+                    <label>الموقع الأثري</label>
+                    <div class="input-icons">
+                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                      <input 
+                        class="form-control input-field disabled-input" 
+                        type="text" value="قصر البارون"
+                        name="companyName" 
+                        disabled>
+                    </div> 
+
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
+                    <label>المكان المحدد داخل الموقع الأثري</label>
+                    <div class="input-icons">
+                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                      <input 
+                        class="form-control input-field disabled-input" 
+                        type="text" value="القاعة المغطاه"
+                        name="companyName" 
+                        disabled>
+                    </div> 
+
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
+                    <label>نوع الفاعلية</label>
+                    <div class="input-icons">
+                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                      <input 
+                        class="form-control input-field disabled-input" 
+                        type="text" value="حفل تكريم"
+                        name="companyName" 
+                        disabled>
+                    </div> 
+
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
+                    <label>عدد الأفراد</label>
+                    <div class="input-icons">
+                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                      <input 
+                        class="form-control input-field disabled-input" 
+                        type="text" value="300 فرد"
+                        name="companyName" 
+                        disabled>
+                    </div> 
+
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
+                    <label>الغرض</label>
+                    <div class="input-icons">
+                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                      <input 
+                        class="form-control input-field disabled-input" 
+                        type="text" value="حصري"
+                        name="companyName" 
+                        disabled>
+                    </div> 
+
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            
+                    <label>التاريخ</label>
+                    <div class="input-group mb-3 ">
+                        <input class="form-control " id="visitDate"type="date" placeholder="" aria-label="date1" aria-describedby="button-addon2">
+                    </div> 
+
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
+                    <label>عدد أيام الحفل</label>
+                    <div class="input-icons">
+                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                      <input 
+                        class="form-control input-field disabled-input" 
+                        type="text" value="اربع أيام"
+                        name="companyName" 
+                        disabled>
+                    </div> 
+
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                    
+                    <label>مواد دعائية</label>
+                    <div> 
+                      <label class="custom-file">
+                        
+                        <input type="file" class="custom-file-input" id="InputFile" aria-describedby="fileHelp">
+                        <label for="InputFile" id="file-lbl">
+                          إرفاق ملف
+                          <img src="../img/pages/buy-visit-permit/icons/attach.svg" alt='attach' width="20" height="20">
+                        </label>
+                      </label>
+                    </div>
+                    
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
+                    <label>عدد أيام التجهيزات قبل الحفل</label>
+                    <div class="input-icons">
+                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                      <input 
+                        class="form-control input-field disabled-input" 
+                        type="text" value="اربع أيام"
+                        name="companyName" 
+                        disabled>
+                    </div> 
+
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
+                    <label>هدف التغطية إعلامية</label>
+                    <div class="input-icons">
+                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                      <input 
+                        class="form-control input-field disabled-input" 
+                        type="text" value="توثيق الحفل"
+                        name="companyName" 
+                        disabled>
+                    </div> 
+
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
+                    <label> نوع التغطية تغطية إعلامية</label>
+                    <div class="input-icons">
+                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                      <input 
+                        class="form-control input-field disabled-input" 
+                        type="text" value="قناة تليفزيونية"
+                        name="companyName" 
+                        disabled>
+                    </div> 
+
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                    
+                    <label>محتوى الحفل والفقرات والأسئلة المطروحة</label>
+                    <div> 
+                      <label class="custom-file">
+                        
+                        <input type="file" class="custom-file-input" id="InputFile" aria-describedby="fileHelp">
+                        <label for="InputFile" id="file-lbl">
+                          إرفاق ملف
+                          <img src="../img/pages/buy-visit-permit/icons/attach.svg" alt='attach' width="20" height="20">
+                        </label>
+                      </label>
+                    </div>
+                    
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
+                    <label> اسم المحاور</label>
+                    <div class="input-icons">
+                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                      <input 
+                        class="form-control input-field disabled-input" 
+                        type="text" value="محمد أحمد"
+                        name="companyName" 
+                        disabled>
+                    </div> 
+
+                  </div>
+
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12 ">
+                      <label>تفاصيل المواد الإعلامية (بند 1)</label>
+                      <div class="input-icons">
+                        <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                        <input 
+                          class="form-control input-field disabled-input mb-0" 
+                          type="text" value="بانر"
+                          name="companyName" 
+                          disabled>
+                      </div> 
+                      <label class="add-item" id="firstAddItemlbl" onclick="appendItem()">
+                        + اضافة بند
+                      </label>
+                  </div>
+
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12" id ="firstItem">
+
+                    <label> العدد</label>
+                    <div class="input-icons">
+                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                      <input 
+                        class="form-control input-field disabled-input" 
+                        type="text" value="4"
+                        name="companyName" 
+                        disabled>
+                    </div> 
+
+                  </div>
+
                   
-                  <div class="form-buttons">
-                    <a href ="../pages/photography-photo-permit.html" class="btn add">
-                      معرفة التفاصيل
-                    </a>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12"></div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+
+                    <label>تفاصيل أخرى</label>
+                    <div class="input-icons">
+                      <img src="../img/pages/profile/icons/pen.png" onclick="editInput(this)">
+                      <input 
+                        class="form-control input-field disabled-input" 
+                        type="text" value="لوريم ايبسوم هو نموذج افتراضي"
+                        name="email" 
+                        disabled>
+                    </div> 
+
                   </div>
 
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0  text-part-col  text-col">
-                <div class="text-part1  private-photo-text t2  vertical-center">
-                  <h1>تصريح تصوير شخصي</h1>
-                  <p>
-                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
-                  </p>
-                  
-                  <div class="form-buttons">
-                    <a href ="../pages/private-photo-permit.html" class="btn add">
-                      معرفة التفاصيل
-                    </a>
-                  </div>
 
                 </div>
-              </div>
 
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0 img-part-col">
-                <div class="img-part1  private-photo-img i2">
-                  <img src="../img/pages/services/img/4.jpg" alt="featured"  >
+
+                <div class="form-buttons">
+                  <a href ="#!" class="btn save">
+                    الرجوع
+                  </a>
+                  <a class="btn submit" href="#!" onclick="clearInputs(this)" >
+                    تم التعديل
+                  </a>
+                  <p>* يرجى القراءه للشروط والمستندات المطلوبة</p>
                 </div>
-              </div>
 
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0 img-part-col">
-                <div class="img-part1  private-visit-img i2">
-                  <img src="../img/pages/services/img/5.jpg" alt="featured"  >
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0  text-part-col  text-col">
-                <div class="text-part1  private-visit-text t2  vertical-center">
-                  <h1>تصريح زيارة خاصة</h1>
-                  <p>
-                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
-                  </p>
-                  
-                  <div class="form-buttons">
-                    <a href ="../pages/private-visit-permit.html" class="btn add">
-                      معرفة التفاصيل
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0  text-part-col  text-col">
-                <div class="text-part1  buy-visit-permit-text t2  vertical-center">
-                  <h1>شراء تصاريح زيارة</h1>
-                  <p>
-                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
-                  </p>
-
-                  <div class="form-buttons">
-                    <a href ="../pages/buy-visit-permit.html" class="btn add">
-                      معرفة التفاصيل
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-0 img-part-col">
-                <div class="img-part1  buy-visit-permit-img i2">
-                  <img src="../img/pages/services/img/6.jpg" alt="featured"  >
-                </div>
-              </div>
-
-
+              </form>
             </div>
             
           </section>
@@ -447,6 +645,7 @@
     <script type="text/javascript" src="../plugins/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
     <script src="../plugins/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/edit-permit.js"></script>
     <script type="text/javascript" src="../js/login.js"></script>
 
   </body>

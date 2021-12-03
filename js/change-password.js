@@ -4,7 +4,8 @@ $(document).ready(function() {
         $('#changePassword').modal('toggle');
 
         setInterval(function(){
-            location.href="../pages/profile.html";
+            localStorage.setItem('showLogin', 1);
+            location.href="../index.html";
         },3000);
     }
    

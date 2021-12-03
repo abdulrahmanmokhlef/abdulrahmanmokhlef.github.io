@@ -50,14 +50,24 @@ $(document).ready(function() {
 
 
     activeTabInSpecificPage = function(tab, page){
-      debugger
       localStorage.setItem('tab', tab);
       window.location.replace('../pages/' + page);
     };
 
     addToCart = function(){
-      debugger
+      
+      var itemsInCart = localStorage.getItem('itemsIncart');
+      var prevCount = itemsInCart == null? 1 : Number(itemsInCart) + 1;
+      localStorage.setItem('itemsIncart', prevCount);
+      var currentCount = localStorage.getItem('itemsIncart');
+
+      if(currentCount > 0){
+        $('#lblCartCount').addClass('showCart');
+        $('#lblCartCount').innerHtml = Number(currentCount);
+      }
+       
       activeTabInSpecificPage('apply', 'buy-visit-permit.html')
+
     }
 
 });

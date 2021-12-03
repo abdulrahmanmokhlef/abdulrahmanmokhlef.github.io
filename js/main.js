@@ -1,5 +1,37 @@
 $(document).ready(function() {
  
+  //redirect to login after change password
+  var login = localStorage.getItem('showLogin');
+  if(login =="1"){
+    $('#loginModal').modal('toggle');
+    localStorage.removeItem('showLogin');
+  }
+
+  //cahnge language
+  var showLang= false;
+  selectLang = function(){
+    showLang = !showLang;
+    if(showLang){
+
+      $('#language').addClass('language');
+      $('#language > .ar , #language > .en , #language > .pipe').addClass('showElement');
+
+    }else{
+
+      $('#language').removeClass('language');
+      $('#language > .ar , #language > .en , #language > .pipe').removeClass('showElement');
+      
+    }
+    
+
+  }
+  
+  //show/hide and set new value for cart
+  var currentCount = localStorage.getItem('itemsIncart');
+  if(currentCount > 0){
+    $('#lblCartCount').addClass('showCart');
+    $("#lblCartCount").text(Number(currentCount));
+  }
 
   //this function for input that has edit icon inside
   editInput = function(e){
@@ -26,8 +58,8 @@ $(document).ready(function() {
 
 
   //style main nav tabs
-  $('.tab-item').click(function(){
-    debugger
+  $('.nav-tabs > .tab-item').click(function(){
+    
     $('.nav-tabs > .tab-item').removeClass('active');
     $('nav-tabs > tab-item >.tab-link').removeClass('active');
     $(this).addClass('active');
@@ -89,7 +121,29 @@ $(document).ready(function() {
       });
     
 
-      
+    //   $('.accordion-toggle').on('click', function(event){
+    //     event.preventDefault();
+    //     // create accordion variables
+    //     var accordion = $(this);
+    //     var accordionContent = accordion.next('.accordion-content');
+
+    //     // toggle accordion link open class
+    //     accordion.toggleClass("open");
+    //     // toggle accordion content
+    //     accordionContent.slideToggle(250);
+
+    // });
+
+      // $('.accordion-toggle').on('click', function(e) { 
+      //   debugger
+      //   if ($(this).hasClass('collapsed')) { 
+      //     debugger
+      //     // e.stopPropagation(); 
+      //     $('#accordion .collapse').collapse(true)
+      //     $(this).collapse(false);
+      //   } 
+      // });
+
     //todo this block of code is temporary commented
     //this to keep active tab opened after reload 
     // $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {

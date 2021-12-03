@@ -736,12 +736,14 @@ a:hover .icon-label{
 }
 
 
-/*tab4*/
-.p-section-1-3-4 .notifications{
+/*tab4 and help tab*/ 
+.p-section-1-3-4 .notifications,
+.p-section-1-4 .notifications{
     background-color: #1034A6;
     text-align: right;
 }
-.p-section-1-3-4 .notifications p{
+.p-section-1-3-4 .notifications p,
+.p-section-1-4 .notifications p{
     padding: 15px 10px;
    color: #FAE168;
 }
@@ -945,12 +947,14 @@ a:hover .icon-label{
 }
 
 
-.p-section-1-3-4 .form-buttons{
+.p-section-1-3-4 .form-buttons,
+.p-section-1-4 .form-buttons{
     margin-top: 30px;
     padding: 10px 10px;
 }
 
-.p-section-1-3-4 .form-buttons a{
+.p-section-1-3-4 .form-buttons a,
+.p-section-1-4 .form-buttons a{
     background-color: #1034A6;
     color: #FFFFFF;
     padding: 8px;
@@ -958,13 +962,15 @@ a:hover .icon-label{
     border-radius: 0px;
 }
 
-.p-section-1-3-4 .form-buttons a:hover{
+.p-section-1-3-4 .form-buttons a:hover,
+.p-section-1-4 .form-buttons a:hover{
     background-color: #FF5440;
     color: #FFFFFF;
 }
 
 
-.p-section-1-3-4 .custom-file{
+.p-section-1-3-4 .custom-file,
+.p-section-1-4 .custom-file{
     direction: ltr;
     text-align: center;
     width: 15%;
@@ -973,7 +979,8 @@ a:hover .icon-label{
     background-color: #BCBCBC !important;
     cursor: pointer;
 }
-.p-section-1-3-4 #file-lbl{
+.p-section-1-3-4 #file-lbl,
+.p-section-1-4 #file-lbl{
     display: block;
     background-color: #BCBCBC;
     color: white;
@@ -983,20 +990,104 @@ a:hover .icon-label{
     width: 100px;
 }
 
-.p-section-1-3-4 .custom-file:hover{
+.p-section-1-3-4 .custom-file:hover,
+.p-section-1-4 .custom-file:hover{
     background-color: #1034A6 !important;
 }
-.p-section-1-3-4 .custom-file:hover #file-lbl{
+.p-section-1-3-4 .custom-file:hover #file-lbl,
+.p-section-1-4 .custom-file:hover #file-lbl{
     background-color: #1034A6 !important;
     color: #ffffff;
 }
 
-.p-section-1-3-4 .form-buttons .chat-hour{
+.p-section-1-3-4 .form-buttons .chat-hour,
+.p-section-1-4 .form-buttons .chat-hour{
     float: right;
     margin-top: 20px;
     font-size: 14px;
     color: #AEB8C0;
 }
+
+
+.p-section-1-4{
+    margin-top: 50px;
+}
+
+.custom-hr{
+    background-color:#1034A6;
+    width: 100%;
+}
+
+/*FAQ */
+
+.faq{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.faqHeader {
+    text-align: right;
+    color: #28D0DD;
+    margin-bottom: 30px;
+}
+
+.panel{
+    text-align: right;
+    margin: 0px !important;
+
+}
+.panel-group{
+}
+.panel-heading{
+    background: #1034A6 !important;
+    color: #FFFFFF !important;
+    border-radius: 0;
+    padding: 10px 10px;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+.panel-title{
+
+}
+.panel-collapse{
+    border: 1px solid #1034A6;
+    background-color: #FFFFFF;
+    color: #1034A6;
+    margin-bottom: 1px;
+    margin-top: -1px;
+}
+
+.panel-body p{
+    padding: 10px 15px;
+}
+
+.panel-heading [data-toggle="collapse"]:after {
+    font-family: 'Glyphicons Halflings';
+    content: url('../img/icons/down-arrow_15x15.png'); /* "play" icon */
+
+    float: left;
+    color: #F58723;
+    font-size: 18px;
+    line-height: 22px;
+    /* rotate "play" icon from > (right arrow) to down arrow */
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+    /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    color: #454444;
+}
+
 
 
 

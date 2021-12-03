@@ -67,7 +67,7 @@ body {
 }
 
 .header-img {
-    height: 500px;
+    height: 350px;
     min-height: 350px;
 }
 
@@ -160,6 +160,37 @@ body {
 }  */
 
 
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    /* -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px; */
+    border-radius: 50% !important;
+    font-size: 10px;
+    font-weight: normal !important;
+    margin-right: -26px;
+  }
+  
+  .label-warning[href],
+  .badge-warning[href] {
+    background-color: #c67605;
+  }
+  #lblCartCount {
+      opacity: 0;
+      font-size: 12px;
+      background: #ff0000;
+      backface-visibility: hidden;
+      color: #fff;
+      padding: 0 4px;
+      vertical-align: top;
+      margin-left: 8px !important;
+      /* margin-left: -10px;  */
+  }
+
+.showCart{
+    opacity: 1 !important;
+}
 /*custom input icon/disable*/
 .input-icons{
     text-align: left;
@@ -250,6 +281,46 @@ textarea:focus-visible{
    vertical-align: middle;
 }
 
+/* .first-nav li:nth-child(1){
+    margin-left: 10px;
+    margin-top: -24px;
+}  */
+.language{
+    border: 2px solid #FFFFFF;
+    /* padding: 4px; */
+    /* margin-top: -3px; */
+    padding: 2px;
+    /* font-size: 5px; */
+}
+.globe-icon{
+    /* padding: 0px 5px; */
+}
+.ar{
+    color: #28D0DC;
+    cursor: pointer;
+    /* padding: 5px; */
+}
+.en{
+    color: #FFFFFF;
+    cursor: pointer;
+    /* padding: 5px; */
+}
+.pipe{
+    color: #FFFFFF;
+}
+
+.ar, .en, .pipe{
+    opacity: 0;
+}
+
+.language i{
+    color: #FFFFFF;
+}
+.showElement{
+    opacity: 1;
+}
+
+
 .first-nav, .second-nav{
     float:inherit !important;
 }
@@ -263,7 +334,7 @@ textarea:focus-visible{
 .first-nav li:nth-child(2), 
 .first-nav li:nth-child(3),
 .first-nav li:nth-child(4) {
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 
@@ -692,6 +763,7 @@ a.nav-link:hover #nav-icon{
 }
 .text-part-4 p{
     font-size: 20px;
+    opacity: 80%;
 }
 
 .bg-blue{
@@ -948,6 +1020,10 @@ footer .row > :last-child{
 
 }
 @media screen and (max-width: 800px) {
+    .tasgeel{
+        display: inline-block;
+    }
+
     .carousel-caption-override{
         right: 0% !important; 
     }
@@ -959,6 +1035,9 @@ footer .row > :last-child{
 }
 
 @media screen and (max-width: 600px) {
+    .tasgeel{
+        display: none;
+    }
     footer .row > :last-child{
         direction: rtl;
     }
@@ -970,5 +1049,34 @@ footer .row > :last-child{
     .modal button{
         margin-right: -15px;
     }
+
+    #loginModal {
+       margin-left: 12px;
+    }
+
+
+    .logo-container{
+        margin-right: 10px;
+    }
+    #language{
+        font-size: 5px;
+        padding: 8px 1px;
+    }
+
+    .carousel-caption {
+        padding-bottom: 90px !important;
+    }
+    .carousel-caption h1{
+        font-size: 15px;
+
+    }
+
+    .carousel-caption h2{
+        font-size: 15px !important;
+    }
+    /*#loginModal .login-form{
+        width: 100%;
+        padding: 0px
+    } */
 }
 

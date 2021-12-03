@@ -95,18 +95,21 @@ main{
 }
 
 
-::placeholder {
+/* Firefox */
+/* ::placeholder {
 color: #FF5440 !important;
-opacity: 1; /* Firefox */
-}
+opacity: 1; 
+} */
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+/* Internet Explorer 10-11 */
+/* :-ms-input-placeholder { 
 color: #FF5440 !important;
-}
+} */
 
-::-ms-input-placeholder { /* Microsoft Edge */
+/* Microsoft Edge */
+/* ::-ms-input-placeholder { 
 color: #FF5440 !important;
-}
+} */
 
 
 div.gallery {
@@ -215,6 +218,12 @@ div.gallery-4 div.caption, div.gallery-4 div.small-caption{
     opacity: 50%;
     font-size: 12px;
 }
+
+input[type="time"]::-webkit-calendar-picker-indicator{
+    background-image: url('../img/icons/calendar.svg');
+    opacity: 100% !important; 
+}
+
 /* .selectpicker option[selected] {
     color:red !important;
 } */
@@ -408,16 +417,13 @@ div.gallery-4 div.caption, div.gallery-4 div.small-caption{
 
 
 
-.p-section-1-5 .file-upload{
-    /* border: 1px solid #1034A6; */
-    
 
-}
 .p-section-1-5 .custom-file{
     direction: ltr;
     text-align: center;
     /* border: 1px solid#8f9fcc; */
     border: 1px solid #1034A6;
+    background: #FFFFFF;
 }
 
 .p-section-1-5 #file-lbl{
@@ -504,7 +510,13 @@ div.gallery-4 div.caption, div.gallery-4 div.small-caption{
     text-decoration: underline;
 }
 
+.ssn, .co{
+    /* opacity: 0; */
+}
 
+.showField{
+    opacity: 1;
+}
 .p-section-1-5 .body-content{
     padding: 60px;
 }

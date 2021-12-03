@@ -1,0 +1,193 @@
+.header-img {
+    /* background: no-repeat center center scroll; */
+    background-image: url('../img/pages/waiver/img/hdr.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+.overlay{
+    /* background: url('../img/header/hdr-overlay.svg'); */
+}
+
+main{
+    background: url('../img/main/section-bg.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 689px;
+    background-position: bottom;
+}
+
+
+
+
+/* ==========================================
+    Section-1
+  ========================================== */
+.p-section-1{
+    margin-top: 50px;
+	overflow: hidden;
+}
+
+.p-section-1 .header{
+    text-align: right;
+}
+
+.p-section-1 .header h3{
+    color: #28D0DD;
+}
+
+.p-section-1 .header-details{
+    background-color: #1034A6;
+    text-align: right;
+}
+
+.p-section-1 .header-details p{
+    padding: 15px 10px;
+   color: #FAE168;
+}
+
+.p-section-1 .form{
+    margin-bottom: 30px;
+    color: #1034A6;
+}
+
+.p-section-1 .form .row{
+    text-align: right !important;
+}
+
+
+.p-section-1 .form-control {
+    margin-bottom: 30px;
+    color: #1034A6;
+    border: 1px solid #1034A6 !important;
+    border-radius: 0px !important;
+    /* opacity: 50%; */
+    font-size: 12px;
+}
+
+
+
+.p-section-1 .form-control #visitDate{
+    opacity: 100% !important;
+}
+
+
+
+.p-section-1 .form-check .form-check-label{
+    padding-right: 15px;
+    color: #1034A6;
+}
+.p-section-1 .form-check .form-check-label a{
+    color: #1034A6;
+    text-decoration: underline;
+}
+
+.p-section-1 .form-control #visitDate{
+    opacity: 100% !important;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-image: url('../img/pages/waiver/icons/calendar.svg');
+    opacity: 100% !important; 
+}
+
+
+
+.p-section-1 .custom-file{
+    direction: ltr;
+    text-align: center;
+    border: 1px solid #1034A6;
+    background: #FFFFFF;
+}
+
+.p-section-1  #file-lbl{
+    display: block;
+    background-color: #1034A6;
+    color: white;
+    padding: 6px;
+    border-radius: 0;
+    cursor: pointer;
+    margin-top: -38px;
+    width: 140px;
+}
+
+.edit > a{
+    float: left;
+}
+
+.p-section-1 .add-item{
+    color: #FF5440;
+    cursor: pointer;
+    margin-top: -20px;
+}
+
+.p-section-1 .form-buttons{
+    /* text-align: center; */
+    margin-top: 50px;
+}
+
+
+.p-section-1 .form-buttons a{
+    background-color: #1034A6;
+    color: #FFFFFF;
+    padding: 8px;
+    width: 15%;
+    border-radius: 0px;
+}
+
+.p-section-1 .form-buttons a.save{
+    background-color: #BCBCBC !important;
+    color: #FFFFFF;
+}
+
+.p-section-1 .form-buttons a.save:hover{
+    background-color: #1034A6 !important;
+    color: #FFFFFF;
+}
+
+.p-section-1 .form-buttons a.submit:hover{
+    background-color: #FF5440 !important;
+    color: #FFFFFF;
+}
+
+.p-section-1 .form-buttons p{
+    /* text-align: center; */
+    color: #FF5440;
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+
+
+.main-end{
+    height: 50px;
+}
+
+/*@media query*/
+@media screen and (max-width: 1200px) {
+    
+    .form-buttons a{
+        width: 40% !important;
+    }
+}
+
+/*@media query*/
+@media screen and (max-width: 900px) {
+    
+    .form-buttons a{
+        width: 24% !important;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .form-buttons a{
+        width: 36% !important;
+    }
+}

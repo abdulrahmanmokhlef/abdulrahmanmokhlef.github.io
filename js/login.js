@@ -1,7 +1,7 @@
 $(document).ready(function() {
  
     var modal = `<!-- Login Modal -->
-        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="false">
+        <div class="modal fade" id="loginModal" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="loginModal" aria-hidden="false">
           <div class="modal-dialog modal-dialog-centered" role="document">
             
             <div class="modal-content">
@@ -35,7 +35,7 @@ $(document).ready(function() {
                   </div>
 
                   <div class="forget">
-                    <a href="../pages/forget-password.html" class="link">هل نسيت كلمة السر؟</a>
+                    <a id="forgetPassword" href="#!" class="link">هل نسيت كلمة السر؟</a>
                   </div>
                   
                 </form>
@@ -73,5 +73,16 @@ $(document).ready(function() {
         location.href = './pages/profile.html'; 
       }
     };
-  
+
+    //forget password
+    document.getElementById("forgetPassword").onclick = function () {
+      debugger
+      var url = document.URL;
+      if(url.includes('pages')){
+        location.href = '../pages/forget-password.html'; 
+      }else{
+        location.href = './pages/forget-password.html'; 
+      }
+    };
+
   });

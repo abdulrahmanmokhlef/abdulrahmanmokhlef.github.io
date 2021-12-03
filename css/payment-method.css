@@ -111,6 +111,9 @@ main{
     padding-left: 5px;
 }
 
+.small-text{
+    font-size: 12px;
+}
 hr {
     /* border:none;
     border:1px dashed #28D0DC!important;
@@ -129,12 +132,7 @@ hr {
 }
 
 
-.p-section-1 .form .form-text{
-    margin-top: 30px;
-}
-.p-section-1 .form .form-text p{
-    font-size: 15px;
-}
+
 
 
 .p-section-1 .form .attachment-lbl{
@@ -160,6 +158,18 @@ hr {
     width: 140px;
 }
 
+
+.p-section-1 .form .form-text{
+    margin-top: 30px;
+    width: 565px;
+}
+.p-section-1 .form .form-text p{
+    font-size: 15px;
+    margin-bottom:7px;
+}
+.custom-text p{
+display: inline-block;
+}
 
 
 .p-section-1 .form-buttons{

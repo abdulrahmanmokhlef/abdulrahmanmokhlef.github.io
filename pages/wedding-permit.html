@@ -95,7 +95,7 @@
                                     <path id="nav-icon" data-name="Path 5" d="M362,363a3,3,0,1,0,3-3A3,3,0,0,0,362,363Zm3-1a1,1,0,1,1-1,1A1,1,0,0,1,365,362Zm0,0" transform="translate(-344.693 -342)" fill="#fff"/>
                                   </g>
                                 </svg>
-                                
+                                <span class='badge badge-warning' id='lblCartCount'> 0 </span>
                               </a>
                             </li>
                             <li class="nav-item">
@@ -412,11 +412,11 @@
                     <div class="form">
                       <form action="#">
                         <div class="row">
-
-                          <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+        
+                          <div class="col-lg-4 col-md-4 col-sm-4 col-12">
                             
                               <div class="input-group mb-3 search-group">
-                                  <input class="form-control" type="text" placeholder="البحث عن موقع" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                  <input class="form-control" onfocus="this.value=''" type="text" value="البحث عن موقع" aria-label="Recipient's username" aria-describedby="button-addon2">
                                   <button class="btn  search-button"id="button-addon2" type="button">
                                     <!-- <i class="fas fa-search"></i> -->
                                     <img src="../img/icons/nav/loupe.svg" alt="search" width="20" height="20">
@@ -424,8 +424,8 @@
                               </div> 
                             
                           </div>
-
-                          <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+        
+                          <div class="col-lg-4 col-md-4 col-sm-4 col-12">
                             
                             <div>
                                 <!-- AUTO COMPLETE DROPDOWN -->
@@ -435,36 +435,9 @@
                                   <option value="2">2</option>
                                   <option value="3">3</option>
                                   <option value="4">4</option>
-                                </select>
-                            </div>
-                            
-                          </div>
-
-                          <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-                            
-                            <div>
-                                <!-- AUTO COMPLETE DROPDOWN -->
-                                <select class="selectpicker form-control ">
-                                  <option value="Ultrasound Knee Right" selected disabled>عدد الأفراد</option>
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                </select>
-                            </div>
-                            
-                          </div>
-
-                          <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-                            
-                            <div>
-                                <!-- AUTO COMPLETE DROPDOWN -->
-                                <select class="selectpicker form-control ">
-                                  <option value="Ultrasound Knee Right" selected disabled>الخدمات</option>
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
                                 </select>
                             </div>
                             
@@ -564,8 +537,8 @@
                   <section class="p-section-1-2">
 
                     <div class="p-section-1-2-header">
-                      <h3>احسب رسوم إقامة حفلات وفاعليات بالمواقع الأثرية الكترونياً</h3>
-                      <p>تتيح وزارة الآثار استضافة الحفلات والفعاليات في عدد من المناطق الأثرية والمتاحف، تستضيف فعاليات ثقافية واجتماعية للأفراد والشركات والمؤسسات مع الالتزام بالضوابط والقواعد الخاصة بلائحة الحفلات والفعاليات التي أقرها المجلس الأعلى للآثار</p>
+                      <h3>احسب رسوم إقامة فاعليات بالمواقع الأثرية الكترونياً</h3>
+                      <p>تتيح وزارة الآثار استضافة الحفلات والفعاليات في عدد من المناطق الأثرية والمتاحف، تستضيف فعاليات ثقافية واجتماعية للأفراد والشركات والمؤسسات مع الالتزام بالضوابط والقواعد الخاصة بلائحة الفعاليات التي أقرها المجلس الأعلى للآثار</p>
                     </div>
 
                     <div class="form">
@@ -637,10 +610,24 @@
 
                           <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                             
-                            <label>عدد أيام الحفل</label>
+                            <label>هل تريد إستخدام المرافق (ماء/كهرباء)؟</label>
                             <div>
                                 <!-- AUTO COMPLETE DROPDOWN -->
                                 <select class="selectpicker form-control ">
+                                  <option class =" red"value="Ultrasound Knee Right" selected disabled>اختر من القائمة</option>
+                                  <option value=1>نعم</option>
+                                  <option value=2>لا</option>
+                                </select>
+                            </div>
+                            
+                          </div>
+
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-12" id="eventDaysCol">
+                            
+                            <label>عدد أيام الفاعلية</label>
+                            <div>
+                                <!-- AUTO COMPLETE DROPDOWN -->
+                                <select class="selectpicker form-control " onchange="setEventDays(this)">
                                   <option class =" red"value="Ultrasound Knee Right" selected disabled>اختر من القائمة</option>
                                   <option value="1">1</option>
                                   <option value="2">2</option>
@@ -651,12 +638,16 @@
                             
                           </div>
 
-                          <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                          
+
+                         
+
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-12 " id ="preparingDaysCol">
                             
                             <label>عدد أيام التجهيزات</label>
                             <div>
                                 <!-- AUTO COMPLETE DROPDOWN -->
-                                <select class="selectpicker form-control ">
+                                <select class="selectpicker form-control " onchange="setPreparingDays(this)">
                                   <option class =" red"value="Ultrasound Knee Right" selected disabled>اختر من القائمة</option>
                                   <option value="1">1</option>
                                   <option value="2">2</option>
@@ -666,6 +657,21 @@
                             </div>
                             
                           </div>
+
+                          <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-12" id="preparingCol">
+                            
+                            <label>هل ترغب في التجهيز قبل الفاعلية؟</label>
+                            <div>
+                                <select class="selectpicker form-control " id="preparingDays" onchange="setPreparingPeriod(this)">
+                                  <option class =" red"value="Ultrasound Knee Right" selected disabled>اختر من القائمة</option>
+                                  <option value=1>نعم</option>
+                                  <option value=2>لا</option>
+                                </select>
+                            </div>
+                            
+                          </div> -->
+
+                          
 
                           <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                             
@@ -757,7 +763,7 @@
                   <section class="p-section-1-5">
 
                     <div class="p-section-1-5-header">
-                      <h3>تقديم طلب إقامة حفل وفاعليات في موقع أثري</h3>
+                      <h3>تقديم طلب إقامة فاعلية في موقع أثري</h3>
                     </div>
 
 
@@ -769,7 +775,7 @@
       
                               <li class="tab-item">
                                 <a class="tab-link  active" id="details-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="true">
-                                  <span>تفاصيل الحفل</span>
+                                  <span>تفاصيل الفاعلية</span>
                                 </a>
                               </li>
       
@@ -906,7 +912,7 @@
       
       
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                  <label>تجهيزات قبل الحفل</label>
+                                  <label>تجهيزات قبل الفاعلية</label>
                                   <div>
                                     <!-- AUTO COMPLETE DROPDOWN -->
                                     <select class="selectpicker form-control ">
@@ -1117,16 +1123,6 @@
                                   </div>
                                   
                                   <!-- <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">
-                                      اوافق علي 
-                                      <a href="#!" onclick="activeTab('nav-tabs','terms')"> 
-                                        الشروط والضوابط
-                                      </a>
-                                    </label>
-                                  </div> -->
-
-                                  <div class="form-check">
                                     
                                     <label>
                                       <input type="checkbox" name="checkbox" value="css" />
@@ -1140,6 +1136,21 @@
                                       </a>
                                     </label>
 
+                                  </div> -->
+                                  
+                                 
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12" id ="customerTypeCol">
+                                  <label>نوع العميل</label>
+                                  <div>
+                                    <!-- AUTO COMPLETE DROPDOWN -->
+                                    <select class="selectpicker form-control "  onchange="selectCustomerType(this)">
+                                      <option value="Ultrasound Knee Right" selected disabled>اختر من القائمة</option>
+                                      <option value=1>فرد</option>
+                                      <option value=2>شركة</option>
+                                     
+                                    </select>
                                   </div>
                                   
                                 </div>
