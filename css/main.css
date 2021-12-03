@@ -724,8 +724,6 @@ a.nav-link:hover #nav-icon{
 
 .section-3-button{
     text-align: center;
-    
-    
 }
 
 .section-3-button a{
@@ -1050,33 +1048,38 @@ footer .row > :last-child{
         margin-right: -15px;
     }
 
-    #loginModal {
-       margin-left: 12px;
-    }
+    
 
-
-    .logo-container{
-        margin-right: 10px;
-    }
-    #language{
-        font-size: 5px;
-        padding: 8px 1px;
-    }
-
-    .carousel-caption {
-        padding-bottom: 90px !important;
-    }
-    .carousel-caption h1{
-        font-size: 15px;
-
-    }
-
-    .carousel-caption h2{
-        font-size: 15px !important;
-    }
+    
     /*#loginModal .login-form{
         width: 100%;
         padding: 0px
     } */
 }
 
+@media screen and (max-width: 500px) {
+    #loginModal {
+        margin-left: 12px;
+     }
+ 
+ 
+     .logo-container{
+         margin-right: 10px;
+     }
+     #language{
+         font-size: 5px;
+         padding: 8px 1px;
+     }
+ 
+     .carousel-caption {
+         padding-bottom: 90px !important;
+         margin-left: 25px;
+
+     }
+     .carousel-caption h1, 
+     .carousel-caption h2{
+         font-size: 20px !important;
+ 
+     }
+     
+}
