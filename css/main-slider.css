@@ -110,6 +110,11 @@
     section-3
   ========================================== */
  
+.sites-slider{
+    overflow: hidden;
+    padding: 30px;
+}
+
 .owl-carousel .item{
     overflow: hidden; 
 }
