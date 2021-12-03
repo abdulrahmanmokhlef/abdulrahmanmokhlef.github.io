@@ -6,7 +6,9 @@
 body {
     margin: 0;
     font-family: Hacen-Algeria,Arial, Helvetica, sans-serif;
+     
 }
+
 
 *{
     font-family:Hacen-Algeria !important;
@@ -944,6 +946,7 @@ a.nav-link:hover #nav-icon{
 footer .container{
     padding: 45px 0px;
 }
+
 footer .row > div{
     direction: ltr;
 }
@@ -1036,6 +1039,11 @@ footer .row > :last-child{
     .tasgeel{
         display: none;
     }
+   
+    footer .row > div {
+        /* padding-right: 80px; */
+        direction: rtl;
+    }
     footer .row > :last-child{
         direction: rtl;
     }
@@ -1058,6 +1066,10 @@ footer .row > :last-child{
 }
 
 @media screen and (max-width: 500px) {
+    body{
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+   
     #loginModal {
         margin-left: 12px;
      }
