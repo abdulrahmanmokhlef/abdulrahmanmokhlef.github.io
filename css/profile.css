@@ -1141,3 +1141,9 @@ a:hover .icon-label{
         grid-template-columns: 1fr 1fr;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .selectdiv{
+        min-width:159px;
+    }
+}
