@@ -1,7 +1,7 @@
 $(document).ready(function() {
  
     var modal = `<!-- Login Modal -->
-        <div class="modal fade" id="loginModal" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="loginModal" aria-hidden="false">
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="false">
           <div class="modal-dialog modal-dialog-centered" role="document">
             
             <div class="modal-content">

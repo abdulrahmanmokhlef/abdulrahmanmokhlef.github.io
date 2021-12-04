@@ -404,16 +404,77 @@ input[type="time"]::-webkit-calendar-picker-indicator{
 
 
 
+.note{
+    font-size: 11px;
+    color: #FF5440;
+}
+
+.col{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.p-section-1-5 .chat-form {
+    background: #FFFFFF;
+    border: 1px solid #1034A6;
+    width: 100%;
+}
+
+.p-section-1-5 .chat-form textarea{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    resize: none !important;
+    outline: none !important;
+    min-height: 50px;
+
+}
+
+.p-section-1-5 .chat-form textarea:focus{
+    /* background: #F2FDFD; */
+    color: #1034A6;
+}
 
 
 
+.p-section-1-5 .chat-form .form-buttons{
+    text-align: left;
+    margin-top: -140px;
+    margin-bottom: -8px;
+}
 
-/* .p-section-1-5 .custom-file {
-    color: #1034A6 !important;
-    border: 1px solid #1034A6 !important;
-    border-radius: 0px !important;
-    opacity: 50%;
+
+
+.p-section-1-5 .chat-form .custom-file2{
+    direction: ltr;
+    text-align: center;
+    width: 11%;
+    height: 40px;
+    text-align: -webkit-center;
+    background-color: #1034A6 !important;
+    cursor: pointer;
+    min-width: 100px;
+}
+
+.p-section-1-5 .chat-form #file-lbl2{
+    display: block;
+    background-color: #1034A6 !important;
+    color: white;
+    padding: 6px;
+    border-radius: 0;
+    margin-top: -37px;
+    width: 100px;
+}
+
+/* .p-section-1-5 .chat-form .custom-file2:hover{
+    background-color: #1034A6 !important;
+}
+
+.p-section-1-5 .chat-form .custom-file2:hover #file-lbl2{
+    background-color: #1034A6 !important;
+    color: #ffffff;
 } */
+
+
 
 
 
@@ -425,6 +486,7 @@ input[type="time"]::-webkit-calendar-picker-indicator{
     border: 1px solid #1034A6;
     background: #FFFFFF;
 }
+
 
 .p-section-1-5 #file-lbl{
     display: block;

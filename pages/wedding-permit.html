@@ -629,48 +629,47 @@
                                 <!-- AUTO COMPLETE DROPDOWN -->
                                 <select class="selectpicker form-control " onchange="setEventDays(this)">
                                   <option class =" red"value="Ultrasound Knee Right" selected disabled>اختر من القائمة</option>
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
+                                  <option value=1>1</option>
+                                  <option value=2>2</option>
+                                  <option value=3>3</option>
+                                  <option value=4>4</option>
+                                  <option value=5>5</option>
+                                  <option value=6>6</option>
+                                  <option value=7>7</option>
+                                 
                                 </select>
                             </div>
                             
                           </div>
 
-                          
-
-                         
-
-                          <div class="col-lg-6 col-md-6 col-sm-6 col-12 " id ="preparingDaysCol">
-                            
-                            <label>عدد أيام التجهيزات</label>
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                              
+                            <label>هل ترغب في المعاينة خارج مواعيد العمل؟</label>
                             <div>
                                 <!-- AUTO COMPLETE DROPDOWN -->
-                                <select class="selectpicker form-control " onchange="setPreparingDays(this)">
-                                  <option class =" red"value="Ultrasound Knee Right" selected disabled>اختر من القائمة</option>
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                </select>
-                            </div>
-                            
-                          </div>
-
-                          <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-12" id="preparingCol">
-                            
-                            <label>هل ترغب في التجهيز قبل الفاعلية؟</label>
-                            <div>
-                                <select class="selectpicker form-control " id="preparingDays" onchange="setPreparingPeriod(this)">
+                                <select class="selectpicker form-control " onchange="setPreviewPeriod(this)">
                                   <option class =" red"value="Ultrasound Knee Right" selected disabled>اختر من القائمة</option>
                                   <option value=1>نعم</option>
                                   <option value=2>لا</option>
                                 </select>
                             </div>
-                            
-                          </div> -->
+                          
+                          </div>
 
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-12 preparingDaysCol" id="preparingDaysCol">
+                            
+                            <label>هل ترغب في التجهيز قبل الفاعلية؟</label>
+                            <div>
+                                <select class="selectpicker form-control setPreparingDays" id="setPreparingDays" onchange="addPreparingDays(this)">
+                                  <option class =" red"value="Ultrasound Knee Right" selected disabled>اختر من القائمة</option>
+                                  <option value=1>نعم</option>
+                                  <option value=2>لا</option>
+                                </select>
+                            </div>
+                          
+                          </div>
+
+                          
                           
 
                           <div class="col-lg-6 col-md-6 col-sm-6 col-12">
@@ -880,14 +879,78 @@
                                   </div> 
                                 </div>
 
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12" id="eventDaysCol2">
+                            
+                                  <label>عدد أيام الفاعلية</label>
+                                  <div>
+                                      <!-- AUTO COMPLETE DROPDOWN -->
+                                      <select class="selectpicker form-control " onchange="setEventDays2(this)">
+                                        <option class =" red"value="Ultrasound Knee Right" selected disabled>اختر من القائمة</option>
+                                        <option value=1>1</option>
+                                        <option value=2>2</option>
+                                        <option value=3>3</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5</option>
+                                        <option value=6>6</option>
+                                        <option value=7>7</option>
+                                       
+                                      </select>
+                                  </div>
                                   
-                                  <label>التاريخ</label>
-                                  <div class="input-group mb-3 ">
-                                      <input class="form-control " id="visitDate"type="date" placeholder="" aria-label="date1" aria-describedby="button-addon2">
-                                  </div> 
-      
                                 </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 ">
+                              
+                                  <label >هل ترغب في معاينة الموقع خارج مواعيد العمل الرسمية؟</label>
+                                  <div>
+                                      <!-- AUTO COMPLETE DROPDOWN -->
+                                      <select class="selectpicker form-control mb-0" onchange="setPreviewPeriod2(this)">
+                                        <option class =" red"value="Ultrasound Knee Right" selected disabled>اختر من القائمة</option>
+                                        <option value=1>نعم</option>
+                                        <option value=2>لا</option>
+                                      </select>
+                                  </div>
+                                  <label class="note">*في حالة المعاينة يرجى العلم أنه لا سمح بالتصوبير بكاميرا فوتوغرافية بدون تصريح. متاح التصوير بالتليفون المحمول فقط خلال الفاعلية</label>
+                                
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 co">
+                                  <label>الجدول المفصل للفاعلية يرجى كتابة الجدول علي أوراق الشركة وختمها </label>
+                                  <div> 
+                                    <label class="custom-file">
+                                      <input type="file" class="custom-file-input" id="InputFile" aria-describedby="fileHelp">
+                                      <label for="InputFile" id="file-lbl">
+                                        إرفاق ملف
+                                        <img src="../img/icons/attach.svg" alt='attach' width="20" height="20">
+                                      </label>
+                                    </label>
+                                  </div>
+                                </div>
+                                
+
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col">
+                                      <label>تفاصيل اخرى</label>
+                                      <div class="chat-form">
+                                        <textarea  rows="10" placeholder="اكتب التفاصيل هنا...."></textarea>
+                                       
+                                        <div class="form-buttons">
+      
+                                          <label class="custom-file2">
+                                            <input type="file" class="custom-file-input" id="InputFile" aria-describedby="fileHelp">
+                                            <label for="InputFile" id="file-lbl2">
+                                              إرفاق ملف
+                                              <img src="../img/pages/buy-visit-permit/icons/attach.svg" alt='attach' width="20" height="20">
+                                            </label>
+                                          </label>
+      
+                                        </div>
+                                    </div>
+                                    </div>
+                                  </div>
+                                </div>
+
       
                               </div>
       
@@ -1216,18 +1279,17 @@
       <!-- Footer -->
       <footer class="bg-blue  text-white">
 
-        <!-- Grid container -->
         <div class="container">
-  
+
           <!-- Section: Links -->
-          <section>
+          <section >
             <!--Grid row-->
             <div class="row">
               
               <!--Grid column-->
               <div class="col-lg-4 col-md-4 col-sm-6 mb-4 mb-md-0 ">
-  
-                <ul class="list-unstyled mb-0 float-right text-align-right pp">
+
+                <ul class="list-unstyled mb-0  text-align-right ">
                   <li>
                       <p>
                         الإدارة العامة للعلاقات الثقافية الخارجية
@@ -1240,10 +1302,10 @@
                 </ul>
               </div>
               <!--Grid column-->
-  
+
               <!--Links-->
               <div class="col-lg-2 col-md-2 col-sm-6 mb-4 mb-md-0">
-  
+
                 <ul class="list-unstyled mb-0 float-right text-align-right">
                   <li>
                     <h5><p>روابط هامة</p></h5>
@@ -1269,28 +1331,28 @@
                 </ul>
               </div>
               <!--Links-->
-  
+
               <!--Social-->
               <div class="col-lg-3 col-md-3 col-sm-6 mb-4 mb-md-0">
                 <ul class="list-unstyled mb-0 float-right">
                   <li>
                     <!-- Section: Social media -->
                     <section class="mb-4 ">
-  
+
                       <!-- Instagram -->
                       <a class=" social" href="#!" role="button">
                         <img src="../img/icons/footer/insta.svg" alt="social" width="40" height="40">
                         </a>
-  
+
                       <!-- Linkedin -->
                       <a class=" social" href="#!" role="button">
                         <img src="../img/icons/footer/in.svg" alt="social" width="40" height="40">
-  
+
                       <!-- Twitter -->
                       <a class="  social" href="#!" role="button">
                         <img src="../img/icons/footer/witter.svg" alt="social" width="40" height="40">
                       </a>
-  
+
                       <!-- Facebook -->
                       <a class=" social" href="#!" role="button">
                         <img src="../img/icons/footer/facebook.svg" alt="social" width="40" height="40">
@@ -1300,33 +1362,35 @@
                 </ul>
               </div>
               <!--social-->
-  
+
               <!--Logo-->
               <div class="col-lg-3 col-md-3 col-sm-6  mb-4 mb-md-0">
-                <ul class="list-unstyled mb-0">
+                <ul class="list-unstyled mb-0 ">
                   <li>
                     <div class="footer-logo-container">
-                      <img src="../img/icons/footer/لوجو-وزارة-الاثار.svg"  alt="featured" >
-                      <img src="../img/logo/logo.svg" alt="featured" width="125" height="130">
+                      <img src="../img/icons/footer/لوجو-وزارة-الاثار.svg"  alt="featured" height="120">
+                      <img src="../img/logo/logo.svg" alt="featured" width="120" height="120">
                     </div>
                   </li>
                   <li>
                     <div class="footer-logo-container">
                       <p>Powered by</p>
-                      <img src="../img/icons/footer/aswaaq.svg" alt="featured" width="125" height="130">
+                      <img src="../img/icons/footer/aswaaq.svg" alt="featured" width="120" height="120">
                     </div>
                   </li>
                 </ul>
               </div>
               <!--Logo-->
-  
+
             </div>
             <!--Grid row-->
           </section>
           <!-- Section: Links -->
+
         </div>
-        <!-- Grid container -->
-  
+          
+        
+
         <!-- Copyright -->
         <div class="text-center p-3 bg-blue-1" >
           .Copyright © 2021 Office of Culture Affairs. All rights reserved 
