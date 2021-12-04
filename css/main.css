@@ -1139,11 +1139,16 @@ footer .row > :last-child{
      .modal{
         width: 85% !important;
         /* height: 80 !important; */
-        left: 11% !important;
+        left: 10% !important;
+    }
+    .body-content {
+        padding: 40px;
     }
     .modal .form-buttons a{
-        width: 130px !important;
-        margin-right: -35px !important;
+        font-size: 14px;
+        padding: 0;
+        /* width: 130px !important; */
+        /* margin-right: -25px !important; */
 
     }
 }
