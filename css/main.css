@@ -35,20 +35,6 @@ body {
 
 
  /* Start Header*/
-
- /*fluid*/
- /* .top-header{
-    position: absolute;
-    top:0;
-    right: 0;
-    left: 0;
-    z-index: 1;
-    padding-left: 160px !important;
-    padding-right: 110px !important;
-    padding-top: 20px;
-} */
-
-
 /* ==========================================
     common on over all application
   ========================================== */
@@ -343,6 +329,7 @@ textarea:focus-visible{
 .first-nav li:nth-child(2),
 .first-nav li:nth-child(3) {
     margin-left: 30px;
+    
 }
 
 
@@ -382,6 +369,33 @@ a.nav-link:hover #nav-icon{
     margin: 0px !important;
 }
 
+/*search input*/
+.first-nav input[type=text] {
+    width: 0px;
+    box-sizing: border-box;
+    /* border-radius: 4px; */
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: transparent;
+    background-image: url('../img/icons/nav/loupe.svg');
+    background-position: 8px 2px; 
+    background-repeat: no-repeat;
+    padding: 4px 0px 0px 36px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    outline: none;
+    border: none;
+    
+  }
+  
+.first-nav  input[type=text]:focus {
+    width: 100%;
+    padding: 4px 20px 0px 36px;
+    border: 2px solid #ccc;
+    margin-top: -3px;
+    box-shadow: none;
+    outline: none;
+  }
 /* ==========================================
     Main Section
   ========================================== */
@@ -1041,9 +1055,6 @@ footer .row > :last-child{
 }
 
 @media screen and (max-width: 600px) {
-    .tasgeel{
-        display: none;
-    }
    
     footer .row > div {
         /* padding-right: 80px; */
@@ -1071,18 +1082,44 @@ footer .row > :last-child{
 }
 
 @media screen and (max-width: 500px) {
-    body{
-        overflow-x: hidden; /* Hide horizontal scrollbar */
+    
+    /* .tasgeel{
+        display: none;
+    } */
+
+    /* PADDING */
+    /* .navbar-collapse.show {
+        padding-top: 30px;
+    } */
+    
+    .second-nav #navbarNav{
+        background-color: rgba(0, 0, 0, 0.2) !important;
+        /* width: 400px !important; */
+        padding: 10px;
     }
-   
+    .second-nav .nav-link{
+       width: 120px;
+    }
+    .second-nav .nav-link:hover{
+        /* background:  !important;; */
+        color: #FFFFFF;
+    }
+
+    #searchInput:focus{
+        min-width: 100px !important;
+        margin-left: -10px;
+        /* font-size: 15px; */
+    }
     #loginModal {
-        margin-left: 12px;
+       /* padding-left: 100px;
+       margin-left: 50px; */
      }
  
  
      .logo-container{
          margin-right: 10px;
      }
+
      #language{
          font-size: 5px;
          padding: 8px 1px;
@@ -1099,4 +1136,14 @@ footer .row > :last-child{
  
      }
      
+     .modal{
+        width: 85% !important;
+        /* height: 80 !important; */
+        left: 11% !important;
+    }
+    .modal .form-buttons a{
+        width: 130px !important;
+        margin-right: -35px !important;
+
+    }
 }
