@@ -495,10 +495,10 @@
 
 
                 <div class="form-buttons">
-                  <a href ="#!" class="btn save">
+                  <a href ="#!" class="btn save" onclick="back()">
                     الرجوع
                   </a>
-                  <a class="btn submit" href="#!" onclick="clearInputs(this)" >
+                  <a class="btn submit" href="#!" onclick="editPermit()" >
                     تم التعديل
                   </a>
                   <p>* يرجى القراءه للشروط والمستندات المطلوبة</p>
@@ -509,6 +509,23 @@
             
           </section>
           <!--Section 2 end-->
+
+
+          <!-- Modal -->
+        <div class="modal fade" id="etitPermitModal" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              
+              <div class="modal-body">
+                <div class="body-content">
+                  <h4>تم تعديل الطلب بنجاح</h4>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
         </div>
 
         <div class="main-end"></div>

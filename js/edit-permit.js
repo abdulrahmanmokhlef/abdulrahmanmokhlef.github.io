@@ -1,5 +1,22 @@
 $(document).ready(function() {
  
+  back = function(){
+    activeTabInSpecificPage('sites', 'profile.html')
+  }
+  
+  editPermit = function(){
+    debugger
+    $('#etitPermitModal').modal('toggle');
+
+    setInterval(function(){
+      activeTabInSpecificPage('sites', 'profile.html')
+    },3000);
+  }
+
+  activeTabInSpecificPage = function(tab, page){
+    localStorage.setItem('tab', tab);
+    window.location.replace('../pages/' + page);
+  };
 
   var count1 = 1;
   var itemCount = 2;

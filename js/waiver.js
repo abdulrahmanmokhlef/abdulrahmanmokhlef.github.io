@@ -1,5 +1,9 @@
 $(document).ready(function() {
  
+  back = function(){
+    activeTabInSpecificPage('sites', 'profile.html')
+  }
+  
   waiverFunc = function(){
     debugger
     $('#waiverModal').modal('toggle');
