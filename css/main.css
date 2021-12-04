@@ -1139,7 +1139,7 @@ footer .row > :last-child{
      .modal{
         width: 85% !important;
         /* height: 80 !important; */
-        left: 10% !important;
+        left: 8% !important;
     }
     .body-content {
         padding: 40px;
@@ -1150,5 +1150,21 @@ footer .row > :last-child{
         /* width: 130px !important; */
         /* margin-right: -25px !important; */
 
+    }
+
+    .modal .login-form{
+        width:inherit;
+        padding: 0;
+    }
+    .modal .login-form .action{
+        padding: 0;
+    }
+
+    .modal .login-form .action a{
+        padding: 5px 10px;
+        margin: 0 14px;
+        width: 90px;
+        font-size: 15px;
+        margin-left: 33px;
     }
 }
