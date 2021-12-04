@@ -187,6 +187,11 @@ main{
 
 .dropdowns-nav .row{
     text-align: right;
+    
+}
+
+.dropdowns-nav .row > div{
+    padding-right: 0px !important;
 }
 
 .dropdowns-nav .row label{
@@ -1130,6 +1135,12 @@ a:hover .icon-label{
 }
 
 /*@media query*/
+@media screen and (max-width: 1000px) {
+    .selectdiv{
+        min-width:177px;
+    }
+}
+/*@media query*/
 @media screen and (max-width: 600px) {
     .form{
         margin-bottom: 10px;
@@ -1140,10 +1151,14 @@ a:hover .icon-label{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .selectdiv{
+        min-width:177px;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .selectdiv{
-        min-width:159px;
+        min-width:177px;
     }
 }
