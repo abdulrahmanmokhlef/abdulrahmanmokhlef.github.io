@@ -595,9 +595,13 @@ input[type="time"]::-webkit-calendar-picker-indicator{
         margin-bottom: 10px;
     }
 
-    .grid-container {
-        width: 400px;
+    .p-section-1 .grid-container {
+        width: 345px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .p-section-1 .grid-child{
+        padding: 10px 25px;
     }
 }
