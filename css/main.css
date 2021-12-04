@@ -1168,4 +1168,8 @@ footer .row > :last-child{
         font-size: 15px;
         margin-left: 33px;
     }
+
+    .modal button {
+        width: 10%;
+    }
 }
