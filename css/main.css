@@ -1158,11 +1158,12 @@ footer .row > :last-child{
     }
     .modal .login-form .action{
         padding: 0;
+        margin-left: 18px
     }
 
     .modal .login-form .action a{
         padding: 5px 10px;
-        margin: 0 14px;
+        margin: 0px;
         width: 90px;
         font-size: 15px;
         margin-left: 33px;
