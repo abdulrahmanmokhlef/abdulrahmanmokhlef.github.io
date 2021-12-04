@@ -53,27 +53,37 @@
         </div>
         <!--Header-img end-->
 
-         <div class="container top-header">
+        <div class="container top-header">
+
           <div class="row ">
 
-            <div class="col-lg-3  col-md-3 col-sm-3 col-3 p-0 float-right">
+            <div class="col-lg-3  col-md-3 col-sm-3 col-2 p-0 float-right">
               <div class=" logo-container">
                 <a class="navbar-brand"href="../index.html"><img src="../img/logo/logo.svg" alt="logo" width="100" height="109"></a>
               </div>
             </div>
-            <div class="col-lg-9 col-md-9 col-sm-9 col-9 p-0 ">
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-10 p-0 ">
               
-              <div class="row">
+              <div class="container">
+                <div class="row">
   
-                <div class="col-md-12 col-sm-9 col-9 p-0 float-left">
-                  <nav class="navbar navbar-expand-lg navbar-light first-nav">
-                    <div class="">
-                        <ul class="navbar-nav nav-float">
-                            <li class="nav-item">
-                              <a class="nav-link last-child" href="#">
-                                <!-- <i class="fa fa-globe"></i> -->
-                                <!-- <img src="../img/icons/nav/global (1).png" alt="globe" width ="20" height="20"> -->
-                                
+                  <div class="col-md-12 col-sm-9 col-9 ">
+                   
+                    <nav class="navbar navbar-expand-lg navbar-light st-nav" >
+                      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button> -->
+                      <div class="" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-item nav-link active" href="#"> 
+                            <span  id="language">
+                              <span class="en">English</span>
+                              <span class="pipe">|</span>
+                              <span class="ar">العربية</span>
+
+                              <i class="globe-icon" onclick="selectLang()">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                   <g id="global_1_" data-name="global (1)" transform="translate(9)">
                                     <g id="Group_2" data-name="Group 2" transform="translate(-9)">
@@ -81,83 +91,67 @@
                                     </g>
                                   </g>
                                 </svg>
-                                
-                              </a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link last-child" href="#">
-                                <!-- <i class="fas fa-cart-arrow-down"></i> -->
-                                <!-- <img src="../img/icons/nav/shopping-cart (1).png" alt="globe" width ="20" height="20"> -->
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 27.307 24">
-                                  <g id="shopping-cart_1_" data-name="shopping-cart (1)" transform="translate(0 0)">
-                                    <path id="nav-icon" data-name="Path 3" d="M8.8,15H23.307a.8.8,0,0,0,.769-.544l3.2-10.5a.713.713,0,0,0-.13-.658.82.82,0,0,0-.639-.3H6.953L6.381.587A.791.791,0,0,0,5.6,0H.8A.776.776,0,0,0,0,.75a.776.776,0,0,0,.8.75H4.958L7.847,13.686A2.255,2.255,0,0,0,6.4,15.75,2.331,2.331,0,0,0,8.8,18H23.307a.752.752,0,1,0,0-1.5H8.8a.751.751,0,1,1,0-1.5ZM25.446,4.5l-2.743,9H9.442l-2.133-9Zm0,0" transform="translate(0 0)" fill="#fff"/>
-                                    <path id="nav-icon" data-name="Path 4" d="M150,363a3,3,0,1,0,3-3A3,3,0,0,0,150,363Zm3-1a1,1,0,1,1-1,1A1,1,0,0,1,153,362Zm0,0" transform="translate(-142.427 -342)" fill="#fff"/>
-                                    <path id="nav-icon" data-name="Path 5" d="M362,363a3,3,0,1,0,3-3A3,3,0,0,0,362,363Zm3-1a1,1,0,1,1-1,1A1,1,0,0,1,365,362Zm0,0" transform="translate(-344.693 -342)" fill="#fff"/>
-                                  </g>
-                                </svg>
-                                <span class='badge badge-warning' id='lblCartCount'> 0 </span>
-                              </a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">
-                                <!-- <i class="fa fa-search"></i> -->
-                                <!-- <img src="../img/icons/nav/loupe.png" alt="globe" width ="20" height="20"> -->
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                  <g id="loupe" transform="translate(71 -0.003)">
-                                    <g id="Group_1" data-name="Group 1" transform="translate(-71 0.003)">
-                                      <path id="nav-icon" data-name="Path 1" d="M23.707,22.3l-6.825-6.825a9.518,9.518,0,1,0-1.414,1.414l6.825,6.825A1,1,0,1,0,23.707,22.3ZM9.5,17A7.5,7.5,0,1,1,17,9.5,7.508,7.508,0,0,1,9.5,17Z" transform="translate(0 -0.003)" fill="#fff"/>
-                                    </g>
-                                  </g>
-                                </svg>
-                              </a>
+                              </i>
 
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link last-child" href="#" data-toggle="modal" data-target="#loginModal" >
-                                تسجيل الدخول
-                                <!-- <i class="far fa-user-circle"></i> -->
-                                <!-- <img src="../img/icons/nav/user.png" alt="globe" width ="20" height="20"> -->
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                  <path id="nav-icon" id="user" d="M20.485,3.515A12,12,0,0,0,3.514,20.485,12,12,0,0,0,20.485,3.515ZM6.015,20.737a6.076,6.076,0,0,1,11.968,0,10.571,10.571,0,0,1-11.968,0ZM8.184,10.494A3.816,3.816,0,1,1,12,14.309a3.82,3.82,0,0,1-3.816-3.816ZM19.2,19.761a7.494,7.494,0,0,0-4.357-4.891,5.222,5.222,0,1,0-5.691,0A7.493,7.493,0,0,0,4.8,19.761a10.594,10.594,0,1,1,14.4,0Zm0,0" transform="translate(0.001)" fill="#fff"/>
-                                </svg>
-                              </a>
-                            </li>
-                          </ul>
+                            </span>
+                          </a>
+                          <a class="nav-item nav-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 27.307 24">
+                              <g id="shopping-cart_1_" data-name="shopping-cart (1)" transform="translate(0 0)">
+                                <path id="nav-icon" data-name="Path 3" d="M8.8,15H23.307a.8.8,0,0,0,.769-.544l3.2-10.5a.713.713,0,0,0-.13-.658.82.82,0,0,0-.639-.3H6.953L6.381.587A.791.791,0,0,0,5.6,0H.8A.776.776,0,0,0,0,.75a.776.776,0,0,0,.8.75H4.958L7.847,13.686A2.255,2.255,0,0,0,6.4,15.75,2.331,2.331,0,0,0,8.8,18H23.307a.752.752,0,1,0,0-1.5H8.8a.751.751,0,1,1,0-1.5ZM25.446,4.5l-2.743,9H9.442l-2.133-9Zm0,0" transform="translate(0 0)" fill="#fff"/>
+                                <path id="nav-icon" data-name="Path 4" d="M150,363a3,3,0,1,0,3-3A3,3,0,0,0,150,363Zm3-1a1,1,0,1,1-1,1A1,1,0,0,1,153,362Zm0,0" transform="translate(-142.427 -342)" fill="#fff"/>
+                                <path id="nav-icon" data-name="Path 5" d="M362,363a3,3,0,1,0,3-3A3,3,0,0,0,362,363Zm3-1a1,1,0,1,1-1,1A1,1,0,0,1,365,362Zm0,0" transform="translate(-344.693 -342)" fill="#fff"/>
+                              </g>
+                            </svg>
+                          <span class='badge badge-warning' id='lblCartCount'> 0 </span>
+                          </a>
+                          <a class="nav-item nav-link" href="#">
+                            <!-- <form>
+                              <input type="text" id="searchInput"name="search"  >
+                            </form> -->
+                            <div class="search-box">
+                              <button class="btn-search">
+                                <img src="../img/icons/nav/loupe.svg" width="25" height="25">
+                              </button>
+                              <input type="text" class="input-search" placeholder="البحث في الموقع">
+                              
+                            </div>
+                          </a>
+                          <a class="nav-item nav-link last-nav-item" href="#" data-toggle="modal" data-target="#loginModal">
+                            <span class="tasgeel">تسجيل الدخول</span>
+                            <!-- <i class="far fa-user-circle"></i> -->
+                            <!-- <img src="./img/icons/nav/user.png" alt="globe" width ="20" height="20"> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                              <path id="nav-icon" id="user" d="M20.485,3.515A12,12,0,0,0,3.514,20.485,12,12,0,0,0,20.485,3.515ZM6.015,20.737a6.076,6.076,0,0,1,11.968,0,10.571,10.571,0,0,1-11.968,0ZM8.184,10.494A3.816,3.816,0,1,1,12,14.309a3.82,3.82,0,0,1-3.816-3.816ZM19.2,19.761a7.494,7.494,0,0,0-4.357-4.891,5.222,5.222,0,1,0-5.691,0A7.493,7.493,0,0,0,4.8,19.761a10.594,10.594,0,1,1,14.4,0Zm0,0" transform="translate(0.001)" fill="#fff"/>
+                            </svg>
+                          </a>
+                        </div>
                       </div>
-                  </nav>
-  
-                </div>
-  
-                <div class="col-md-12 col-sm-3 col-3 p-0 float-left">
-                
-                  <nav class="navbar navbar-expand-lg navbar-light second-nav">
-                    <div class="">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#!" ><label>الإدارة العامة للعلاقات الثقافية الخارجية</label></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="../pages/services.html" ><label>خدماتنا</label></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="../pages/arch-sites.html"><label>مواقع أثرية</label></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="../pages/contact-us.html"><label>اتصل بنا</label></a>
-                            </li>
-                          </ul>
-                      </div>
-                    </div>
-                  </nav>
+                    </nav>
+                  </div>
+    
+                  <div class="col-md-12 col-sm-3 col-3">
                   
+                    <nav class=" navbar-expand-lg navbar-light second-nav">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <div class="navbar-nav">
+                              <a class="nav-link" href="../index.html" ><label>الإدارة العامة للعلاقات الثقافية الخارجية</label></a>
+                              <a class="nav-link" href="../pages/services.html" ><label>خدماتنا</label></a>
+                              <a class="nav-link" href="../pages/arch-sites.html"><label>مواقع أثرية</label></a>
+                              <a class="nav-link" href="../pages/contact-us.html"><label>اتصل بنا</label></a>
+                            </div>
+                        </div>
+                    </nav>
+                    
+                  </div>
+    
                 </div>
-  
               </div>
             </div>
+            
           </div>
         </div>
         

@@ -178,6 +178,7 @@ body {
 
 .showCart{
     opacity: 1 !important;
+    z-index: 5 !important;
 }
 /*custom input icon/disable*/
 .input-icons{
