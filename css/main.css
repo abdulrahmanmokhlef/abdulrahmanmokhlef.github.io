@@ -1237,6 +1237,10 @@ footer .row > :last-child{
     .st-nav .search-box {
         margin-left: -3px;
     }
+
+    .section-2 .img-part img {
+        height: 340px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1379,7 +1383,9 @@ footer .row > :last-child{
     .st-nav .search-box {
         margin-left: -3px;
     }
-    
+    .section-2 .img-part img {
+        height: 340px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1503,5 +1509,9 @@ footer .row > :last-child{
 
     .st-nav .search-box {
         margin-left: -3px;
+    }
+
+    .section-2 .img-part img {
+        height: 340px;
     }
 }
