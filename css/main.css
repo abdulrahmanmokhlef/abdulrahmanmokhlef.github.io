@@ -343,6 +343,10 @@ textarea:focus-visible{
     letter-spacing: 2px;
     outline: none;
     transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
     background: none;
     padding-left: 30px;
     padding-right: 5px;
