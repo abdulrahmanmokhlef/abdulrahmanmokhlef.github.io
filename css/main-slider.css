@@ -1,7 +1,8 @@
 
 .carousel-item {
     /* height: 85vh; */
-    height: 500px;
+    /* height: 500px; */
+    height: 650px;
     min-height: 350px;
     /* background: no-repeat center center scroll; */
     -webkit-background-size: cover;
@@ -109,14 +110,14 @@
 /* ==========================================
     section-3
   ========================================== */
- 
+
 .sites-slider{
     overflow: hidden;
     padding: 30px;
 }
 
 .owl-carousel .item{
-    overflow: hidden; 
+    overflow: hidden;
 }
 .item-img{
     overflow: hidden;
@@ -149,20 +150,20 @@
 .item-1 .item-caption, .item-1 .item-small-caption {
     background: #FAE168;
     color: #1034A6;
-} 
+}
 .item-2 .item-caption, .item-2 .item-small-caption {
     background: #FF5440;
     color: #FFFFFF;
-} 
+}
 .item-3 .item-caption, .item-3 .item-small-caption {
     background: #1034A6;
     color: #FFFFFF;
-} 
+}
 .item-4 .item-caption, .item-4 .item-small-caption {
     background: #3FD5DF;
     color: #FFFFFF;
-} 
-/*Owl carsouel configurations*/  
+}
+/*Owl carsouel configurations*/
 .owl-prev {
     width: 22px;
     height: 22px;
@@ -182,7 +183,7 @@
     right: -30px;
     border:1px solid #FF5440 !important;
     border-radius: 0px !important;
-    
+
 }
 .owl-prev i, .owl-next i {transform : scale(1.2); color: #85C1E9}
 
@@ -195,7 +196,7 @@
 .owl-prev:hover i,
 .owl-next:hover i{
     color: #ffffff;
-} 
+}
 
 .owl-next:focus, .owl-prev:focus {outline: none;}
 

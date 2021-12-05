@@ -239,7 +239,8 @@ textarea:focus-visible{
     right: 0;
     left: 0;
     /* height: 85vh; */
-    height: 500px;
+    /* height: 500px; */
+    height: 650px;
     min-height: 350px;
     /* background: no-repeat center center scroll; */
     background-image: url('../img/header/layer.svg');
