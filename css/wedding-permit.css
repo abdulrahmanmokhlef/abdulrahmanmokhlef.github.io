@@ -215,14 +215,14 @@ div.gallery-4 div.caption, div.gallery-4 div.small-caption{
     color: #1034A6 !important;
     border: 1px solid #1034A6 !important;
     border-radius: 0px !important;
-    opacity: 50%;
+    /* opacity: 50%; */
     font-size: 12px;
 }
 
-input[type="time"]::-webkit-calendar-picker-indicator{
-    background-image: url('../img/icons/calendar.svg');
+/* input[type="time"]::-webkit-calendar-picker-indicator{
+    background-image: url('../img/icons/calendar.svg'); 
     opacity: 100% !important; 
-}
+} */
 
 /* .selectpicker option[selected] {
     color:red !important;
@@ -397,7 +397,7 @@ input[type="time"]::-webkit-calendar-picker-indicator{
     opacity: 100% !important;
 }
 
-::-webkit-calendar-picker-indicator {
+input[type="date"]::-webkit-calendar-picker-indicator {
     background-image: url('../img/pages/wedding-permit/icons/calendar.svg');
     opacity: 100% !important; 
 }

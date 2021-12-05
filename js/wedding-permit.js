@@ -164,22 +164,20 @@ debugger
         <div class="row">
 
           <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-            <!-- <input type="time" 
-                  class="form-control"id="appt" 
-                  min="09:00" max="18:00" 
-                  > -->
-            <input type="text" 
-                    placeholder="من الساعة...صباحاً"
-                    onfocus="(this.type='time')"
-                    class="form-control"id="appt" name="appt"
-                    min="09:00" max="18:00">      
-          </div>
+            <input type="time" 
+              class="form-control"id="appt" 
+              min="09:00" max="18:00">
+
+              <!-- <input type="text" 
+                placeholder="من الساعة...صباحاً"
+                onfocus="(this.type='time')"
+                class="form-control"id="appt" name="appt"
+                min="09:00" max="18:00">  -->    
+          </div> 
 
           <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-            <input type="text" 
-              placeholder="إلي الساعة...مساءً"
-              onfocus="(this.type='time')"
-              class="form-control"id="appt" name="appt"
+            <input type="time" 
+              class="form-control"id="appt" 
               min="09:00" max="18:00">      
           </div>
 
@@ -201,19 +199,15 @@ var previewPeriod= `
         <div class="row">
 
           <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-            <input type="text" 
-                    placeholder="من الساعة...صباحاً"
-                    onfocus="(this.type='time')"
-                    class="form-control"id="appt" name="appt"
-                    min="09:00" max="18:00">      
+            <input type="time" 
+              class="form-control"id="appt" 
+              min="09:00" max="18:00">      
           </div>
 
           <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-            <input type="text" 
-              placeholder="إلي الساعة...مساءً"
-              onfocus="(this.type='time')"
-              class="form-control"id="appt" name="appt"
-              min="09:00" max="18:00">      
+            <input type="time" 
+              class="form-control"id="appt" 
+              min="09:00" max="18:00">     
           </div>
           
         </div>
@@ -312,22 +306,14 @@ setPreparingDaysPeriod = function(e){
           <div class="row">
   
             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-              <!-- <input type="time" 
-                    class="form-control"id="appt" 
-                    min="09:00" max="18:00" 
-                    > -->
-              <input type="text" 
-                      placeholder="من الساعة...صباحاً"
-                      onfocus="(this.type='time')"
-                      class="form-control"id="appt" name="appt"
-                      min="09:00" max="18:00">      
+              <input type="time" 
+                class="form-control"id="appt" 
+                min="09:00" max="18:00">  
             </div>
   
             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-              <input type="text" 
-                placeholder="إلي الساعة...مساءً"
-                onfocus="(this.type='time')"
-                class="form-control"id="appt" name="appt"
+              <input type="time" 
+                class="form-control"id="appt" 
                 min="09:00" max="18:00">      
             </div>
   
@@ -390,22 +376,14 @@ setEventDays2 = function(e){
           <div class="row">
   
             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-              <!-- <input type="time" 
-                    class="form-control"id="appt" 
-                    min="09:00" max="18:00" 
-                    > -->
-              <input type="text" 
-                      placeholder="من الساعة...صباحاً"
-                      onfocus="(this.type='time')"
-                      class="form-control"id="appt" name="appt"
-                      min="09:00" max="18:00">      
+              <input type="time" 
+                class="form-control"id="appt" 
+                min="09:00" max="18:00">  
             </div>
   
             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-              <input type="text" 
-                placeholder="إلي الساعة...مساءً"
-                onfocus="(this.type='time')"
-                class="form-control"id="appt" name="appt"
+              <input type="time" 
+                class="form-control"id="appt" 
                 min="09:00" max="18:00">      
             </div>
   
@@ -439,18 +417,14 @@ var previewPeriod2= `
   <div class="row">
 
     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-      <input type="text" 
-              placeholder="من الساعة...صباحاً"
-              onfocus="(this.type='time')"
-              class="form-control"id="appt" name="appt"
-              min="09:00" max="18:00">      
+      <input type="time" 
+        class="form-control"id="appt" 
+        min="09:00" max="18:00">      
     </div>
 
     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-      <input type="text" 
-        placeholder="إلي الساعة...مساءً"
-        onfocus="(this.type='time')"
-        class="form-control"id="appt" name="appt"
+      <input type="time" 
+        class="form-control"id="appt" 
         min="09:00" max="18:00">      
     </div>
     
