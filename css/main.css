@@ -27,7 +27,6 @@ body {
     position: absolute;
     bottom: 30px !important;
     color: #FFFFFF;
-    z-index: 2;
 }
 
 .header-img {
