@@ -31,7 +31,19 @@ $(document).ready(function() {
 
     }
     
+  }
+  
+  //ar is selected by default
+  $('.ar').addClass('lang-selected');
+  changeLang = function(id){
 
+    if(id == 1){
+      $('.ar').addClass('lang-selected')
+      $('.en').removeClass('lang-selected')
+    }else if(id == 2){
+      $('.en').addClass('lang-selected')
+      $('.ar').removeClass('lang-selected')
+    }
   }
   
   //show/hide and set new value for cart

@@ -440,7 +440,7 @@ input[type="search"]::-webkit-search-results-decoration {
     /* padding: 0px 5px; */
 }
 .ar{
-    color: #28D0DC !important;
+    color: #FFFFFF;
     cursor: pointer;
     /* padding: 5px; */
 }
@@ -460,6 +460,17 @@ input[type="search"]::-webkit-search-results-decoration {
 .language i{
     color: #FFFFFF;
 }
+
+.ar:hover, 
+.en:hover{
+    color: #28D0DC;
+}
+
+.lang-selected{
+    color: #28D0DC;
+}
+
+
 .showElement{
     opacity: 1;
 }
