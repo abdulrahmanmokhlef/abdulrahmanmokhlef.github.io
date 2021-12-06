@@ -551,6 +551,9 @@ a.nav-link:hover #nav-icon{
         display: flex !important;
     } */
     
+    .nav-item{
+        margin-bottom: 15px;
+    }
     
 
     .nav-first-part{
