@@ -511,10 +511,14 @@ a.nav-link:hover #nav-icon{
     float: left;
 }
 
+
+
+
 @media (min-width: 768px){
     #navbarCollapse{
-    display: block !important;
+        display: block !important;
     }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -522,8 +526,8 @@ a.nav-link:hover #nav-icon{
 
     .navbar{
         display: block !important;
-        width: 310px;
-        z-index: 100 !important;
+        width: 295px;
+        background: #1034A6 !important;
     }
     
     .navbar-light .navbar-toggler {
@@ -538,12 +542,22 @@ a.nav-link:hover #nav-icon{
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
     }
 
-    .collapse{
-        background-color: #1034A6;
-        padding: 18px;
-        z-index: 100 !important;
+    /*toggler customization*/
+    .navbar-light .navbar-toggler {
+        position: absolute;
+        top: -37px;
+        left: -4px;
     }
-    
+    nav.navbar{
+        margin-top: 42px;
+        padding: 0;
+    }
+
+    .collapse{
+        /* padding: 18px; */
+        /* background-color: #1034A6; */
+    }
+   
     .navbar ul li{
         margin-right: 0;
     }
@@ -556,9 +570,15 @@ a.nav-link:hover #nav-icon{
         margin-bottom: 15px;
     }
     
+    .nav-first-part,
+    .nav-second-part{
+        margin-right: 17px;
+        padding: 9px
+    }
 
     .nav-first-part{
-       margin-bottom: -10px;
+       margin-bottom: -30px;
+       margin-top: 15px;
        float: none;
        /* margin-right: 0px; */
     }
