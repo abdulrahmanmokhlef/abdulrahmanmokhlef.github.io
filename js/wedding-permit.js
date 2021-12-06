@@ -1,5 +1,5 @@
 $(document).ready(function() {
- 
+ debugger
   var item = localStorage.getItem('tab');
 
   if(item ==="apply"){

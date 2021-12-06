@@ -10,17 +10,22 @@ $(document).ready(function() {
   //cahnge language
   var showLang= false;
   selectLang = function(){
+    debugger
     showLang = !showLang;
     if(showLang){
 
-      $('#language').addClass('language');
-      $('#language > .ar , #language > .en , #language > .pipe').addClass('showElement');
+      // $('#language').addClass('language');
+      // $('#language > .ar , #language > .en , #language > .pipe').addClass('showElement');
 
+      document.getElementsByClassName('s').className = 'lang-tansition'
+      // $('#language > .ar , #language > .en , #language > .pipe').className =('lang-tansition');
     }else{
 
-      $('#language').removeClass('language');
-      $('#language > .ar , #language > .en , #language > .pipe').removeClass('showElement');
+      // $('#language').removeClass('language');
+      // $('#language > .ar , #language > .en , #language > .pipe').removeClass('showElement');
       
+      $('#language > .ar , #language > .en , #language > .pipe').addClass('lang-tansition');
+
     }
     
 
@@ -53,7 +58,14 @@ $(document).ready(function() {
 
   activeTabInSpecificPage = function(tab, page){
       localStorage.setItem('tab', tab);
-      window.location.replace('../pages/' + page);
+    debugger
+      var url = document.URL;
+
+      if(url.includes('pages')){
+        window.location.replace('../pages/' + page);
+      }else{
+        window.location.replace('./pages/' + page);
+      }
   };
 
 
