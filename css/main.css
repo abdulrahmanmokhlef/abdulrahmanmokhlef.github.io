@@ -523,7 +523,8 @@ a.nav-link:hover #nav-icon{
 
     .navbar{
         display: block !important;
-        width: 310px
+        width: 310px;
+        z-index: 100 !important;
     }
     
     .navbar-light .navbar-toggler {
@@ -541,6 +542,7 @@ a.nav-link:hover #nav-icon{
     .collapse{
         background-color: #1034A6;
         padding: 18px;
+        z-index: 100 !important;
     }
     
     .navbar ul li{
@@ -654,7 +656,7 @@ a.nav-link:hover #nav-icon{
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 400px) {
     #language-a .s {
         position: relative;
         opacity: 1;
