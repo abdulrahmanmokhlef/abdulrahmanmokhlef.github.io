@@ -206,9 +206,9 @@ textarea:focus-visible{
     top: 0;
     right: 0;
     left: 0;
-    /* height: 85vh; */
+    height: 85vh;
     /* height: 500px; */
-    height: 650px;
+    /* height: 650px; */
     min-height: 350px;
     /* background: no-repeat center center scroll; */
     background-image: url('../img/header/layer.svg');
@@ -225,7 +225,7 @@ textarea:focus-visible{
     top:0;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: 5;
     padding-top: 20px;
 }
 .logo-container{
@@ -683,9 +683,9 @@ a.nav-link:hover #nav-icon{
         padding: 4px;
     }
 
-    .nav-first-part .btn-search{
+    /* .nav-first-part .btn-search{
         margin-left: -15px;
-    }
+    } */
     
 }
 
@@ -1546,10 +1546,10 @@ footer .row > :last-child{
      }
 
 
+    
      .carousel-caption {
          padding-bottom: 90px !important;
          margin-left: 25px;
-
      }
      .carousel-caption h1,
      .carousel-caption h2{
