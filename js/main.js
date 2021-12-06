@@ -7,6 +7,9 @@ $(document).ready(function() {
     localStorage.removeItem('showLogin');
   }
 
+
+
+  
   //cahnge language
   var showLang= false;
   selectLang = function(){
