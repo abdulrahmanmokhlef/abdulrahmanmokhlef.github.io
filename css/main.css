@@ -658,6 +658,10 @@ a.nav-link:hover #nav-icon{
         width: 100px;
         padding: 4px;
     }
+
+    .nav-first-part .btn-search{
+        margin-left: -15px;
+    }
     
 }
 
