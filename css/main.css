@@ -499,6 +499,7 @@ a.nav-link:hover #nav-icon{
     display: block !important;
     }
 }
+
 @media screen and (max-width: 768px) {
 
 
@@ -506,6 +507,19 @@ a.nav-link:hover #nav-icon{
         display: block !important;
         width: 310px
     }
+    
+    .navbar-light .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-light .navbar-toggler:focus{
+        outline: none !important;
+    }
+
+    .navbar-light .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    }
+
     .collapse{
         background-color: #1034A6;
         padding: 18px;
@@ -522,7 +536,7 @@ a.nav-link:hover #nav-icon{
     
 
     .nav-first-part{
-       margin-bottom: 10px;
+       margin-bottom: -10px;
        float: none;
        /* margin-right: 0px; */
     }
@@ -549,7 +563,7 @@ a.nav-link:hover #nav-icon{
         border: 1px solid #ccc;
     }
     .nav-first-part  .input-search:focus{
-        /* width: 180px; */
+        width: 240px;
         border-radius: 0px;
         background-color: transparent;
         /* border-bottom:1px solid rgba(255,255,255,.5); */
@@ -572,6 +586,11 @@ a.nav-link:hover #nav-icon{
         font-size: 12px;
     }
 
+    
+    #language-a:focus .lang{
+        border: 1px solid #FFFFFF !important;
+    }
+    
     #language-a .s{
         position: relative;
         opacity: 1;
@@ -579,10 +598,6 @@ a.nav-link:hover #nav-icon{
         padding: 6px;
 
     }
-    #language-a:focus .lang{
-        border: 1px solid #FFFFFF !important;
-    }
-    
     #language-a:focus .s {
         opacity: 1;
         padding: 6px;
@@ -618,6 +633,17 @@ a.nav-link:hover #nav-icon{
         text-align: -webkit-right
     }
 }
+
+@media screen and (max-width: 550px) {
+    #language-a .s {
+        position: relative;
+        opacity: 1;
+        width: 100px;
+        padding: 4px;
+    }
+    
+}
+
 /* ==========================================
     Main Section
   ========================================== */
